@@ -1,0 +1,61 @@
+\documentclass[encoding=utf8,british]{tumphthesis}
+% \documentclass[pstricks,siunitx,addfonts,theorem,font=palatino,british]{tumphthesis}
+% für Dissertation:
+% \documentclass[encoding=utf8,british,dissertation,font=helvet]{tumphthesis}
+
+% Die Metadaten der Abschlussarbeit (Bachelor oder Master) werden auf dem
+% Deckblatt gedruckt und in dem PDF eingetragen.
+\subject{Abschlussarbeit im Bachelorstudiengang Physik}
+\title{Titel der Abschlussarbeit}
+%\subtitle{\foreignlanguage{british}{Title in English}}
+\author{Luca Göcke}
+\date{31.~Juli 2011}
+%\cooperators{Max-Planck-Institut für Physik}
+
+% Auf der Rückseite des Deckblatts können Themensteller, Zweitgutachter
+% und Tag der mündlichen Prüfung vermerkt werden.
+\lowertitleback{Erstgutachter (Themensteller): Prof.\ A.~Kabelschacht\\
+Zweitgutachter: Prof.\ S.~Preuss}
+
+% Die Bibliographie wirde über BibLaTeX mit Biber-Backend erstellt.
+% Sofern vorhanden, wird eine bib-Datei \jobname.bib (i.d.R. also der
+% gleiche Name wie die Hauptdatei nur bib-Endung) automatisch eingebunden.
+% Heißt sie anders oder müssen weitere Quelldateien eingebunden werden, so
+% dient dazu der folgende Befehl (auch z.B. bei Verwendung von ShareLaTeX
+% erforderlich, da hier \jobname auf output gesetzt wird)
+ \addbibresource{thesis.bib}
+
+\begin{document}
+% Ist die Arbeit auf Englisch verfasst, hier die Sprache umschalten.
+% Die Sprache muss als Klassenoption angegeben sein.
+\selectlanguage{british}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\chapter{Vorwort}
+\todo{noch ausarbeiten!}
+
+\mainmatter
+\chapter{Titel des ersten Kapitels}
+\section{Erster Abschnitt}
+
+
+\section{Zweiter Abschnitt}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{tumlogo}
+	\caption{\label{fig:test}Test}
+\end{figure}
+\subsection{Unterabschnitt}
+\subsubsection{Unterunterabschnitt}
+
+\appendix
+\chapter{Erstes Kapitel im Anhang}
+
+\backmatter
+\printbibliography
+
+
+\end{document}
