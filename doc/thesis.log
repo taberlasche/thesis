@@ -1,9 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.6.20)  26 JUN 2020 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.6.20)  27 JUN 2020 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\PassOptionsToPackage{draft}{pst-pdf}\input{thesis}
- (./thesis.tex (./tumphthesis.cls
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-03> (./tumphthesis.cls
 Document Class: tumphthesis 2018/08/24 LaTeX2e TUM PH Thesis layout
 (/usr/share/texmf-dist/tex/latex/koma-script/scrbook.cls
 Document Class: scrbook 2020/04/19 v3.30 KOMA-Script document class (book)
@@ -890,47 +892,27 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2020/04/19 v3.30 KOMA-Script package (end user interf
+ace for scrlayer)
 
-! LaTeX Error: File `scrpage2.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: mystyle
-(./mystyle.sty
-
-LaTeX Warning: You have requested package `scrpage2',
-               but the package provides `mystyle'.
-
-Package: mystyle 
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlayer.sty
+Package: scrlayer 2020/04/19 v3.30 KOMA-Script package (defining layers and pag
+e styles)
+Package scrlayer Info: Using already defined \footheight
+(scrlayer)             hoping, that this is a length and
+(scrlayer)             not only a macro on input line 109.
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 210
+6.
 )
-
-! LaTeX Error: Unknown option `ilines' for package `scrpage2'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.338 	\pagestyle
-                 {scrheadings}
-? 
-
-! LaTeX Error: Unknown option `headsepline' for package `scrpage2'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.338 	\pagestyle
-                 {scrheadings}
-? 
-! Undefined control sequence.
-<argument> \undefinedpagestyle 
-                               
-l.338 	\pagestyle{scrheadings}
-                              
-? 
-) (/usr/share/texmf-dist/tex/latex/koma-script/tocstyle.sty
+Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
+(scrlayer-scrpage)             alias to `pageheadfoot' on input line 1244.
+Package scrlayer-scrpage Info: deactivating warning for font element
+(scrlayer-scrpage)             `pagefoot' on input line 1271.
+)
+Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
+)
+(/usr/share/texmf-dist/tex/latex/koma-script/tocstyle.sty
 Package: tocstyle 2019/10/09 v0.2j-alpha deprecated package (versatile toc styl
 es)
 
@@ -967,8 +949,7 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count421
 \l__pdf_internal_box=\box52
-)
-No file thesis.aux.
+) (./thesis.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
@@ -987,7 +968,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count422
 \scratchdimen=\dimen183
@@ -1040,6 +1021,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 28.
 LaTeX Info: Redefining \pageref on input line 28.
 LaTeX Info: Redefining \nameref on input line 28.
+
+(./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           Using `bookmark' together with `hyperref' is recommended,
@@ -1092,13 +1075,13 @@ Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' not found.
-
-No file thesis.bbl.
+Package biblatex Info: ... file 'thesis.bbl' found.
+ (./thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 28.
 Package biblatex Info: Reference segment=0 on input line 28.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
 
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 28.
@@ -1141,12 +1124,12 @@ Package scrbase Warning: Usage of deprecated command `\ifpdfoutput'.
 (scrbase)                Please replace `\ifpdfoutput' by `\Ifpdfoutput' on inp
 ut line 34.
 
-<PH.pdf, id=3, 29.8716pt x 29.8716pt>
+<PH.pdf, id=4, 29.8716pt x 29.8716pt>
 File: PH.pdf Graphic file (type pdf)
 <use PH.pdf>
 Package pdftex.def Info: PH.pdf  used on input line 34.
 (pdftex.def)             Requested size: 28.45274pt x 28.45303pt.
-<tumlogo.pdf, id=4, 53.24893pt x 28.45631pt>
+<tumlogo.pdf, id=5, 53.24893pt x 28.45631pt>
 File: tumlogo.pdf Graphic file (type pdf)
 <use tumlogo.pdf>
 Package pdftex.def Info: tumlogo.pdf  used on input line 34.
@@ -1158,9 +1141,36 @@ Package pdftex.def Info: tumlogo.pdf  used on input line 34.
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Abbildungen/PH.pdf> <./A
+bbildungen/tumlogo.pdf>] [2
 
-]
+] (./thesis.toc
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  16.33182pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 14.02747pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  16.33182pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 14.02747pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 1):  16.33182pt
+text indent by \l@... (toc, 1):  25.04214pt
+number indent by parent (toc, 1):  14.02747pt
+text indent calculated (toc, 1): 19.35791pt
+number indent calculated (toc, 1): 16.33182pt
+number indent by \l@... (toc, 1):  16.33182pt
+text indent by \l@... (toc, 1):  25.04214pt
+number indent by parent (toc, 1):  14.02747pt
+text indent calculated (toc, 1): 19.35791pt
+number indent calculated (toc, 1): 16.33182pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  16.33182pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 14.02747pt
+number indent calculated (toc, 0): 0.0pt
+)
 \tf@toc=\write6
  [3
 
@@ -1197,59 +1207,39 @@ chapter A.
 
 
 ]
-! Undefined control sequence.
-<argument> \undefinedpagestyle 
-                               
-l.57 \backmatter
-                
-? 
 
 LaTeX Warning: Empty bibliography on input line 58.
-
-
-LaTeX Warning: Empty bibliography on input line 61.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
 (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
-
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 27586 strings out of 480478
- 498374 string characters out of 5905959
- 1333549 words of memory out of 5000000
- 43256 multiletter control sequences out of 15000+600000
- 543369 words of font info for 49 fonts, out of 8000000 for 9000
+ 29092 strings out of 480478
+ 551677 string characters out of 5905959
+ 1402379 words of memory out of 5000000
+ 44748 multiletter control sequences out of 15000+600000
+ 544195 words of font info for 50 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 67i,7n,112p,10163b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-pdfTeX warning: \pdfdraftmode enabled, not changing output pdf
-
+ 65i,19n,110p,10122b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/f
+onts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfs
+s1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfsx2074.pfb>
+Output written on thesis.pdf (10 pages, 107827 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  21 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

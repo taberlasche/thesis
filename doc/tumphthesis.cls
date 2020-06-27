@@ -1,4 +1,4 @@
-%% 
+%%
 %% Vorschlag für eine LaTeX2e-Dokumentenklasse für Abschlussarbeiten am Physik-Department der TU München
 %% Stand 24.04.2018 (PHvL)
 %%
@@ -69,7 +69,7 @@
 	\relax
 \else
 	\PassOptionsToPackage{german=guillemets}{csquotes}
-	\RequirePackage{csquotes} 
+	\RequirePackage{csquotes}
 	\defineshorthand{"`}{\openautoquote}
 	\defineshorthand{"'}{\closeautoquote}
 \fi
@@ -91,7 +91,7 @@
 	\RequirePackage[final]{graphicx}
 \fi
 
-% Um PDF-Kommentare für ToDos o. Ae. zu setzen, wird pdfcomment verwendet 
+% Um PDF-Kommentare für ToDos o. Ae. zu setzen, wird pdfcomment verwendet
 % und ein \todo-Makro definiert.
 \if@noloadpdfcomment
 	\newcommand{\todo}[1]{%
@@ -129,7 +129,7 @@
 \PassOptionsToPackage{showonlyrefs}{mathtools}
 \RequirePackage{mathtools}
 
-% Sätze, Definitionen und Beweise können mit amsthm und shadethm einfach und 
+% Sätze, Definitionen und Beweise können mit amsthm und shadethm einfach und
 % sauber gesetzt werden.
 \if@loadtheorem
 	\RequirePackage{amsthm}
@@ -154,7 +154,7 @@
 \RequirePackage{multirow}
 \RequirePackage{xspace}
 
-% Mit dem Paket siunitx lassen sich einheitenbehaftete Größen auf einfache Weise 
+% Mit dem Paket siunitx lassen sich einheitenbehaftete Größen auf einfache Weise
 % korrekt setzen.
 \if@loadsiunitx
 	\PassOptionsToPackage{locale=DE,per-mode=symbol-or-fraction,load-configurations={binary,abbreviations}}{siunitx}
@@ -244,9 +244,9 @@
 	\RequirePackage{hyperref}
 \fi
 \g@addto@macro\UrlBreaks{
-  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j 
-  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t 
-  \do\u\do\v\do\w\do\x\do\y\do\z\do\&\do\1\do\2\do\3 
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\&\do\1\do\2\do\3
   \do\4\do\5\do\6\do\7\do\8\do\9\do\0}
 \g@addto@macro\UrlSpecials{\do\/{\mbox{\UrlFont/}\hskip 0pt plus 1pt}}
 
@@ -334,7 +334,7 @@
 \if@draftmode
 	\relax
 \else
-	\RequirePackage[ilines,headsepline]{scrpage2}
+	\RequirePackage[ilines,headsepline]{scrlayer-scrpage}
 	\pagestyle{scrheadings}
 	\newcommand\OrigBackmatter{} \let\OrigBackmatter=\backmatter
 	\renewcommand{\backmatter}{\OrigBackmatter \pagestyle{scrplain}}
@@ -382,9 +382,9 @@
 		}%
 		\vfill%
 		{\IfBooleanTF{\@dissertationfinal}{%
-			\noindent Vollständiger Abdruck der von der promotionsführenden Einrichtung 
-			\@departmentorirc\ der Technischen Universität München zur Erlangung 
-			des akademischen Grades eines Doktors \@drdegree\ genehmigten 
+			\noindent Vollständiger Abdruck der von der promotionsführenden Einrichtung
+			\@departmentorirc\ der Technischen Universität München zur Erlangung
+			des akademischen Grades eines Doktors \@drdegree\ genehmigten
 			Dissertation.\par
 			\vskip 4em
 			\noindent Vorsitzende(r): \@vorsitz\par
@@ -396,14 +396,14 @@
 				{\IfBooleanT{\@erweitertekommission}{\item \@drittprueferin}}%
 			\end{enumerate}
 			\vskip 2em
-			Die Dissertation wurde am \@date\ bei der Technischen Universität 
-			München eingereicht und durch die promotionsführenden Einrichtung 
+			Die Dissertation wurde am \@date\ bei der Technischen Universität
+			München eingereicht und durch die promotionsführenden Einrichtung
 			\@departmentorirc\ angenommen.}{%
-			\noindent Dissertation zur Erlangung des akademischen Grades eines Doktors 
-			\@drdegree\ zur Vorlage bei der promotionsführenden Einrichtung 
+			\noindent Dissertation zur Erlangung des akademischen Grades eines Doktors
+			\@drdegree\ zur Vorlage bei der promotionsführenden Einrichtung
 			\@departmentorirc\ der Technischen Universität München.%
 			{\IfBooleanT{\@erstprueferinset}{\par\vskip 1em
-			\noindent Die Dissertation wurde von \@erstprueferin\ 
+			\noindent Die Dissertation wurde von \@erstprueferin\
 			angeregt und in wesentlichen Teilen betreut.}}}}%
 	\end{titlepage}
 	\else

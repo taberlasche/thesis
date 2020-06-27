@@ -2180,7 +2180,6 @@
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
-    <bcf:datasource type="file" datatype="bibtex">uni.bib</bcf:datasource>
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
