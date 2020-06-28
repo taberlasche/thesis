@@ -42,7 +42,7 @@
 \FamilyBoolKey{TUMPH}{nocsquotes}{@noloadcsquotes}
 \FamilyBoolKey{TUMPH}{addfonts}{@loadadditionalfonts}
 \FamilyBoolKey{TUMPH}{theorem}{@loadtheorem}
-\newcommand{\file@encoding}{utf8x}
+\newcommand{\file@encoding}{utf8}
 \DefineFamilyKey{TUMPH}{encoding}{\renewcommand{\file@encoding}{#1}}
 \FamilyProcessOptions{TUMPH}\relax
 \if@draftmode
