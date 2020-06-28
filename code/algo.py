@@ -1,8 +1,8 @@
-#TODO:
+# TODO:
 # + Merge two loops
 # + semidefinite program
-# + how to get the v's
-#
+# + M_ij -> \braket{v_i}{v_j}?
+# + Kronecker Produkt für rho[i]
 
 import numpy as np
 
