@@ -17,7 +17,8 @@
 
 
 # Pauli Matrices
-   X = \begin{bmatrix} 0 & 1 \\
+ $$
+ X = \begin{bmatrix} 0 & 1 \\
                     1 & 0
         \end{bmatrix},~
 
@@ -28,3 +29,4 @@
     ~Z = \begin{bmatrix} 1 & 0 \\
                     0 & -1
         \end{bmatrix}
+$$
