@@ -1,5 +1,6 @@
 #TODO:
 # + Merge two loops
+# + semidefinite program
 # + how to get the v's
 #
 
