@@ -2,7 +2,7 @@
 # + Merge two loops
 # + semidefinite program
 # + M_ij -> \braket{v_i}{v_j}?
-# + Kronecker Produkt für rho[i]
+# + Tensor Produkt für rho[i]
 
 import numpy as np
 
