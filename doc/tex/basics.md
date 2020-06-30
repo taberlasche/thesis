@@ -30,3 +30,7 @@
                     0 & -1
         \end{bmatrix}
 $$
+Properties:
++ traceless
++ unitary
++ hermitian
