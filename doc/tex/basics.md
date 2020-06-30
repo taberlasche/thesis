@@ -1,5 +1,6 @@
 # TODO
 + states
++ positive semidefinite matrices properties
 + algorithms
 + pauli matrices
 + gellmann matrices
@@ -13,7 +14,6 @@
 + trace 1
 + hermitian
 
-# Approximation Algorithms
 
 
 # Pauli Matrices
