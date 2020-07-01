@@ -1,8 +1,9 @@
 """
 TODO:
-+ checking positive semidefiniteness
-+ partial traces
-+ tensor product
++ [x] eigenvalues
++ [ ] checking positive semidefiniteness
++ [ ] partial traces
++ [x] tensor product
 """
 import numpy as np
 
@@ -16,8 +17,7 @@ def pos_def(A)
 
 
 
-
     # np.all(np.linalg.eigvalsh(A) > 0)
     # chol_A = np.linalg.cholesky(A)
 
-# for the tensor product we can use np.kron(A)
+# for the tensor product and partial traces qutip could be used
