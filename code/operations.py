@@ -14,10 +14,8 @@ import numpy as np
 def pos_def(A)
 
 
-
-
-
     # np.all(np.linalg.eigvalsh(A) > 0)
     # chol_A = np.linalg.cholesky(A)
 
-# for the tensor product and partial traces qutip could be used
+# for the tensor product qutip could be used
+# for partial traces np.reshape can be used alternatively to qutip
