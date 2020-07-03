@@ -25,7 +25,6 @@ for i in range(1,3n+1):
     z = np.inner(r, v[i])/T
         if abs(z) > 1/sqrt(3): y.append(np.sign(z)/sqrt(3))
         else: y.append(z)
-#There is probably a way to merge these two loops, making it more elegant/efficient?
 for a in range(1, n+1):
     rho.append(0.5*(I + y[3a-2]*X + y[3a-1]*Y + y[3a]*Z))
 return rho
