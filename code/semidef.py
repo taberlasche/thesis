@@ -1,25 +1,22 @@
 import cvxopt as cvx
 import numpy as np
 
-# a cvxopt.matrix can be converted to numpy using the array() function B = array(A) and vice versa A = matrix(B)
 
-# M: in herm(3n)
-# C: C^T = C real n x n with C_ij=0 for i=j
+def solve(c):
 
-# maximize Tr(CM) over M in herm(3n)
-# subject to M >= 0  and M_i,i = 1 for all i
-c = cvx.matrix()
-n = int(np.sqrt(len(c)))
-# the constraint M_ii =1 in the Form G*vec(M)=h
-Gx = []
-for i in range(1,n):
-    Gx.append(1)
-    Gx.extend([0 for i in range(n)])
-Gx.append(1)
+    n = c.size[0]
+    G = -1*cvx.matrix(np.identity(n**2).astype(np.double))
+    h = cvx.matrix(np.zeros((n**2,1), dtype=np.double))
+    Y = []
+    for i in range(1,n):
+        Y.append(1)
+        Y.extend([0 for i in range(n)])
+    Y.append(1)
 
-G = cvx.matrix(np.reshape(np.diagflat(Gx), (n**2,n**2)).astype(np.double))
-h = cvx.matrix(np.asarray(Gx).flatten('F').astype(np.double))
+    A = cvx.matrix(np.reshape(np.diagflat(Y), (n**2,n**2)).astype(np.double))
+    b = cvx.matrix(np.asarray(Y).flatten('F').astype(np.double))
 
-sol = cvx.solvers.sdp(c, Gl=G, hl=h)
+    sol = cvx.solvers.sdp(c, Gl=G, hl=h, A, b)
+    print(sol['x'])
 
-print(sol['x'])
+#ValueError: Rank(A) < p or Rank([G; A]) < n
