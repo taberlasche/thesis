@@ -28,5 +28,4 @@ def approx(C, c, o):
     for i in range(1, o+1):
         solve(C, c)
         ratio(C, y)
-        print(o ':' rat)
-        o += 1
+        print(i ':' rat)
