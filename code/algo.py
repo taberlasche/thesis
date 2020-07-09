@@ -2,7 +2,7 @@
 # + Merge two loops
 
 import numpy as np
-
+# returns bloch vector and state upon input of C and c
 def round(v, c):
 
     #Pauli matrices
@@ -22,4 +22,5 @@ def round(v, c):
             else: y.append(z)
     for a in range(1, n+1):
         rho.append(0.5*(I + y[3a-2]*X + y[3a-1]*Y + y[3a]*Z))
+    return y
     return rho
