@@ -42,16 +42,5 @@ def choleskyPSDSym(A):
 
 
 
-# Some examples
-def main():
-    A = np.array([[4, 1, -1], [1, 2, 1], [-1, 1, 2]])
-    B = np.array([[1, 1], [1, 1]])
-
-    v = findGenVecGram(A)
-    print(calcGram(v)) # should print A
-
-    v = findGenVecGram(B)
-    print(calcGram(v)) # should print B
-
 
 main()

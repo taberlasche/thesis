@@ -22,5 +22,6 @@ def mc(C):
 
     # Solve the problem.
     maxcut.solve(solver='cvxopt')
-    print('bound from the SDP relaxation: {0}'.format(maxcut.obj_value()))
     print(X)
+    V=X.value
+    return V
