@@ -14,7 +14,7 @@ def ratio(C, y, maxeig):
     k = np.inner(np.inner(np.transpose(y),C),y)
     rat = maxeig/k
 
-# returns dictionary with the state and bloch vector upon input of C and c(O(1))
+# returns 1. the solution to the SDP 2. the gram vectors 3. dictionary with the state and bloch vector upon input of C and c(O(1))
 def solve(C, c):
     V = np.array(mc(C))
     K = (np.conj(V)+V)/2
