@@ -14,14 +14,16 @@ def ratio(C, y, maxeig):
     k = np.inner(np.inner(np.transpose(y),C),y)
     rat = maxeig/k
 
-# returns rho upon input of C and c(O(1))
+# returns dictionary with the state and bloch vector upon input of C and c(O(1))
 def solve(C, c):
-    mc(C)
-    V = mc(C)
+    V = np.array(mc(C))
     K = (np.conj(V)+V)/2
     v = findGenVecGram(K)
-    round(v, c)
-
+    rd = round(v,c,C)
+    sol = {}
+    sol["blochvec"] = rd["blochvec"]
+    sol["state"] = rd["state"]
+    return sol
 
 # returns approximation ratios upon input of C, c, o, maxeig, where o is the number of rounds and maxeig the maximum eigenvalue of the Hamiltonian corresponding to C
 def approx(C, c, o, maxeig):
