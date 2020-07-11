@@ -27,9 +27,11 @@ def solve(C, c):
 
 # returns approximation ratios upon input of C, c, o, maxeig, where o is the number of rounds and maxeig the maximum eigenvalue of the Hamiltonian corresponding to C
 def approx(C, c, o, maxeig):
-    for i in range(1, o+1):
-        solve(C, c)
-        ratio(C, y)
-        #print(i ":" rat)
-        ratlist=[]
-        ratlist.append(rat)
+    ratlist=[]
+    i=1
+    while i < o+1:
+        sol = solve(C, c)
+        y=sol["blochvec"]
+        ratlist.append(ratio(C,y,maxeig)
+        i=+1
+    return ratlist
