@@ -9,11 +9,6 @@ from algo import *
 from operations import *
 
 
-# returns upon input of H and rho a ratio
-def ratio(C, y, maxeig):
-    k = np.inner(np.inner(np.transpose(y),C),y)
-    rat = maxeig/k
-
 # returns 1. the solution to the SDP 2. the gram vectors 3. dictionary with the state and bloch vector upon input of C and c(O(1))
 def solve(C, c):
     V = np.array(mc(C))
@@ -24,6 +19,13 @@ def solve(C, c):
     sol["blochvec"] = rd["blochvec"]
     sol["state"] = rd["state"]
     return sol
+
+
+# returns upon input of H and rho a ratio
+def ratio(C, y, maxeig):
+    k = np.inner(np.inner(np.transpose(y),C),y)
+    rat = maxeig/k
+    return rat
 
 # returns approximation ratios upon input of C, c, o, maxeig, where o is the number of rounds and maxeig the maximum eigenvalue of the Hamiltonian corresponding to C
 def approx(C, c, o, maxeig):
