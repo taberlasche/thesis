@@ -18,7 +18,7 @@ def solve(C, c):
     return sol
 
 
-# returns upon input of H and rho a ratio
+# returns upon input of C, y and the maximal eigenvalue corresponding to C the ratio
 def ratio(C, y, maxeig):
     k = np.inner(np.inner(np.transpose(y),C),y)
     rat = maxeig/k
