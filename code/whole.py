@@ -14,10 +14,7 @@ def solve(C, c):
     V = np.array(mc(C))
     K = (np.conj(V)+V)/2
     v = findGenVecGram(K)
-    rd = round(v,c,C)
-    sol = {}
-    sol["blochvec"] = rd["blochvec"]
-    sol["state"] = rd["state"]
+    sol = round(v,c,C)
     return sol
 
 
