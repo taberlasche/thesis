@@ -1,13 +1,15 @@
 # TODO
 + [x] states
 + [x] positive semidefinite matrices properties
-+ [ ] algorithms
 + [x] pauli matrices
 + [x] gellmann matrices
 + [ ] bloch sphere qubits
 + [ ] bloch sphere qudits
 + [ ] non positiv-semidefinite states
++ [ ] quantum algorithms basics
 + [ ] basic complexity theory and classical algorithms
++ [ ] Lie Algebra basics
+
 
 # States
 In general, a complex $N \times N$ matrix is a density matrix if it is:
@@ -50,6 +52,15 @@ $$s_{k}=\frac{1}{k}\left(s_{k-1} \operatorname{Tr} A-s_{k-2} \operatorname{Tr} A
 The eigenvalues of the matrix are non-neatives iff the coefficients $s_k$ are non-negative.
 If this is the case, then the representation above is a bijection.
 
+For $N=2$ the positivity property is equivalent to $Tr\rho²\le Tr\rho$, therefore we have $|\tau|\le 1$ and characterize the Bloch-vector-space with as a Ball with Radius $1$.
+
+Generally, using $Tr(\sigma_i\sigma_j) = 2\delta_{ij}$: $|\tau|\le 2\left( 1-\frac{1}{N} \right) $ and
+\[
+\rho²=\rho  \leftrightarrow \begin{cases}
+	\tau² = \frac{N-1}{2N} \\
+	\left( \tau \right)
+\end{cases}
+.\]
 
 
 # Properties positive semidefite matrices $M$
