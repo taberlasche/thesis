@@ -1,0 +1,88 @@
+# TODO
++ [x] states
++ [x] positive semidefinite matrices properties
++ [ ] algorithms
++ [x] pauli matrices
++ [x] gellmann matrices
++ [ ] bloch sphere qubits
++ [ ] bloch sphere qudits
++ [ ] non positiv-semidefinite states
+
+# States
+In general, a complex $N \times N$ matrix is a density matrix if it is:
+\begin{enumerate}[label=(\roman*)]
+	\item Hermitian,	$\rho =\rho^{\dagger}$
+	\item positive,		$\rho \ge 0$
+	\item normalized,	$Tr\rho = 1$
+\end{enumerate}
+The set of density matrices is convex set and its extremal points are the pure states obeying $\rho^2 = \rho$
+We can write a state $\rho$ as
+$$\rho = \frac{1}{N} \mathbb{1} + \sum_{i=1}^{N^2-1} \tau_i \sigma_i$$
+where $\sigma_i$ are generators of $SU(N)$ obeying
+\[
+	\sigma_i\sigma_j = \frac{2}{N}\delta_{ij} + d_{ijk}\sigma_k + if_{ijk}\sigma_k
+.\]
+$f_{ijk}$ is totally antisymmetric and equals the Levi-Civita-Symbol for $N=2$, $d_{ijk}$ is totally symmetric and vanishing for $N=2$
+
+We can construct the generators as follows:
+
+ \[
+\{\sigma_i\}^{N^2-1}_{i=1} = \{u_{jk},v_{jk},w_l\}
+.\]
+where
+\[
+	u_{jk} = \ket{k}\bra{k}+\ket{k}\bra{j}, ~ v_{jk} = -i(\ket{j}\bra{k}-\ket{k}\bra{j}),
+.\]
+\[
+	w_l = \sqrt{\frac{2}{l(l+1}} \sum_{j=1}^{l} \left( \ket{j}\bra{j}-l\ket{l+1}\bra{l+1} \right),
+	1\le j\le k\le N, 1\le l\le N-1
+.\]
+
+The $\tau_i$ are the components of the $N^2-1$ dimensional bloch vector and are the expectation values of the $\sigma_i$:
+ \[
+	 \tau_i = Tr(\rho\sigma_i)
+.\]
+We can determine the spectrum of $\rho$ by computing the traces of the first N powers of the matrix.
+$$\operatorname{det}(\lambda \mathbb{1}-A)=\lambda^{N}-s_{1} \lambda^{N-1}+s_{2} \lambda^{N-2}-\cdots+(-1)^{N} s_{N}=0$$
+and
+$$s_{k}=\frac{1}{k}\left(s_{k-1} \operatorname{Tr} A-s_{k-2} \operatorname{Tr} A^{2}+\cdots+(-1)^{k-1} \operatorname{Tr} A^{k}\right)$$
+The eigenvalues of the matrix are non-neatives iff the coefficients $s_k$ are non-negative.
+If this is the case, then the representation above is a bijection.
+
+
+
+# Properties positive semidefite matrices $M$
+$M$ has non-negative eigenvalues
+
+The diagonal entries of of a positive definite matrix are real and non-negative
+
+
+An $n \times n$ hermitian matrix  is pos. def. if
+  $tr(M) > 0$
+ and $\frac{(tr(M))^2}{tr(M^2)} > n-1$
+
+$M,N\ge 0 \implies M\otimes N \ge 0$
+
+A hermitian matrix $M$ is positive definite if and only if it has a unique Cholesky decomposition, i.e. the matrix $M$ is positive definite if and only if there exists a unique lower triangular matrix $L$, with real and strictly positive diagonal elements, such that M = LL^{*)
+Furthermore, positive-semidefinite Matrices have such a decomposition if the diagonal elements of $L$ are allowed to be zero.
+
+
+
+# Pauli Matrices
+ $$
+ X = \begin{bmatrix} 0 & 1 \\
+                    1 & 0
+        \end{bmatrix},~
+
+    ~Y = \begin{bmatrix} 0 & -i \\
+                    i & 0
+         \end{bmatrix},~
+
+    ~Z = \begin{bmatrix} 1 & 0 \\
+                    0 & -1
+        \end{bmatrix}
+$$
+Properties:
++ traceless
++ unitary
++ hermitian
