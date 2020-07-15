@@ -25,12 +25,11 @@ def ratio(C, y, maxeig):
     return rat
 
 # returns approximation ratios upon input of C, c, o, maxeig, where o is the number of rounds and maxeig the maximum eigenvalue of the Hamiltonian corresponding to C
-def approx(C, c, o, maxeig):
-    ratlist=[]
-    i=1
-    while i < o+1:
-        sol = solve(C, c)
-        y=sol["blochvec"]
-        ratlist.append(ratio(C,y,maxeig)
-        i=+1
-    return ratlist
+# def approx(C, c, o, maxeig):
+#    ratlist=[]
+#    i=1
+#    while i < o+1:
+#        sol = solve(C, c)
+#        y=sol["blochvec"]
+#        ratlist.append(ratio(C,y,maxeig)
+#    return ratlist

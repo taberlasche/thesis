@@ -23,5 +23,4 @@ def mc(C):
     # Solve the problem.
     maxcut.solve(solver='cvxopt')
     print(X)
-    V=X.value
-    return V
+    return X.value

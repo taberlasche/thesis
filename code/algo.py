@@ -11,7 +11,6 @@ def round(v, c, C):
     Y = np.array([[0, -1j],[1j, 0]])
     Z = np.array([[1, 0],[0, -1]])
     I = np.array([[1, 0],[0, 1]])
-    print(v)
     N=C.size[0]
     n=N/3
     print(int(n))
@@ -19,8 +18,8 @@ def round(v, c, C):
     rd = {}
     y = []
     rho = []
+    r = np.random.normal(N) #vector of 3n i.d.d. N(0,1) random variables
     for i in range(0,N):
-        r = np.random.random(N) #vector of 3n i.d.d. N(0,1) random variables
         z = np.inner(r, v[i])/T
         if np.linalg.norm(z) > 1/math.sqrt(3): y.append(np.sign(z)/math.sqrt(3))
         else: y.append(z)
