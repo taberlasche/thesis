@@ -13,7 +13,6 @@ def round(v, c, C):
     I = np.array([[1, 0],[0, 1]])
     N=C.size[0]
     n=N/3
-    print(int(n))
     T = c*math.sqrt(math.log(n)) #c=O(1)
     rd = {}
     y = []
@@ -23,8 +22,9 @@ def round(v, c, C):
         z = np.inner(r, v[i])/T
         if np.linalg.norm(z) > 1/math.sqrt(3): y.append(np.sign(z)/math.sqrt(3))
         else: y.append(z)
-    for a in range(0, int(n)):
-        rho.append(0.5*(I + y[3*a-2]*X + y[3*a-1]*Y + y[3*a]*Z))
-    rd["blochvec"] = y
-    rd["state"] = rho
-    return rd
+    #for a in range(0, int(n)):
+    #    rho.append(0.5*(I + y[3*a-2]*X + y[3*a-1]*Y + y[3*a]*Z))
+    #rd["blochvec"] = y
+    #rd["state"] = rho
+    #return rd
+    return y
