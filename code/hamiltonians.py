@@ -13,4 +13,4 @@ def buildC(n):
 
     for i in range(1,int(n/4)+1):
         s.append(d)
-    return block_diag(*s)
+    return np.array(block_diag(*s))

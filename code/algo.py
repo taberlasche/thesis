@@ -3,7 +3,7 @@
 
 import numpy as np
 import math
-# returns bloch vector and state upon input of C and c
+# returns bloch vector #and state# upon input of C and c
 def round(v, c, C):
 
     #Pauli matrices
@@ -17,14 +17,13 @@ def round(v, c, C):
     rd = {}
     y = []
     rho = []
-    r = np.random.normal(N) #vector of 3n i.d.d. N(0,1) random variables
+    r = np.random.normal(0,1,N) #vector of 3n i.d.d. N(0,1) random variables
     for i in range(0,N):
         z = np.inner(r, v[i])/T
         if np.linalg.norm(z) > 1/math.sqrt(3): y.append(np.sign(z)/math.sqrt(3))
         else: y.append(z)
-    #for a in range(0, int(n)):
-    #    rho.append(0.5*(I + y[3*a-2]*X + y[3*a-1]*Y + y[3*a]*Z))
-    #rd["blochvec"] = y
-    #rd["state"] = rho
-    #return rd
-    return y
+    for a in range(0, int(n)):
+        rho.append(0.5*(I + y[3*a-2]*X + y[3*a-1]*Y + y[3*a]*Z))
+    rd["blochvec"] = y
+    rd["state"] = rho
+    return rd
