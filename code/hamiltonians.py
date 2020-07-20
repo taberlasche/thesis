@@ -8,9 +8,7 @@ def buildC(n):
     b = np.block([[o1, a], [a, o1]])
     o2 = np.zeros((6,6))
     d = np.block([[b, o2], [o2, o2]])
-
     s = []
-
     for i in range(1,int(n/4)+1):
         s.append(d)
     return np.array(block_diag(*s))
