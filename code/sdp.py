@@ -18,9 +18,7 @@ def mc(C):
     # Set the objective.
     maxcut.set_objective('max', C|X)
 
-    print(maxcut)
 
     # Solve the problem.
     maxcut.solve(solver='cvxopt')
-    print(X)
     return X.value
