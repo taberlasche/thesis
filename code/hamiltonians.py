@@ -19,6 +19,7 @@ def buildC(n):
         A[3*n+2][9+i*12] = 1
         A[9+i*12][3*n+2] = 1
     return A
+
 def sdp1(n):
     A = np.add(buildC(n),np.eye(3*n+3))
     if int(n/4)>1:k=1
@@ -38,23 +39,7 @@ def sdp1(n):
     return A
 
 
-
-#    for i in range(0,int(n/4)):
-#        A[6+12*i][9+i*12] = 1
-#        A[9+i*12][6+12*i] = 1
-#    for i in range(2,int(n/4)+1):
-#
-#        for j in range(2, int(n/4)+1):
-#            A[6+(i-2)*12][18+(i-2)*12] = 1
-#            A[18+(i-2)*12][6+(i-2)*12] = 1
-#            A[9+(i-2)*12][18+(i-2)*12] = 1
-#            A[18+(i-2)*12][9+(i-2)*12] = 1
-#            A[6+(i-2)*12][21+(i-2)*12] = 1
-#            A[21+(i-2)*12][6+(i-2)*12] = 1
-#            A[9+(i-2)*12][21+(i-2)*12] = 1
-#            A[21+(i-2)*12][9+(i-2)*12] = 1
-    return A
-
+# returns the C for a chain of spins
 def chainC(n):
     a = []
     a.extend([1,0,0] for i in range(n-1))
@@ -62,13 +47,10 @@ def chainC(n):
     C[0][3*n-3]=1
     C[3*n-3][0]=1
     return C
-
-def chainsdp(n):
-    O = np.zeros((3,3))
-    I = np.eye(3*n)
-    A = np.array([[1,0,0], [0,0,0], [0,0,0]])
-    B = [O]
-    for i in range(n-1):
-        B.extend(A for j in range(n))
-        B.append(O)
-    return np.reshape(np.block(np.vsplit(np.stack(B),n)), (3*n,3*n)) + I
+# returns the sdp solution for chainC(n)
+def sdp2(n):
+    A = np.eye(3*n)
+    for i in range(0,n):
+        for j in range(0,n):
+            A[i*3][j*3] = 1
+    return A

@@ -25,7 +25,7 @@ def ratio(C, y, maxeig):
 
 # returns list of ratios upon input of number of qubits, c and number of iterations
 def sample(n, c, o, C):
-    K = np.add(C, np.identity(3*n))
+    K = sdp1(n)
     v = findGenVecGram(K)
     ratlist=[]
     i=0
