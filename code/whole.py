@@ -25,8 +25,7 @@ def ratio(C, y, maxeig):
 
 # returns list of ratios upon input of number of qubits, c and number of iterations
 def sample(n, c, o, C):
-    K = sdp1(n)
-    v = findGenVecGram(K)
+    v = findGenVecGram(sdp1(n))
     ratlist=[]
     i=0
     while i < o:
@@ -35,7 +34,7 @@ def sample(n, c, o, C):
     return ratlist
 
 def chainsample(n, c, o, C):
-    v = findGenVecGram(mc(cvx.matrix(C)))
+    v = findGenVecGram(sdp2(n))
     ratlist=[]
     i=0
     while i < o:
