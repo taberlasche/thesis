@@ -8,7 +8,7 @@
 	+ whole.py: whole program
 	+ operations.py: some common operations
 
-+Funktionenüberblick:
++ Funktionenüberblick:
 	+ buildC(n) baut C für einen Hamiltonian der Art X_1X_2+Z_1Z_2+Z_{n+1}X_3+Z_{n+1}X_4...
 	+ sdp1 baut die (versuchte) Lösung für das Sdp dieses Hamiltonians. (Beispiele in sdp1_examples))
 	+ chainC(n) baut C für einen Hamiltonian der Art X_i X_{i+1}, eine Spinkette ohne lineare Terme
