@@ -8,4 +8,14 @@ def test(n):
     a.real[abs(a.real) < tol] = 0.0
     print(n)
     return a
-print(np.array(mc(cvx.matrix(buildC(16)))))
+print(sdp2(4))
+print(sdp2(8))
+print(sdp2(12))
+print(sdp2(16))
+
+
+
+#print(test(4))
+#print(test(8))
+#print(test(12))
+#print(test(16))
