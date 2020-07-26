@@ -62,10 +62,11 @@ def plotn(ni, nf, c, o):
         x.extend([i for j in range(o)])
     for i in range(ni,nf+1,4):
         y=y+sample(i,c,o,buildC(i))
-    plt.scatter(x,y,marker=".",s=2)
+    plt.scatter(x,y,marker=".",s=3)
     plt.xlabel('n')
-    plt.ylabel('log(ratio)')
-    plt.yscale('log')
+    plt.ylabel('ratio')
+    #plt.ylabel('log(ratio)')
+    #plt.yscale('log')
     plt.title('nplot')
     plt.show()
 
@@ -76,9 +77,8 @@ def plotc(ci, cf, n, o):
     y=[]
     for i in range(ci,cf+1):
         x.extend([i for j in range(o)])
-    for i in range(ci,cf+1):
         y=y+sample(n,i,o,C)
-    plt.scatter(x,y,marker=".",s=2)
+    plt.scatter(x,y,marker=".",s=3)
     plt.xlabel('c')
     plt.ylabel('ratio')
     plt.title('cplot')
@@ -90,9 +90,8 @@ def chainplotn(ni, nf, c, o):
     y=[]
     for i in range(ni,nf+1):
         x.extend([i for j in range(o)])
-    for i in range(ni,nf+1):
         y=y+chainsample(i,c,o,chainC(i))
-    plt.scatter(x,y,marker=".",s=2)
+    plt.scatter(x,y,marker=".",s=3)
     plt.xlabel('n')
     plt.ylabel('log(ratio)')
     plt.yscale('log')
@@ -107,8 +106,8 @@ def chainplotc(ci, cf, n, o):
     for i in range(ci,cf+1):
         x.extend([i for j in range(o)])
     for i in range(ci,cf+1):
-        y=y+sample(n,i,o,C)
-    plt.scatter(x,y,marker=".",s=2)
+        y=y+chainsample(n,i,o,C)
+    plt.scatter(x,y,marker=".",s=3)
     plt.xlabel('c')
     plt.ylabel('ratio')
     plt.title('cplot')

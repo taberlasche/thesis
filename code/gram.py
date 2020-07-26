@@ -35,23 +35,10 @@ def choleskyPSDSym(A):
 
     # Calculate spectral decomposition (eigenvalues + eigenvectors) of A
     w, v = np.linalg.eig(A)
+    for i in range(len(w)):
+            if w[i]<0:
+                if abs(w[i])<10e-8: w[i]=0
 
     # Return the orthogonal matrix v multiplied with the square root of
     # the diagonal matrix whose diagonal consists of the eigenvalues
     return np.transpose(np.matmul(v, np.sqrt(np.diag(w))))
-
-
-
-# Some examples
-def main():
-    A = np.array([[4, 1, -1], [1, 2, 1], [-1, 1, 2]])
-    B = np.array([[1, 1], [1, 1]])
-
-    v = findGenVecGram(A)
-    print(calcGram(v)) # should print A
-
-    v = findGenVecGram(B)
-    print(calcGram(v)) # should print B
-
-
-main()
