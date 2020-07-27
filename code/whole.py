@@ -52,7 +52,8 @@ def sample2(n,c,o,C):
         eiglist.append(np.inner(np.dot(y,C),np.transpose(y)))
     return eiglist
 
-
+def avg(l):
+    return sum(l)/len(l)
 
 # for the buildC(n) returns a plot of samples in a range of qubitnumbers upon input of start and end of range, c and the number of rounding attemps per qubitnumber
 def plotn(ni, nf, c, o):
@@ -63,6 +64,22 @@ def plotn(ni, nf, c, o):
     for i in range(ni,nf+1,4):
         y=y+sample(i,c,o,buildC(i))
     plt.scatter(x,y,marker=".",s=3)
+    plt.xlabel('n')
+    plt.ylabel('ratio')
+    #plt.ylabel('log(ratio)')
+    #plt.yscale('log')
+    plt.title('nplot')
+    plt.show()
+
+# does the same as plotn but returns the averages over the lists per n, and the steps are choosable for efficiency
+def avgplotn(ni,nf,c,o,s):
+    x=[]
+    y=[]
+    for i in range(ni,nf+1,s):
+        x.append(i)
+    for i in range(ni,nf+1,s):
+        y.append(avg(sample(i,c,o,buildC(i))))
+    plt.scatter(x,y,marker="o",s=5)
     plt.xlabel('n')
     plt.ylabel('ratio')
     #plt.ylabel('log(ratio)')
