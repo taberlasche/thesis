@@ -55,13 +55,13 @@ def sample2(n,c,o,C):
 def avg(l):
     return sum(l)/len(l)
 
+
 # for the buildC(n) returns a plot of samples in a range of qubitnumbers upon input of start and end of range, c and the number of rounding attemps per qubitnumber
-def plotn(ni, nf, c, o):
+def plotn(ni, nf, c, o, s):
     x=[]
     y=[]
-    for i in range(ni,nf+1,4):
+    for i in range(ni,nf+1,s):
         x.extend([i for j in range(o)])
-    for i in range(ni,nf+1,4):
         y=y+sample(i,c,o,buildC(i))
     plt.scatter(x,y,marker=".",s=3)
     plt.xlabel('n')
@@ -75,18 +75,17 @@ def plotn(ni, nf, c, o):
 def avgplotn(ni,nf,c,o,s):
     x=[]
     y=[]
-    for i in range(ni,nf+1,s):
-        x.append(i)
+    for i in range(ni,nf+1,s): 
+        x.append(i) 
     for i in range(ni,nf+1,s):
         y.append(avg(sample(i,c,o,buildC(i))))
     plt.scatter(x,y,marker="o",s=5)
-    plt.xlabel('n')
+    plt.xlabel('log(n)')
     plt.ylabel('ratio')
     #plt.ylabel('log(ratio)')
-    #plt.yscale('log')
+    plt.xscale('log')
     plt.title('nplot')
     plt.show()
-
 # for the buildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is
 def plotc(ci, cf, n, o):
     C = buildC(n)
@@ -102,12 +101,12 @@ def plotc(ci, cf, n, o):
     plt.show()
 
 # for the chainC(n) returns a plot of samples in a range of qubitnumbers upon input of start and end of range, c and the number of rounding attemps per qubitnumber
-def chainplotn(ni, nf, c, o):
+def chainplotn(ni, nf, c, o,s):
     x=[]
     y=[]
     for i in range(ni,nf+1):
-        x.extend([i for j in range(o)])
-        y=y+chainsample(i,c,o,chainC(i))
+        x.append(i)
+        y=y+avg(chainsample(i,c,o,chainC(i)))
     plt.scatter(x,y,marker=".",s=3)
     plt.xlabel('n')
     plt.ylabel('log(ratio)')
@@ -128,4 +127,19 @@ def chainplotc(ci, cf, n, o):
     plt.xlabel('c')
     plt.ylabel('ratio')
     plt.title('cplot')
+    plt.show()
+
+def avgchainplotn(ni,nf,c,o,s):
+    x=[]
+    y=[]
+    for i in range(ni,nf+1,s):
+        x.append(i)
+    for i in range(ni,nf+1,s):
+        y.append(avg(chainsample(i,c,o,chainC(i))))
+    plt.scatter(x,y,marker="o",s=5)
+    plt.xlabel('log(n)')
+    plt.ylabel('ratio')
+    #plt.ylabel('log(ratio)')
+    plt.xscale('log')
+    plt.title('nplot')
     plt.show()

@@ -15,3 +15,5 @@ def roundeig(M):
         if w[i]<0:
             if abs(w[i])<10e-8: w[i]=0
     return w
+
+avgchainplotn(4,4004,1,30,400)
