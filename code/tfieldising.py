@@ -37,3 +37,4 @@ gam, lam =1, 1
 H = hamiltonian(gam, lam, a, lattice_length)
 eigenvalues = np.linalg.eig(H)[0]
 sorted(eigenvalues)
+np.amax(eigenvalues)
