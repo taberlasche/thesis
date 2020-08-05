@@ -75,10 +75,10 @@ def plotn(ni, nf, c, o, s):
 def avgplotn(ni,nf,c,o,s):
     x=[]
     y=[]
-    for i in range(ni,nf+1,s): 
-        x.append(i) 
     for i in range(ni,nf+1,s):
+        x.append(i)
         y.append(avg(sample(i,c,o,buildC(i))))
+        print(i)
     plt.scatter(x,y,marker="o",s=5)
     plt.xlabel('log(n)')
     plt.ylabel('ratio')
@@ -86,6 +86,7 @@ def avgplotn(ni,nf,c,o,s):
     plt.xscale('log')
     plt.title('nplot')
     plt.show()
+
 # for the buildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is
 def plotc(ci, cf, n, o):
     C = buildC(n)
