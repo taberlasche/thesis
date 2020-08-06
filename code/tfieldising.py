@@ -19,10 +19,10 @@ def jordan_wigner_transform(j, lattice_length):
         operators.append(I)
     return -nested_kronecker_product(operators)
 
-lattice_length = 12
-a = []
-for i in range(lattice_length):
-    a.append(jordan_wigner_transform(i, lattice_length))
+#lattice_length = 12
+#a = []
+#for i in range(lattice_length):
+#    a.append(jordan_wigner_transform(i, lattice_length))
 
 def hamiltonian(gam, lam, a, lattice_length):
     H = 0
@@ -33,8 +33,16 @@ def hamiltonian(gam, lam, a, lattice_length):
         H -= 2*lam*(a[i].dot(a[i].T))
     return H
 
-gam, lam =1, 1
-H = hamiltonian(gam, lam, a, lattice_length)
-eigenvalues = np.linalg.eig(H)[0]
-sorted(eigenvalues)
-np.amax(eigenvalues)
+#gam, lam =1, 1
+#H = hamiltonian(gam, lam, a, lattice_length)
+#eigenvalues = np.linalg.eig(H)[0]
+#sorted(eigenvalues)
+#np.amax(eigenvalues)
+
+
+def tfisingmaxeig(gam, lam, lattice_length):
+    a = []
+    for i in range(lattice_length):
+        a.append(jordan_wigner_transform(i, lattice_length))
+    return np.amax(np.linalg.eig(hamiltonian(gam, lam, a, lattice_length)
+)[0])
