@@ -1,12 +1,12 @@
-# This code returns the eigenvalues of a spinchain of length lattice_length through a jordan wigner transformation
 import numpy as np
-
+# implements the nested kronecker product
 def nested_kronecker_product(a):
     if len(a) == 2:
         return np.kron(a[0],a[1])
     else:
         return np.kron(a[0], nested_kronecker_product(a[1:]))
 
+# returns the jordan wigner transform
 def jordan_wigner_transform(j, lattice_length):
     sigma = np.array([[0, 1], [0, 0]])
     sigma_z = np.array([[1, 0], [0, -1]])
@@ -19,11 +19,7 @@ def jordan_wigner_transform(j, lattice_length):
         operators.append(I)
     return -nested_kronecker_product(operators)
 
-#lattice_length = 12
-#a = []
-#for i in range(lattice_length):
-#    a.append(jordan_wigner_transform(i, lattice_length))
-
+#builds the transverse field ising model hamiltonian, takes a list of jw trafos
 def hamiltonian(gam, lam, a, lattice_length):
     H = 0
     for i in range(lattice_length - 1):
@@ -32,14 +28,7 @@ def hamiltonian(gam, lam, a, lattice_length):
     for i in range(lattice_length):
         H -= 2*lam*(a[i].dot(a[i].T))
     return H
-
-#gam, lam =1, 1
-#H = hamiltonian(gam, lam, a, lattice_length)
-#eigenvalues = np.linalg.eig(H)[0]
-#sorted(eigenvalues)
-#np.amax(eigenvalues)
-
-
+# returns the maximal eigenvalue of such a chain with a certain length upon input of gamma and lambda
 def tfisingmaxeig(gam, lam, lattice_length):
     a = []
     for i in range(lattice_length):
