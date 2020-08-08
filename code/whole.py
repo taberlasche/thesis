@@ -15,7 +15,7 @@ def solve(C, c):
     V = np.array(mc(C))
     K = (np.conj(V)+V)/2
     v = findGenVecGram(K)
-    sol = round(v,c,C)
+    sol = rund(v,c,C)
     print(sol)
     return sol
 
@@ -29,7 +29,7 @@ def sample(n, c, o, C):
     ratlist=[]
     i=0
     while i < o:
-        ratlist.append(ratio(C, round(v,c,cvx.matrix(C))["blochvec"], n))
+        ratlist.append(ratio(C, rund(v,c,cvx.matrix(C))["blochvec"], n))
         i=i+1
     return ratlist
 
@@ -38,7 +38,7 @@ def chainsample(n, c, o, C):
     ratlist=[]
     i=0
     while i < o:
-        ratlist.append(ratio(C, round(v,c,cvx.matrix(C))["blochvec"], n))
+        ratlist.append(ratio(C, rund(v,c,cvx.matrix(C))["blochvec"], n))
         i=i+1
     return ratlist
 
@@ -48,7 +48,7 @@ def sample2(n,c,o,C):
     v = findGenVecGram(K)
     eiglist=[]
     for i in range(o):
-        y=round(v,c,cvx.matrix(C))["blochvec"]
+        y=rund(v,c,cvx.matrix(C))["blochvec"]
         eiglist.append(np.inner(np.dot(y,C),np.transpose(y)))
     return eiglist
 
@@ -73,12 +73,15 @@ def plotn(ni, nf, c, o, s):
 
 # does the same as plotn but returns the averages over the lists per n, and the steps are choosable for efficiency
 def avgplotn(ni,nf,c,o,s):
-    x=[]
     y=[]
-    for i in range(ni,nf+1,s):
+    x=[]
+    a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
+    for i in a:
+        i = int(4*round(i/4.))
         x.append(i)
-        y.append(avg(sample(i,c,o,buildC(i))))
-        print(i)
+    for i in range(len(x)):
+        y.append(avg(sample(x[i],c,o,buildC(x[i]))))
+        print(x[i])
     plt.scatter(x,y,marker="o",s=5)
     plt.xlabel('log(n)')
     plt.ylabel('ratio')

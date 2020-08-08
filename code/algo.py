@@ -4,7 +4,7 @@
 import numpy as np
 import math
 # returns bloch vector #and state# upon input of C and c
-def round(v, c, C):
+def rund(v, c, C):
 
     #Pauli matrices
     X = np.array([[0, 1],[1, 0]])
