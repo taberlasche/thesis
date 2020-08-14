@@ -1,4 +1,5 @@
 from whole import *
+from tfieldising import *
 import sys
 np.set_printoptions(threshold=sys.maxsize)
 # returns upon input of n the unabridged prettified solution of the sdp
@@ -16,4 +17,15 @@ def roundeig(M):
             if abs(w[i])<10e-8: w[i]=0
     return w
 
-avgchainplotn(4,4004,1,30,400)
+x=[]
+y=[]
+for i in range(2,20):
+    x.append(i)
+    y.append(tfisingmaxeig(1,1,i))
+plt.scatter(x,y,marker=".",s=3)
+plt.xlabel('n')
+plt.ylabel('maxeig')
+#plt.ylabel('log(ratio)')
+#plt.yscale('log')
+plt.title('nplot')
+plt.show()
