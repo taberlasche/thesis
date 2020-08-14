@@ -54,3 +54,41 @@ def sdp2(n):
         for j in range(0,n):
             A[i*3][j*3] = 1
     return A
+
+def tfiC(n,a,b):
+    x = []
+    x.extend([1,0,0] for i in range(n-1))
+    x.append([0,0,0])
+    C = -1*a*(np.diagflat(x,3) + np.diagflat(x,-3))
+    C[3*n-3][0]=-1*a
+    C[0][3*n-3]=-1*a
+    for i in range(2,3*n,3):
+        C[3*n+2][i]=-1*b
+        C[i][3*n+2]=-1*b
+    return C
+
+def tfisdp(n):
+    a = np.eye(3*n+3)
+    b,c=[],[]
+    for i in range(int(n/2)):
+        b.extend([1,0,0,-1,0,0])
+        c.extend([-1,0,0,1,0,0])
+    b.extend([0,0,0])
+    c.extend([0,0,0])
+    np.array(b).reshape(-1)
+    np.array(c).reshape(-1)
+    for i in range(0,3*n-5,6):
+        a[i]=b
+    for i in range(3,3*n-2,6):
+        a[i]=c
+    f=[]
+    for i in range(n):
+        f.extend([0,0,1])
+    f.extend([0,0,0])
+    np.array(f).reshape(-1)
+    for i in range(2,3*n,3):
+        a[i]=f
+    for i in range(2,3*n,3):
+        a[3*n+2][i]=-1
+        a[i][3*n+2]=-1
+    return a

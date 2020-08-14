@@ -3,6 +3,9 @@ import picos as pic
 import cvxopt as cvx
 import cvxopt.lapack
 import matplotlib.pyplot as plt
+import scipy
+from scipy import special
+import math
 
 from hamiltonians import *
 from sdp import *
@@ -140,6 +143,38 @@ def avgchainplotn(ni,nf,c,o,s):
         x.append(i)
     for i in range(ni,nf+1,s):
         y.append(avg(chainsample(i,c,o,chainC(i))))
+    plt.scatter(x,y,marker="o",s=5)
+    plt.xlabel('log(n)')
+    plt.ylabel('ratio')
+    #plt.ylabel('log(ratio)')
+    plt.xscale('log')
+    plt.title('nplot')
+    plt.show()
+
+def tfimaxeig(n,a,b):
+    c = math.sqrt((2*b/a)/((1+b/2*a)**2))
+    x = a+b/2+(2*a*n/math.pi)*(1+b/(2*a))*scipy.special.ellipeinc(math.pi/2,c)
+    return x
+
+def tfisample(n, c, o, C,a,b):
+    v = findGenVecGram(tfisdp(n))
+    ratlist=[]
+    i=0
+    while i < o:
+        ratlist.append(ratio(C, rund(v,c,cvx.matrix(C))["blochvec"], tfimaxeig(n,a,b)))
+        i=i+1
+    return ratlist
+
+def tfiplot(ni,nf,c,iterations,steps,a,b):
+    y=[]
+    x=[]
+    k = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
+    for i in k:
+        i = int(2*round(i/2.))
+        x.append(i)
+    for i in range(len(x)):
+        y.append(avg(tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b)))
+        print(x[i])
     plt.scatter(x,y,marker="o",s=5)
     plt.xlabel('log(n)')
     plt.ylabel('ratio')
