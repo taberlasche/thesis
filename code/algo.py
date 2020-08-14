@@ -22,8 +22,8 @@ def rund(v, c, C):
         z = np.inner(r, v[i])/T
         if np.linalg.norm(z) > 1/math.sqrt(3): y.append(np.sign(z)/math.sqrt(3))
         else: y.append(z)
-    for a in range(0, int(n)):
-        rho.append(0.5*(I + y[3*a-2]*X + y[3*a-1]*Y + y[3*a]*Z))
+    #for a in range(0, int(n)):
+    #    rho.append(0.5*(I + y[3*a-2]*X + y[3*a-1]*Y + y[3*a]*Z))
     rd["blochvec"] = y
-    rd["state"] = rho
+    #rd["state"] = rho
     return rd

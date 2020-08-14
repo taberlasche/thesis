@@ -3,8 +3,8 @@ from tfieldising import *
 import sys
 np.set_printoptions(threshold=sys.maxsize)
 # returns upon input of n the unabridged prettified solution of the sdp
-def test(n):
-    a = np.real(np.array(mc(cvx.matrix(buildC(n)))))
+def test(n,a,b):
+    a = np.real(np.array(mc(cvx.matrix(tfiC(n,a,b)))))
     tol = 1e-8
     a.real[abs(a.real) < tol] = 0.0
     print(n)
@@ -16,6 +16,7 @@ def roundeig(M):
         if w[i]<0:
             if abs(w[i])<10e-8: w[i]=0
     return w
+<<<<<<< HEAD
 
 x=[]
 y=[]
@@ -29,3 +30,11 @@ plt.ylabel('maxeig')
 #plt.yscale('log')
 plt.title('nplot')
 plt.show()
+=======
+print(tfisdp(4))
+print(tfisdp(6))
+print(tfisdp(8))
+print(tfisdp(10))
+print(tfisdp(12))
+print(tfisdp(14))
+>>>>>>> 6e8cda01c29b9e9c46601cc4f0c8b812c9fe58d1
