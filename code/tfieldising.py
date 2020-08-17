@@ -23,10 +23,10 @@ def jordan_wigner_transform(j, lattice_length):
 def hamiltonian(gam, lam, a, lattice_length):
     H = 0
     for i in range(lattice_length - 1):
-        H += a[i].T.dot(a[i+1]) - a[i].dot(a[i+1].T)
-        H -= gam*(a[i].T.dot(a[i+1].T) - a[i].dot(a[i+1]))
+        H += gam*(a[i].T.dot(a[i+1]) - a[i].dot(a[i+1].T))
+        H += gam*(a[i].T.dot(a[i+1].T) - a[i].dot(a[i+1]))
     for i in range(lattice_length):
-        H -= 2*lam*(a[i].dot(a[i].T))
+        H -= 2*lam*(a[i].dot(a[i].T))-lam
     return H
 # returns the maximal eigenvalue of such a chain with a certain length upon input of gamma and lambda
 def tfisingmaxeig(gam, lam, lattice_length):
