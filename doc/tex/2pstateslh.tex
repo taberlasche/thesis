@@ -1,0 +1,16 @@
+A $k$-local-Hamiltonian is a hermitian matrix acting on $N$ qudits, which can be written as a sum of Hamiltonians where each Hamiltonian acts on at most $k$ qudits.
+Specifically, here we look at  $2$-local-Hamiltonians of the form \[
+H = H_1+H_2
+.\]
+where \[
+	H_1 = \sum_{j=1}^{3n} D_jP_j, ~ H_2  = \sum_{i,j=1}^{3n} C_{i,j}P_iP_j
+.\]
+with the Pauli-operators \[
+	P_{3a-2}=X_a, ~ P_{3a-1}=Y_a, ~ P_{3a}=Z_a
+.\]
+A problem relevant to many fields is finding the maximal (or minimal) eigenvalue of a $k$-local-Hamiltonian.
+Since the quantum state achieving this optimal value might be an entangled state which can not be computed in polynomial time, we are interested in finding the product state that achieves the best approximation.
+This is equivalent to maximum satisfiability problems in classical computational theory.
+We call this problem the local-Hamiltonian problem.
+It is in the complexity class QMA, which is the quantum analogue to the NP complexity class.
+It is QMA-complete, meaning that, additionally to being in the class itself, every problem in QMA can be reduced to the local-Hamiltonian problem.
