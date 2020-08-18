@@ -30,3 +30,8 @@ gm = {
         7: np.array([[0,0,0],[0,0,-1j],[0,1j,0]]),
         8: 1/sqrt(3)*np.array([[1,0,0],[0,1,0],[0,0,-2]])
         }
+# the pauli matrices
+X = np.array([[0, 1],[1, 0]])
+Y = np.array([[0, -1j],[1j, 0]])
+Z = np.array([[1, 0],[0, -1]])
+I = np.array([[1, 0],[0, 1]])

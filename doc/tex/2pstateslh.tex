@@ -1,5 +1,5 @@
-A $k$-local-Hamiltonian is a hermitian matrix acting on $N$ qudits, which can be written as a sum of Hamiltonians where each Hamiltonian acts on at most $k$ qudits.
-Specifically, here we look at  $2$-local-Hamiltonians of the form \[
+A $k$-local-Hamiltonian is a hermitian matrix acting on $N$ qudits, which can be written as a sum of Hamiltonians where each acts on at most $k$ qudits.
+Specifically, here we look at  $2$-local-Hamiltonians on qubits of the form \[
 H = H_1+H_2
 .\]
 where \[
@@ -10,7 +10,13 @@ with the Pauli-operators \[
 .\]
 A problem relevant to many fields is finding the maximal (or minimal) eigenvalue of a $k$-local-Hamiltonian.
 Since the quantum state achieving this optimal value might be an entangled state which can not be computed in polynomial time, we are interested in finding the product state that achieves the best approximation.
-This is equivalent to maximum satisfiability problems in classical computational theory.
 We call this problem the local-Hamiltonian problem.
+This is equivalent to maximum satisfiability problems in classical computational theory.
 It is in the complexity class QMA, which is the quantum analogue to the NP complexity class.
 It is QMA-complete, meaning that, additionally to being in the class itself, every problem in QMA can be reduced to the local-Hamiltonian problem.
+We can also think about finding the maximal (or minimal) eigenvalue of such a Hamiltonian as equivalent to the weighted max-cut- problem.
+Given a Graph $G=(V,E)$, we think about the spin-sites as our vertices, and $C_{i,j}$ as our weighted edges.
+The task now is to find a maximum cut, which is NP.
+The most successful classical approximation algorithm for this problem by Goemans and Williamson uses semidefinite programming and randomized rounding.
+The algorithm discussed here parallelizes this for the quantum case.
+It is based on relaxation of a semidefinite program.
