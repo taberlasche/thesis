@@ -117,7 +117,7 @@
    volume  =	{49},
    number  =	{16},
    pages  =	{165203},
-   author =	{Sandeep K Goyal and B Neethi Simon and Rajeev Singh and Sudhavathani Simon},
+   author  =	{Sandeep K Goyal and B Neethi Simon and Rajeev Singh and Sudhavathani Simon},
    title  =	{Geometry of the generalized Bloch sphere for qutrits},
    journal  =	{Journal of Physics A: Mathematical and Theoretical}
 }
@@ -134,40 +134,28 @@
    eprint  =	{https://doi.org/10.1137/110842272}
 }
 @article{gharibian19,
-   title =	{Almost optimal classical approximation algorithms for a quantum generalization of Max-Cut},
-   author =	{Gharibian, Sevag and Parekh, Ojas},
-   journal =	{arXiv preprint arXiv:1909.08846},
-   year =	{2019}
+  title =	{Almost optimal classical approximation algorithms for a quantum generalization of Max-Cut},
+  author =	{Gharibian, Sevag and Parekh, Ojas},
+  journal =	{arXiv preprint arXiv:1909.08846},
+  year =	{2019}
 }
 @article{kempe06,
-   author =	{Kempe, Julia and Kitaev, Alexei and Regev, Oded},
-   title =	{The Complexity of the Local Hamiltonian Problem},
-   journal =	{SIAM Journal on Computing},
-   volume =	{35},
-   number =	{5},
-   pages =	{1070-1097},
-   year =	{2006},
-   doi =		{10.1137/S0097539704445226},
-   URL =		{https://doi.org/10.1137/S0097539704445226},
-   eprint =	{https://doi.org/10.1137/S0097539704445226}
+  author =	{Kempe, Julia and Kitaev, Alexei and Regev, Oded},
+  title =	{The Complexity of the Local Hamiltonian Problem},
+  journal =	{SIAM Journal on Computing},
+  volume =	{35},
+  number =	{5},
+  pages =	{1070-1097},
+  year =	{2006},
+  doi =		{10.1137/S0097539704445226},
+  URL =		{https://doi.org/10.1137/S0097539704445226},
+  eprint =	{https://doi.org/10.1137/S0097539704445226}
 }
 @article{goemans95,
-   author  =	 {M. X. Goemans and D.P. Williamson},
-   title  =	 {Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming},
-   journal  =	 {Journal of the ACM},
-   year  =	 {1995},
-   volume  =	 {42},
-   pages  =	 {1115--1145}
-}
-@article{vandenberghe96,
-   author =	{Vandenberghe, Lieven and Boyd, Stephen},
-   title  =	{Semidefinite Programming},
-   journal =	{SIAM Review},
-   volume =	{38},
-   number =	{1},
-   pages  =	{49-95},
-   year  =	{1996},
-   doi  =	{10.1137/1038003},
-   URL  =	{https://doi.org/10.1137/1038003},
-   eprint =	{https://doi.org/10.1137/1038003}
+    author = {M. X. Goemans and D.P. Williamson},
+    title = {Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming},
+    journal = {Journal of the ACM},
+    year = {1995},
+    volume = {42},
+    pages = {1115--1145}
 }
