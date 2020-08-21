@@ -1,6 +1,10 @@
 \todo{elaborate on relaxation, general stuff like duals, solvability etc}
-\todo{describe classical maxcut sdp relaxation algorithm}
-
+\todo{describe classical maxcut sdp relaxation algorithm, goemans}
+In semidefinite programing we try to maximize a linear function, such that an affine combination of symmetric matrices is positive semidefinite. \cite{vandenberghe96}
+An affine combination is a linear combination \[
+\sum_{i=1}^{n}a_ix_i
+.\] where $x_i$ are elements of a vector space, such that $\sum_{i=1}^{n}a_i=1$
+Semidefinite programs are very useful, as they can be solved efficiently both in theory and in practice.
 In our case, the semidefinite program is:
 \[
 maximize tr\left( CM \right)
@@ -16,5 +20,6 @@ The ideal solution $M$ is connected to our state in the following way:\cite{ghar
 \[
 	M_{i,j} = tr\left( \rho P_{i}P_j \right) ~ i,j=1\ldots 3n
 .\]
-From this perspective. the constraints can be understood in the following way:\
-$M_{i,i}=tr\left( \rho P_i P_i\right) = tr\left( \rho\right) = 1  $ since $P_iP_i=1$\
+From this perspective. the constraints can be understood in the following way:
+$$M_{i,i}=tr\left( \rho P_i P_i\right) = tr\left( \rho\right) = 1  $ since $P_iP_i=1\\
+M\ge 0\leftrightarrow x^TMx=tr\left( \rho\left(\sum_{i}^{3n} x_iP_i\right)\left(\sum_{j}^{3n} x_jP_j right)\right)=tr\left(\rho X^2\right)\ge 0$ where $X=\sum_{i}^{3n} x_iP_i$ and since $X^2,\rho\ge 0$$
