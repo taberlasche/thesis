@@ -128,7 +128,8 @@
 \RequirePackage{nicefrac}
 \PassOptionsToPackage{showonlyrefs}{mathtools}
 \RequirePackage{mathtools}
-
+\RequirePackage{amsfonts}
+\RequirePackage{newclude}
 % Sätze, Definitionen und Beweise können mit amsthm und shadethm einfach und
 % sauber gesetzt werden.
 \if@loadtheorem

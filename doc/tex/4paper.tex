@@ -1,0 +1,16 @@
+In our case, the semidefinite program is:
+\begin{align*}
+max ~ tr\left( CM \right)\\
+s.t. M_{i,i} = 1 \\
+M \ge 0
+\end{align*}\todo{why ~exactly~ is this equivalent to the classical version}
+where M is a real symmetric matrix.
+This is without loss of generality, as it does not change the outcome of the objective function. \todo{thats not the only reason we can do this}
+The ideal solution $M$ is connected to our state in the following way:\cite{gharibian19}
+\[
+	M_{i,j} = tr\left( \rho P_{i}P_j \right) ~ i,j=1\ldots 3n
+.\]
+From this perspective. the constraints can be understood in the following way:
+$$M_{i,i}=tr\left( \rho P_i P_i\right) = tr\left( \rho\right) = 1  $$ since $P_iP_i=1$
+$$M\ge 0\leftrightarrow x^TMx=tr\left(\rho\left(\sum_{i}^{3n} x_iP_i\right)\left(\sum_{j}^{3n} x_jP_j\right)\right)=tr\left(\rho X^2\right)\ge 0$$ where $X=\sum_{i}^{3n} x_iP_i$ and since $X^2,\rho\ge 0$
+\todo{typesetting is ugly here}
