@@ -183,3 +183,21 @@ def tfiplot(ni,nf,c,iterations,steps,a,b):
     plt.xscale('log')
     plt.title('nplot')
     plt.show()
+
+def tritplot(ni,nf,):
+    y=[]
+    x=[]
+    a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
+    for i in a:
+        i = int(4*round(i/4.))
+        x.append(i)
+    for i in range(len(x)):
+        y.append(avg(sample(x[i],c,o,buildC(x[i]))))
+        print(x[i])
+    plt.scatter(x,y,marker="o",s=5)
+    plt.xlabel('log(n)')
+    plt.ylabel('ratio')
+    #plt.ylabel('log(ratio)')
+    plt.xscale('log')
+    plt.title('nplot')
+    plt.show()

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.6)  23 AUG 2020 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.6)  23 AUG 2020 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1512,6 +1512,11 @@ text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
 text indent calculated (toc, 0): 14.02747pt
 number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  16.33182pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 14.02747pt
+number indent calculated (toc, 0): 0.0pt
 )
 \tf@toc=\write8
  [3
@@ -1679,20 +1684,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
  39772 strings out of 480478
  777488 string characters out of 5905960
- 1621472 words of memory out of 5000000
+ 1621668 words of memory out of 5000000
  55178 multiletter control sequences out of 15000+600000
  550160 words of font info for 70 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -1715,10 +1713,10 @@ st/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/
 public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
 /sfsx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><
 /usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (13 pages, 309407 bytes).
+Output written on thesis.pdf (13 pages, 309882 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
- 226 compressed objects within 3 object streams
+ 267 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
  54 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

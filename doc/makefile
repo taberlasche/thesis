@@ -23,7 +23,7 @@ ifeq ($(shell kpsewhich PH.pdf | grep -c ''),0)
 	export TEXINPUTS
 endif
 
-TEXDATEIEN = $(wildcard *.tex) $(BASEFILENAME).bib
+TEXDATEIEN = $(wildcard tex/*.tex) $(BASEFILENAME).bib
 
 PSABBILDUNGEN = $(wildcard ./Abbildungen/*.eps) $(wildcard ./Abbildungen/*.ps) $(wildcard ./Abbildungen/*.pfx) $(wildcard ./Abbildungen/*.ovp)
 

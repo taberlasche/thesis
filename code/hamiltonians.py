@@ -92,3 +92,9 @@ def tfisdp(n):
         a[3*n+2][i]=-1
         a[i][3*n+2]=-1
     return a
+
+def qutrith(n):
+    x=[]
+    for i in range():
+    x.extend([1,0,0,0,0,0,0,0] for i in range(n-1))
+    return np.diagflat(x,3) + np.diagflat(x,-3)
