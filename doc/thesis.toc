@@ -3,6 +3,6 @@
 \babel@toc {ngerman}{}
 \babel@toc {british}{}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Approximation algorithms for qubits}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Approximation algorithms for the maximal energy of 2-local-Hamiltonians}{5}{chapter.2}%
 \contentsline {chapter}{\numberline {A}A}{7}{appendix.A}%
-\contentsline {chapter}{\nonumberline Bibliography}{9}{chapter*.14}%
+\contentsline {chapter}{\nonumberline Bibliography}{9}{chapter*.24}%
