@@ -2,10 +2,7 @@
 The algorithm shown in the paper proceeds in the same way as the algorithm for the classical max-cut problem.
 The aim is to find bounds for the maximum energy of $2$-local-Hamiltonians.\todo{better description of the purpose}
 Before looking at the algorithm itself, there is a prelimary lemma we have to look at.
-\todo{thm2}
-\todo{entanglement breaking channels}
 \todo{appendix B proof idea?}
-\todo{algo}
 \todo{proof ideas lemma 2 and 3}
 Hamiltonians of the kind $H = H_1+H_2$ where $H_1 = \sum_{j=1}^{3n} D_jP_j, ~ H_2  = \sum_{i,j=1}^{3n} C_{i,j}P_iP_j$ have terms, that are linear in Pauli operators.
 For the theorems presented in this paper, the following lemma will enable us to reduce this Hamiltonian to a purely quadratic one.
@@ -41,8 +38,7 @@ M \ge 0
 \end{align*}\todo{why ~exactly~ is this equivalent to program shown earlier}
 where M is a real symmetric matrix.
 We can understand this better, if we look at the following representation.
-The ideal solution $M$ is connected to our state in the following way:\cite{gharibian19}
-\[
+The ideal solution $M$ is connected to our state in the following way:\cite{gharibian19}\[
 	M_{i,j} = tr\left( \rho P_{i}P_j \right) ~ i,j=1\ldots 3n
 .\]
 Setting M as a real symmetric matrix is without loss of generality, because if the Pauli operators act on different matrices they commute, and therefore the matrix entry is real in this case.
@@ -65,11 +61,49 @@ We ask the following question: What is the maximal value that a component of a v
 In other words, if we pick every value without knowing the others, what is the maximal value that we can assign to it so that it is part of the unit sphere?\[
 \|z\|=\sqrt{z_1^2+z_2^2+z_3^2}=\sqrt{3z_1^2}=1
 .\]
-Therefore the maximal value, above which we should round down, is $\frac{1}{\sqrt{3}}$.
+Therefore the maximal value, above which we should round down is $\frac{1}{\sqrt{3}}$.
 If we round such that no bloch vector component can be above this value, we will always have a valid state.
 Visually, this is the same as fitting a cube inside the bloch sphere and reducing our state space to inside the cube.
-\todo{prove this?}
+The edges of the cube which touch the sphere are the pure states that are possible if all components are $\pm 1$.
+\todo{prove this to be sure its true}
+The projections are $z_i=\frac{\braket{r}{v^i}}{c\sqrt{\log{}n}}$ with $c=O(\log{}n)$.
+The algorithm looks like this:
 \begin{enumerate}
 	\item Solve the relaxed semidefinite program, obtaining an optimal set of vectors $v_i$
-	\item Let
+	\item Let $\ket{r}$ be a vector of $3n$ indepently and identically distributed $N(0,1)$ random variables
+	\item If $|z_i|>\frac{1}{\sqrt{3}}$, we round down: $y_i=\frac{sgn(z_i)}{\sqrt{3}}$. Otherwise $y_i=z_i$.
 \end{enumerate}
+As output we take $ \rho=\rho_1\otimes\ldots\otimes\rho_n$ where:\[
+	\rho_a=\frac{1}{2}\left(\1 +y_{3a-2}P_{3a-2}+y_{3a-1}P_{3a-1}+y_{3a}P_{3a}\right).
+.\]
+The energy of this system is then \[
+	Tr\left(H\rho\right) = y^TCy
+.\]
+This is the approximation to the maximum eigenvalue.
+One now has to think about why this works and how good the approximation is.
+In the introduction, we have found the best product approximation that can be found for the EPR-state.
+Generally, the optimal product state is not feasible to find, but it important find general bounds, how good or bad this approximation can be.
+We call the highest eigenvalue achievable by a product state: \[
+	\lambda_{sep}(H)=\max_{\phi_1,\ldots,\phi_n}\bra{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}H\ket{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}
+.\]
+We know the following:\todo{lieb citation} \todo{Theorem 2 typesetting}\\
+Suppose $H$ is traceless 2-local Hamiltonian. then \[
+	\lambda_{sep}(H)\ge \frac{1}{9}\lambda_{max}(H)
+.\]
+We can proof this using entanglement-breaking depolarizing channels.
+\todo{eb maps}
+\todo{thm2}
+Depolarizing channels are a simple model for noise in quantum information theory. \cite{nielsen11}
+They are implemented by a map $\Delta_{\lambda}$, which maps a state  $\rho$ into a linear combination of itself and the identity matrix:\cite{king02}\[
+	\Delta_{\lambda}(\rho)=\lambda\rho+\frac{1-\lambda}{d}\1,
+.\]
+where d is the dimension of state. The parameter $\lambda$ must satisfy \[
+	-\frac{1}{d^2-1}\le\lambda\le_1
+.\]
+This channel maps pure states to mixed states and all output states have eigenvalues $\lambda+\frac{1-\lambda}{d}$ (multiplicity $1$) and $\frac{1-\lambda}{d}$ (multiplicity $d-1$).
+For $\lambda=0$ we get the maximally noisy channel, for $\lambda=1$ the identity.
+In our case we look at entanglement breaking channels.
+These are channels for which the output state is always seperable, i.e. if any entangled density matrix is mapped to a seperable one.\cite{horodecki08}
+Here, the relevant map is defined by its action on the Pauli group.\[
+
+.\]
