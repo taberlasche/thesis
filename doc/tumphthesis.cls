@@ -130,6 +130,7 @@
 \RequirePackage{mathtools}
 \RequirePackage{amsfonts}
 \RequirePackage{newclude}
+\RequirePackage{bm}
 % Sätze, Definitionen und Beweise können mit amsthm und shadethm einfach und
 % sauber gesetzt werden.
 \if@loadtheorem

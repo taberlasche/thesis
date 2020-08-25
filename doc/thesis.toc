@@ -1,0 +1,8 @@
+\babel@toc {ngerman}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\babel@toc {british}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Approximation algorithms for the maximum energy of 2-local-Hamiltonians}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {A}A}{9}{appendix.A}%
+\contentsline {chapter}{\nonumberline Bibliography}{11}{chapter*.31}%
