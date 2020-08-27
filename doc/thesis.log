@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.7.6)  25 AUG 2020 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  27 AUG 2020 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -32,6 +32,12 @@ Package: tocbasic 2020/04/19 v3.30 KOMA-Script package (handling toc-files)
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 137.
 Class scrbook Info: Switching compatibility level to `last'.
+Class scrbook Info: You've used standard option `openany'.
+(scrbook)           This is correct!
+(scrbook)           Internally I'm using `open=any'.
+(scrbook)           If you'd like to set the option with \KOMAoptions,
+(scrbook)           you'd have to use `open=any' there
+(scrbook)           instead of `openany', too.
 Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
 ne 2427.
 
@@ -1483,17 +1489,17 @@ Package scrbase Warning: Usage of deprecated command `\ifpdfoutput'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
 (scrbase)                Please replace `\ifpdfoutput' by `\Ifpdfoutput' on inp
-ut line 15.
+ut line 14.
 
 <PH.pdf, id=4, 29.8716pt x 29.8716pt>
 File: PH.pdf Graphic file (type pdf)
 <use PH.pdf>
-Package pdftex.def Info: PH.pdf  used on input line 15.
+Package pdftex.def Info: PH.pdf  used on input line 14.
 (pdftex.def)             Requested size: 28.45274pt x 28.45303pt.
 <tumlogo.pdf, id=5, 53.24893pt x 28.45631pt>
 File: tumlogo.pdf Graphic file (type pdf)
 <use tumlogo.pdf>
-Package pdftex.def Info: tumlogo.pdf  used on input line 15.
+Package pdftex.def Info: tumlogo.pdf  used on input line 14.
 (pdftex.def)             Requested size: 53.20651pt x 28.43495pt.
 [1
 
@@ -1516,29 +1522,52 @@ bbildungen/tumlogo.pdf>] [2
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  16.33182pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 12.06216pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  16.33182pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 12.06216pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  16.33182pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 12.06216pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  16.33182pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 )
 \tf@toc=\write8
  [3
-
 
 ] [4
 
 
 ]
 chapter 1.
-(./1math.tex
+(./intro.tex) [1
+
+]
+chapter 2.
+(./qit.tex
 Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
  line 3.
 
@@ -1550,8 +1579,7 @@ Class tumphthesis Warning: Warning! There are \todo notes in the final document
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 9.
 
-[1
-
+[2
 
 ]
 
@@ -1570,20 +1598,22 @@ Class tumphthesis Warning: Warning! There are \todo notes in the final document
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 55.
 
-) (./2pstateslh.tex [2]
+[3]
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 29.
-
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 30.
+. on input line 84.
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 36.
+. on input line 85.
 
-) (./3sdp.tex
+
+Class tumphthesis Warning: Warning! There are \todo notes in the final document
+. on input line 91.
+
+) [4]
+chapter 3.
+(./classic.tex
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 1.
@@ -1594,16 +1624,17 @@ Class tumphthesis Warning: Warning! There are \todo notes in the final document
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 10.
+. on input line 3.
 
-[3]
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 29.
+. on input line 10.
 
-) [4]
-chapter 2.
-(./4paper.tex
+) [5
+
+]
+chapter 4.
+(./paper.tex
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 1.
@@ -1614,39 +1645,51 @@ Class tumphthesis Warning: Warning! There are \todo notes in the final document
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 5.
+. on input line 4.
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 6.
+. on input line 10.
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 12.
+. on input line 18.
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 20.
+. on input line 19.
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 21.
+. on input line 28.
 
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 30.
-
-[5
-
+[6
 
 ]
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 38.
+. on input line 36.
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 51.
+. on input line 48.
+
+[7]
+
+Class tumphthesis Warning: Warning! There are \todo notes in the final document
+. on input line 64.
+
+
+Class tumphthesis Warning: Warning! There are \todo notes in the final document
+. on input line 78.
+
+
+Class tumphthesis Warning: Warning! There are \todo notes in the final document
+. on input line 84.
+
+
+Class tumphthesis Warning: Warning! There are \todo notes in the final document
+. on input line 84.
 
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -1656,111 +1699,79 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting typearea's option
 (scrlayer-scrpage)                `headheight=27.2pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 6
-1.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 9
+0.
 
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
- [6]
+ [8]
+[9]) [10]
+chapter 5.
+(./testing.tex) [11
 
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 68.
-
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 89.
-
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 89.
-
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 94.
-
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 95.
-
-[7]
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 114.
-
-) [8]
-chapter A.
-[9
-
-
-] [10
-
+]
+chapter 6.
+(./qutrits.tex) [12
 
 ]
 chapter without number
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+2.
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3439) in paragraph at lines 30--30
+Underfull \hbox (badness 3439) in paragraph at lines 33--33
 \T1/cmr/m/n/10.95 Local Hamilto-nian Prob-lem^^S. In: \T1/cmr/m/it/10.95 SIAM J
 ournal on Com-put-ing \T1/cmr/m/n/10.95 35.5
  []
 
 
-Underfull \hbox (badness 7504) in paragraph at lines 30--30
+Underfull \hbox (badness 7504) in paragraph at lines 33--33
 []\T1/cmr/m/n/10.95 Mary Beth Ruskai. ^^T  Qubit En-tan-gle-ment Break-ing Chan
 -nels^^S. In:
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 30--30
+Underfull \hbox (badness 7451) in paragraph at lines 33--33
 \T1/cmr/m/it/10.95 Re-views in Math-em-at-ical Phys-ics \T1/cmr/m/n/10.95 15.06
  (2003), pp. 643^^U662. \T1/cmr/m/sc/10.95 doi\T1/cmr/m/n/10.95 :
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 30--30
+Underfull \hbox (badness 6016) in paragraph at lines 33--33
 []$\T1/cmtt/m/n/10.95 10 . 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . eprin
 t: []$\T1/cmtt/m/n/10.95 https : [] [] doi . org[] 10 .
  []
 
 
-Overfull \hbox (19.10585pt too wide) in paragraph at lines 30--30
+Overfull \hbox (19.10585pt too wide) in paragraph at lines 33--33
 \T1/cmtt/m/n/10.95 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/
 10.95 url\T1/cmr/m/n/10.95 : []$\T1/cmtt/m/n/10.95 https : [] [] doi . org[] 10
  . 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . 
  []
 
-[11
+[13
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
  (./thesis.aux
 * soulpos - computing points - it may take a few seconds * (./thesis.upa))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 39894 strings out of 480478
- 779187 string characters out of 5905960
- 1622914 words of memory out of 5000000
- 55269 multiletter control sequences out of 15000+600000
+ 39911 strings out of 480478
+ 779319 string characters out of 5905959
+ 1627921 words of memory out of 5000000
+ 55278 multiletter control sequences out of 15000+600000
  554633 words of font info for 83 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  65i,20n,110p,10177b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1784,10 +1795,10 @@ er/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (16 pages, 355879 bytes).
+Output written on thesis.pdf (18 pages, 364918 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 343 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 

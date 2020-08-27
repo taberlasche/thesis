@@ -12,7 +12,7 @@
 	,fontsize=11pt%
 	,twocolumn=false%
 	,twoside=false%
-	,open=any%
+	,openany%
 	,footnotes=multiple%
 	,chapterprefix=true%
 	,appendixprefix=true%
@@ -50,7 +50,7 @@
 \else
 	\KOMAoptions{BCOR=1cm%
 		,DIV=10%
-		,open=right%
+		,open=any%
 		,fontsize=11pt%
 		,twoside=true%
 		}

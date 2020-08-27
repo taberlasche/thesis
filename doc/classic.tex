@@ -1,15 +1,14 @@
 \todo{elaborate on relaxation, general stuff like duals, solvability etc}
 \todo{describe classical maxcut sdp relaxation algorithm, goemans}
+\todo{maxqpcharikar}
 In semidefinite programing we try to maximize a linear function, such that an affine combination of symmetric matrices is positive semidefinite. \cite{vandenberghe96}
-An affine combination is a linear combination $\sum_{i=1}^{n}a_ix_i$
- where $x_i$ are elements of a vector space, such that $\sum_{i=1}^{n}a_i=1$.
+An affine combination is a linear combination $\sum_{i=1}^{n}a_ix_i$ where $x_i$ are elements of a vector space, such that $\sum_{i=1}^{n}a_i=1$.
 Semidefinite programs are very useful, as they can be solved efficiently both in theory and in practice.\\
 For approximating the optimal solution to the max-cut problem, Goemans and Williamson \cite{goemans95} start with reformulating the problem itself: \begin{align*}
 	\text{Maximize}\ \frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-y_iy_j \right) \\
 	\text{subject to:}\ y_i \in S=\{-1,1\}\, \forall i \in V
 \end{align*}\todo{fix notation and definitions}
 given a vertex set $ V=\{1,\ldots n\} $ and non-negative weights $w_{i,j}=w_{j,i}$.
-We call this a quadratic program.
 As this is in NP, we need to relax the constraints.
 This is accomplished by extending the objective function to a larger space, namely $S^n= \{-1,1\}^n$.
 We then have to consider vectors $v_i$ and look at the inner product  $v_i\cdot v_j$
@@ -26,5 +25,5 @@ The algorithm that approximates the solution is:
 	\item Set the cut to $S=\{i|v_i\cdot r \ge 0\} $
 \end{enumerate}
 We can build a good geometrical intuition for this.
-Think of the vector $r$ as the normal of a hyperplane through the origin, and partition the vertices into ones that lie below it and above it.\todo{more on why this works}
+Think of the vector $r$ as the normal of a hyperplane through the origin, and partition the vertices into ones that lie below it and above it.
 This algorithm has an approximation rate of $0.878$.

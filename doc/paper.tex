@@ -1,9 +1,7 @@
-\todo{more introductory words talking about the gharibian19 paper and others}
-The algorithm shown in the paper proceeds in the same way as the algorithm for the classical max-cut problem.
 The aim is to find bounds for the maximum energy of $2$-local-Hamiltonians.\todo{better description of the purpose}
 Before looking at the algorithm itself, there is a prelimary lemma we have to look at.
-\todo{appendix B proof idea?}
 \todo{proof ideas lemma 2 and 3}
+\todo{abs constant}
 Hamiltonians of the kind $H = H_1+H_2$ where $H_1 = \sum_{j=1}^{3n} D_jP_j, ~ H_2  = \sum_{i,j=1}^{3n} C_{i,j}P_iP_j$ have terms, that are linear in Pauli operators.
 For the theorems presented in this paper, the following lemma will enable us to reduce this Hamiltonian to a purely quadratic one.
 We form a new $n+1$-qubit Hamiltonian: \[
@@ -37,7 +35,6 @@ s.t. M_{i,i} = 1 \\
 M \ge 0
 \end{align*}\todo{why ~exactly~ is this equivalent to program shown earlier}
 where M is a real symmetric matrix.
-We can understand this better, if we look at the following representation.
 The ideal solution $M$ is connected to our state in the following way:\cite{gharibian19}\[
 	M_{i,j} = tr\left( \rho P_{i}P_j \right) ~ i,j=1\ldots 3n
 .\]
@@ -56,7 +53,6 @@ In the quantum version, we can interpret the geometry in a different, more instr
 Since we have to preserve the mathematical structure that states have to fulfill.
 Geometrically, this means that our blochvectors are restricted to a sphere of radius one.
 Since we will still project our optimal vectors obtained from the semidefinite program to a random hyperplane through the origin, we have to make sure trough rounding, that the projections correspond to valid bloch vector components.
-The way to ensure this is quite elegant.
 We ask the following question: What is the maximal value that a component of a valid bloch vector can have, if all three components have the same value?
 In other words, if we pick every value without knowing the others, what is the maximal value that we can assign to it so that it is part of the unit sphere?\[
 \|z\|=\sqrt{z_1^2+z_2^2+z_3^2}=\sqrt{3z_1^2}=1
@@ -79,10 +75,9 @@ As output we take $ \rho=\rho_1\otimes\ldots\otimes\rho_n$ where:\[
 The energy of this system is then \[
 	Tr\left(H\rho\right) = y^TCy
 .\]
-This is the approximation to the maximum eigenvalue.
+\todo{tex thm1}
 One now has to think about why this works and how good the approximation is.
 In the introduction, we have found the best product approximation that can be found for the EPR-state.
-Generally, the optimal product state is not feasible to find, but it important find general bounds, how good or bad this approximation can be.
 We call the highest eigenvalue achievable by a product state: \[
 	\lambda_{sep}(H)=\max_{\phi_1,\ldots,\phi_n}\bra{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}H\ket{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}
 .\]
@@ -91,8 +86,6 @@ Suppose $H$ is traceless 2-local Hamiltonian. then \[
 	\lambda_{sep}(H)\ge \frac{1}{9}\lambda_{max}(H)
 .\]
 We can proof this using entanglement-breaking depolarizing channels.
-\todo{eb maps}
-\todo{thm2}
 Depolarizing channels are a simple model for noise in quantum information theory. \cite{nielsen11}
 They are implemented by a map $\Delta_{\lambda}$, which maps a state  $\rho$ into a linear combination of itself and the identity matrix:\cite{king02}\[
 	\Delta_{\lambda}(\rho)=\lambda\rho+\frac{1-\lambda}{d}\1,
@@ -108,10 +101,10 @@ Here, the relevant map $\mathcal{E}_{\delta}$ is defined by its action on the Pa
 	\mathcal{E}_{\delta}(I)=I\quad\mathcal{E}_{\delta}(P)=\delta P\quad P\in \{X,Y,Z\}
 .\]
 Therefore, the action on a qubit state in bloch representation is: \[
-	\mathcal{E}_{\delta}(\rho) =  \frac{1}{2}/1 + \delta \sum_{i=1}^{3n} \tau_i P_i
+	\mathcal{E}_{\delta}(\rho) =  \frac{1}{2}\1 + \delta \sum_{i=1}^{3n} \tau_i P_i
 .\]
 Geometrically, this reduces the length of any bloch vector by a factor $\delta$.
-Generally, a CPT \todo{explain complete positivity and trace preserve} map $\Phi$ can be written as $\Phi(\rho)=\frac{1}{2}\left( \1 + (\bm{t}+T\tau)P_i \right)$ where $\bm{t}$ is a vector and $T$ a matrix.\cite{ruskai03}
+Generally, a CPT map $\Phi$ can be written as $\Phi(\rho)=\frac{1}{2}\left( \1 + (\bm{t}+T\tau)P_i \right)$ where $\bm{t}$ is a vector and $T$ a matrix.\cite{ruskai03}
 We can write this as $\bm{T}=\begin{pmatrix}
 	1 & 0 \\
 	\bm{t} & T
@@ -127,3 +120,14 @@ Then $\bm{T}$ has the canonical form \[
 If $\bm{t}=0$, this channel is unital, which means it maps the identity to itself.
 Unital qubit channels are entanglement breaking if and only if $\sum_{j} \left| \lambda_j \right| \le 1$ (after $T$ was diagonalized)\cite{ruskai03}
 This implies that qubit channels of the form we look at in the paper are entanglement breaking for $\delta\le \frac{1}{3}$ as we have $\lambda_1=\lambda_2=\lambda_3=\delta$.
+Using our definition of $\mathcal{E}$, we see \[
+	Tr\left( \sigma P_{j_1}P_{j_2}\ldots P_{j_L} \right) = \frac{1}{3^L}Tr\left( \rho P_{j_1}P_{j_2}\ldots P_{j_L} \right)
+.\].
+With this, we can proof the Theorem due to Lieb.\\
+We consider the $n$-qubit state $\psi$ satisfying $\bra{\psi}H\ket{\psi}=\lambda_{max}(H)$
+With the identity shown above, the depolarized state \[
+	\sigma = \mathcal{E}^{\otimes n}_{\frac{1}{3}}\left( \ket{\psi}\bra{\psi} \right)
+.\] is seperable and \[
+\lambda_{sep}(H) \ge Tr(\sigma H)=\frac{1}{9}\bra{\psi}H\ket{\psi}
+.\] which is the wanted statement.\\
+This gives a clear bound on how good a seperable state can be in the worst case.
