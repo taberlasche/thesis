@@ -1,94 +1,76 @@
-The aim of this thesis is to introduce the reader to quantum approximation algorithms in general, with special focus on the algorithm by Bravyi et al. \cite{bravyi19}.
-Therefore, I will start with an introduction to the necessary mathematical concepts and to product state approximation.
-Furthermore, \todo{more introductory fluff}
+%The aim of this thesis is to introduce the reader to quantum approximation algorithms in general, with special focus on the algorithm by Bravyi et al. \cite{bravyi19}.
+I will first give an introduction to quantum information theory, which uses quantum mechanical concepts to perform information processing and transmission of information.
+In quantum mechanics, we can associate a Hilbert space $\mathbb{H}$ with every quantum system.
+The quantum states are operators $\rho :\mathbb{H}\to\mathbb{H}$, which we can represent as density matrices.
 In general, a complex $M \times M$ matrix is a density matrix if it is:
 \begin{center}\begin{enumerate}
-	\item Hermitian, $\rho =\rho^{\dagger}$
-	\item positive,	$\rho \ge 0$
-	\item normalized, $Tr\rho = 1$
-\end{enumerate}\end{center}\todo{better typesetting}
-The set of density matrices is convex set and its extremal points are the pure states obeying $\rho^2 = \rho$
-We can write a state $\rho$ as
-$$\rho = \frac{1}{M} \1 + \sum_{i=1}^{M^2-1} \tau_i \sigma_i$$
-where $\sigma_i$ are generators of $SU(M)$ obeying
-\[
-	\sigma_i\sigma_j = \frac{2}{M}\delta_{ij} + d_{ijk}\sigma_k + if_{ijk}\sigma_k
+	\item Hermitian,	$\rho =\rho^{\dagger}$,
+	\item positive,		$\rho \ge 0$,
+	\item normalized, 	$Tr\rho = 1$.
+\end{enumerate}\end{center}
+The set of density matrices is a convex set and its pure states obey $\rho^2 = \rho$.
+In quantum computing, we mostly deal with $N$ 2-level systems called qubits, the composite space of which is $H = H_1 \otimes H_2 \otimes \ldots \otimes H_N$.
+In this space, there are states $\rho$ which can not be expressed through a tensor product of states in the subsystems $\rho = \rho_1\otimes\rho_2\ldots\otimes\rho_N$.
+We call these states entangled states.
+States which can be expressed as such are called seperable or product states.
+We can represent a qubit state as \[
+	\rho= \frac{1}{2}\left( \1 + \sum_{i=1}^{3} \sigma_i\tau_i \right)
 .\]
-$f_{ijk}$ is totally antisymmetric and equals the Levi-Civita-Symbol for $M=2$, $d_{ijk}$ is totally symmetric and vanishing for $M=2$.
-This is the Bloch representation of quantum states.
-We can construct the generators as follows:\cite{kimura03}
- \[
-\{\sigma_i\}^{M^2-1}_{i=1} = \{u_{jk},v_{jk},w_l\}
-.\]
-where
-$$
-	u_{jk} = \ket{k}\bra{k}+\ket{k}\bra{j}, ~ v_{jk} = -i(\ket{j}\bra{k}-\ket{k}\bra{j}),
-$$
-$$
-	w_l = \sqrt{\frac{2}{l(l+1}} \sum_{j=1}^{l} \left( \ket{j}\bra{j}-l\ket{l+1}\bra{l+1} \right),$$
-	$$ 1\le j\le k\le M, 1\le l\le M-1$$
-The $\tau_i$ are the components of the $M^2-1$ dimensional bloch vector and are the expectation values of the $\sigma_i$:
-$$
-	 \tau_i = Tr(\rho\sigma_i)
-$$
-For $M=2$ the positivity property is equivalent to $Tr\rho^2\le Tr\rho$, therefore we have $|\tau|\le 1$ and characterize the Bloch-vector-space with as a Ball with Radius $1$.
-The generators of $SU(2)$ are the Pauli-matrices
+This is called the Bloch representation of the state, and is associated with the Bloch-vector $\bm{\tau}$.
+The $\sigma_i$ are generators of $SU\left( 2 \right) $, in our case these are the Pauli matrices: \todo{maybe word this better}
 $$
  X = \begin{bmatrix} 0 & 1 \\
                     1 & 0
         \end{bmatrix},~
-    ~Y = \begin{bmatrix} 0 & -i \\
+	~Y = \begin{bmatrix} 0 & -i \\
                     i & 0
          \end{bmatrix},~
     ~Z = \begin{bmatrix} 1 & 0 \\
                     0 & -1
         \end{bmatrix}
 $$
-For $M\ge3$ there are bloch vectors which do not correspond to a positive semi-definite matrix.
-The space spanned by the bloch-vectors is therefore not a solid ball with radius $1$.
-The generators of  $SU(3)$ are the Gell-Mann-matrices. \todo{tex gellmann} \todo{more math on qudits}\\
-In quantum computing, we mostly deal with $N$ 2-level systems, the compositie space of which is $H = H_1 \otimes H_2 \otimes \ldots \otimes H_N$
-In this space, there are states $\rho$ which can not be expressed through a tensor product of states in the subsystems $\rho = \rho_1\otimes\rho_2\ldots\otimes\rho_N$.
-We call these states entangled states.
-States which can be expressed as such are called seperable or product states.
-\todo{quantum channels}
-\todo{bigO notation}
+For qubits, the positivity property is equivalent to $Tr\rho^2\le Tr\rho$, which implies $|\bm{\tau}|\le 1$ and characterizes the Bloch-vector-space as a solid Ball with Radius $1$, which is called the Bloch sphere.\\
+Suppose $\ket{0}$ and $\ket{1}$ form an orthogonal basis for the $2$-dimensional one qubit state space.
+An arbitrary vector in the space can then be written \[
+\ket{\psi} = a\ket{0}+b\ket{1}
+.\]
+where $a$ and $b$ are complex numbers.
+The normalization condition of quantum states is equivalent to $\braket{\psi}{\psi}=1$ and $ \left| a \right|^2+\left| b \right|^2=1$.
+The orthogonal basis vectors of the state space are called computational basis.\\
+The basic model of transmitting quantum information has three steps:
+We send a state $\rho$ through a quantum channel $\mathcal{N}$ and the reciever has to measure the outcome in order to extract information.
+Quantum channels can be understood either as geometrical transformations associated with the bloch representation, or as completely positive, trace preserving maps.
+A quantum channel has to be trace preserving i.e. $Tr(\mathcal{N}(\rho))=Tr(\rho)$ in order for the outcome state to be normalized.
+It must be completely positive, i.e., the map $\1\otimes\mathcal{N}$ maps positive semidefinite hermitian matrices to positive semidefinite hermitian matrices for any identity matrix $\1$, in order for the outcome state to be positive.
+A completely positive map is trace preserving if and only if $\sum_{i} A_i^{\dagger}A_i = \1$.\\
+By the Kraus representation Theorem \cite{choi75} a linear map $\Psi$ is completely positive if and only if there exist operators $ \{A_i\} $ such that \[
+\Psi\left(\rho\right)=\sum_{i}A_i\rho A_i^{\dagger}
+.\]
+Maps that are both completely positive and trace preserving are called CPT maps.
+We discern between unital and non-unital maps.
+Unital maps map the identity to itself.
+Geometrically, we can interpret this as the image of the map having the same center as the bloch sphere.
+Unital maps can be expressed as convex combinations of the Pauli operators and the identity.
+Their action in the bloch sphere are different rotations with shrinking parameters, since the Pauli matrices are unitary.\cite{imre12}\\
+The Hamiltonian of a system corresponds to its energy, the spectrum of the operator being the set of possible outcomes when measuring the total energy.
 A $k$-local-Hamiltonian is a hermitian matrix acting on $N$ qudits, which can be written as a sum of Hamiltonians where each acts on at most $k$ qudits.
-Specifically, here we look at  $2$-local-Hamiltonians on qubits of the form \[
+Physically, this corresponds to system, where the interaction energy between more than $k$ qudits is neglible.
+Specifically, we look at $2$-local-Hamiltonians on qubits of the form \[
 H = H_1+H_2
 .\]
 where \[
-	H_1 = \sum_{j=1}^{3n} D_jP_j, ~ H_2  = \sum_{i,j=1}^{3n} C_{i,j}P_iP_j
+	H_1 = \sum_{j=1}^{3n} D_jP_j,\quad ~ H_2  = \sum_{i,j=1}^{3n} C_{i,j}P_iP_j
 .\]
 with the Pauli-operators \[
 	P_{3a-2}=X_a, ~ P_{3a-1}=Y_a, ~ P_{3a}=Z_a
-.\]
-Finding the maximal eigenvalue of such a Hamiltonian is relevant to condensed matter and chemistry.
-This is equivalent to finding the minimal eigenvalue, because $\lambda_{max}(-H)=\lambda_{min}(H)$. \cite{gharibian19}
-We call this the local-Hamiltonian problem, and it is correlated to finding the energy of a system at low temeratures.
-Since the quantum state achieving this optimal value might be an entangled state which might not be computable in polynomial time, we are interested in finding the product state that achieves the best approximation. \\
-As an elementary example, let us look at a two qubit Hamiltonian: \[
-H=X_1X_2+Z_1Z_2
-.\]
-The state achieving the maximal eigenvalue $\lambda_{max}=2$ is the EPR-state $\ket{EPR}=\frac{\bra{00}+\bra{11}}{\sqrt{2}}$ .
-This is a maximally entangled state.
-To find out the product state which approximates this the best, look at a general product state and maximize the overlap.
-\[
-	\ket{\psi}=\ket{\psi_1}\otimes\ket{\psi_2}=\left(a_1\ket{0}+b_1\ket{1}\right)\otimes\left(a_2\ket{0}+b_2\ket{1}\right)
-.\] with $a_1^2+b_1^2=a_2+b_2^2=1$
-\[
-\max_{\psi_1,\psi_2}\left(\left|\braket{EPR}{\psi}\right|^2\right)=\max\left(\left|\frac{1}{\sqrt{2}}\left(a_1a_2+b_1b_2\right)\right|^2\right)=\frac{1}{2}
-.\]
-With either $a_1=a_2=1$ and $b_1=b_2=0$ or $b_1=b_2=1$ and $a_1=a_2=0$.
-Therefore, the product states with the maximal overlap are $\ket{00}$ and $\ket{11}$ with maximal eigenvalue $\lambda_{sep}=1$, the approximation ratio being  $\frac{\lambda_{sep}}{\lambda_{max}} = 0.5 $\\
-The local-Hamiltonian problem is equivalent to constraint satisfaction problems in classical computational theory.\todo{why?}
-It is in the complexity class QMA, which is the quantum analogue to the NP complexity class.\todo{more on complexity}
-It is QMA-complete, meaning that, additionally to being in the class itself, every problem in QMA can be reduced to the local-Hamiltonian problem.\cite{kempe06}
+.\]\\
+The minimal eigenvalue of such a systems corresponds to its ground state.
+Since the quantum state achieving this optimal value might be an entangled state which might not be computable in polynomial time, we are interested in finding the product state that achieves the best approximation. It is equivalent to finding the maximal eigenvalue, because $\lambda_{max}(-H)=\lambda_{min}(H)$. \cite{gharibian19}\\
+\todo{introduction to quantum algorithms, then move to max-k-sat and then the lh problem and comlexity classes}
+\cite{kempe06}
 Reduction means that for predicates $L_1$ and $L_2$ there is a polynomial $f$, such that $L_1(x)=L_2(f(x))$.
 We say that $f$ reduces  $L_1$ to $L_2$ polynomially.\cite{kitaev02}
 It is intructive to think about finding the maximal (or minimal) eigenvalue of such a Hamiltonian as equivalent to the weighted max-cut-problem.
 Given a Graph $G=(V,E)$, we think about the spin-sites as our vertices, and $C_{i,j}$ as our weighted edges.
-The task now is to find a maximum cut, which is in NP.\todo{maxcut picture?}
+The task now is to find a maximum cut, which is in NP.
 This means we cut the graph into two sets of vertices, such that the sum of weights that we cut through is maximized.
-The most successful classical approximation algorithm for this problem by Goemans and Williamson uses semidefinite programming and randomized rounding. \cite{goemans95}
-It is based on relaxation of a semidefinite program.

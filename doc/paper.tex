@@ -1,4 +1,4 @@
-The aim is to find bounds for the maximum energy of $2$-local-Hamiltonians.\todo{better description of the purpose}
+The aim is to find bounds for the maximum energy of traceless $2$-local-Hamiltonians.\todo{better description of the purpose}
 Before looking at the algorithm itself, there is a prelimary lemma we have to look at.
 \todo{proof ideas lemma 2 and 3}
 \todo{abs constant}
@@ -108,7 +108,7 @@ Generally, a CPT map $\Phi$ can be written as $\Phi(\rho)=\frac{1}{2}\left( \1 +
 We can write this as $\bm{T}=\begin{pmatrix}
 	1 & 0 \\
 	\bm{t} & T
-\end{pmatrix} $, where we can assume without loss of generality that $T$ is diagonal.
+\end{pmatrix} $, where we can assume without loss of generality that $T$ is diagonal, which follows directly from the Kraus representation Theorem.\todo{im not sure on this}
 Then $\bm{T}$ has the canonical form \[
 \bm{T} = \begin{pmatrix}
 	1 & 0 & 0 & 0\\
@@ -117,7 +117,7 @@ Then $\bm{T}$ has the canonical form \[
 	t_3 & 0 & 0 & \lambda_3
 \end{pmatrix}
 .\]
-If $\bm{t}=0$, this channel is unital, which means it maps the identity to itself.
+If $\bm{t}=0$, this channel is unital.
 Unital qubit channels are entanglement breaking if and only if $\sum_{j} \left| \lambda_j \right| \le 1$ (after $T$ was diagonalized)\cite{ruskai03}
 This implies that qubit channels of the form we look at in the paper are entanglement breaking for $\delta\le \frac{1}{3}$ as we have $\lambda_1=\lambda_2=\lambda_3=\delta$.
 Using our definition of $\mathcal{E}$, we see \[

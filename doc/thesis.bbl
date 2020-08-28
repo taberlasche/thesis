@@ -19,99 +19,70 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{bravyi19}{article}{}
-      \name{author}{4}{}{%
-        {{hash=964ccce884d5c27e980e285b18d587cd}{%
-           family={Bravyi},
-           familyi={B\bibinitperiod},
-           given={Sergey},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7c0fc8eb0c4a0c7e8f54d801d5604d12}{%
-           family={Gosset},
-           familyi={G\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=845f999abb01eff57f6c976b4c2c108c}{%
-           family={König},
-           familyi={K\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod}}}%
-        {{hash=68b8d929f9cb9fea3f1f9991863a6439}{%
-           family={Temme},
-           familyi={T\bibinitperiod},
-           given={Kristan},
-           giveni={K\bibinitperiod}}}%
+    \entry{choi75}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e7be6d1b55bb4c33b8194dad4a789a5d}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Man-Duen},
+           giveni={M\bibinithyphendelim D\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {AIP Publishing}%
-      }
-      \strng{namehash}{84579f3f095941cba9a7e3acf22af7fc}
-      \strng{fullhash}{57397fbabe3f77446979104411b134df}
-      \strng{bibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
-      \strng{authorbibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
-      \strng{authornamehash}{84579f3f095941cba9a7e3acf22af7fc}
-      \strng{authorfullhash}{57397fbabe3f77446979104411b134df}
+      \strng{namehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
+      \strng{fullhash}{e7be6d1b55bb4c33b8194dad4a789a5d}
+      \strng{bibnamehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
+      \strng{authorbibnamehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
+      \strng{authornamehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
+      \strng{authorfullhash}{e7be6d1b55bb4c33b8194dad4a789a5d}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1089-7658}
-      \field{journaltitle}{Journal of Mathematical Physics}
-      \field{month}{3}
+      \field{issn}{0024-3795}
+      \field{journaltitle}{Linear Algebra and its Applications}
       \field{number}{3}
-      \field{title}{Approximation algorithms for quantum many-body problems}
-      \field{volume}{60}
-      \field{year}{2019}
-      \field{pages}{032203}
-      \range{pages}{1}
+      \field{title}{Completely positive linear maps on complex matrices}
+      \field{volume}{10}
+      \field{year}{1975}
+      \field{pages}{285\bibrangedash 290}
+      \range{pages}{6}
       \verb{doi}
-      \verb 10.1063/1.5085428
+      \verb https://doi.org/10.1016/0024-3795(75)90075-0
       \endverb
       \verb{urlraw}
-      \verb http://dx.doi.org/10.1063/1.5085428
+      \verb http://www.sciencedirect.com/science/article/pii/0024379575900750
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.1063/1.5085428
+      \verb http://www.sciencedirect.com/science/article/pii/0024379575900750
       \endverb
     \endentry
-    \entry{kimura03}{article}{}
-      \name{author}{1}{}{%
-        {{hash=f96dbe2969ae09c7d2123f837dcdd808}{%
-           family={Kimura},
-           familyi={K\bibinitperiod},
-           given={Gen},
-           giveni={G\bibinitperiod}}}%
+    \entry{imre12}{book}{}
+      \name{author}{2}{}{%
+        {{hash=e415eaa7f3c7c07a265f51feaed86e91}{%
+           family={Imre},
+           familyi={I\bibinitperiod},
+           given={Sandor},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7953c0fabe0e21906bca992f99a78fc5}{%
+           family={Gyongyosi},
+           familyi={G\bibinitperiod},
+           given={Laszlo},
+           giveni={L\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Elsevier BV}%
-      }
-      \strng{namehash}{f96dbe2969ae09c7d2123f837dcdd808}
-      \strng{fullhash}{f96dbe2969ae09c7d2123f837dcdd808}
-      \strng{bibnamehash}{f96dbe2969ae09c7d2123f837dcdd808}
-      \strng{authorbibnamehash}{f96dbe2969ae09c7d2123f837dcdd808}
-      \strng{authornamehash}{f96dbe2969ae09c7d2123f837dcdd808}
-      \strng{authorfullhash}{f96dbe2969ae09c7d2123f837dcdd808}
+      \strng{namehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
+      \strng{fullhash}{6e5844e9c79237cc5bd0980c0e69ec2d}
+      \strng{bibnamehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
+      \strng{authorbibnamehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
+      \strng{authornamehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
+      \strng{authorfullhash}{6e5844e9c79237cc5bd0980c0e69ec2d}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0375-9601}
-      \field{journaltitle}{Physics Letters A}
-      \field{month}{8}
-      \field{number}{5-6}
-      \field{title}{The Bloch vector for N-level systems}
-      \field{volume}{314}
-      \field{year}{2003}
-      \field{pages}{339\bibrangedash 349}
-      \range{pages}{11}
+      \field{month}{12}
+      \field{title}{Advanced Quantum Communications: An Engineering Approach}
+      \field{year}{2012}
       \verb{doi}
-      \verb 10.1016/s0375-9601(03)00941-1
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1016/S0375-9601(03)00941-1
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1016/S0375-9601(03)00941-1
+      \verb 10.1002/9781118337462
       \endverb
     \endentry
     \entry{gharibian19}{article}{}
@@ -227,35 +198,34 @@
       \field{title}{Classical and Quantum Computation}
       \field{year}{2002}
     \endentry
-    \entry{goemans95}{article}{}
+    \entry{charikar04}{article}{}
       \name{author}{2}{}{%
-        {{hash=b064c6042cf492d2a9c396f25aa9c366}{%
-           family={Goemans},
-           familyi={G\bibinitperiod},
-           given={M.\bibnamedelimi X.},
-           giveni={M\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
-        {{hash=46fe91d24ac1c8530d9e60ed85cccf1e}{%
-           family={Williamson},
+        {{hash=13aaccfa6ed2de7e175e19b1efec3b3d}{%
+           family={Charikar},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=61a6d517d03c2b983b319073c8f28d9c}{%
+           family={Wirth},
            familyi={W\bibinitperiod},
-           given={D.P.},
-           giveni={D\bibinitperiod}}}%
+           given={A.},
+           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{fullhash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{bibnamehash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{authorbibnamehash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{authornamehash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{authorfullhash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{namehash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{fullhash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{bibnamehash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{authorbibnamehash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{authornamehash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{authorfullhash}{0d4261448b2ab5e328461eeb580f82fa}
       \field{sortinit}{6}
       \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the ACM}
-      \field{title}{Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming}
-      \field{volume}{42}
-      \field{year}{1995}
-      \field{pages}{1115\bibrangedash 1145}
-      \range{pages}{31}
+      \field{journaltitle}{45th Annual IEEE Symposium on Foundations of Computer Science}
+      \field{title}{Maximizing quadratic programs: extending Grothendieck's inequality}
+      \field{year}{2004}
+      \field{pages}{54\bibrangedash 60}
+      \range{pages}{7}
     \endentry
     \entry{vandenberghe96}{article}{}
       \name{author}{2}{}{%
@@ -299,6 +269,36 @@
       \verb{url}
       \verb https://doi.org/10.1137/1038003
       \endverb
+    \endentry
+    \entry{goemans95}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b064c6042cf492d2a9c396f25aa9c366}{%
+           family={Goemans},
+           familyi={G\bibinitperiod},
+           given={M.\bibnamedelimi X.},
+           giveni={M\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=46fe91d24ac1c8530d9e60ed85cccf1e}{%
+           family={Williamson},
+           familyi={W\bibinitperiod},
+           given={D.P.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{fullhash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{bibnamehash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{authorbibnamehash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{authornamehash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{authorfullhash}{c6363792d222200641c2adec88b7b6c6}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the ACM}
+      \field{title}{Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming}
+      \field{volume}{42}
+      \field{year}{1995}
+      \field{pages}{1115\bibrangedash 1145}
+      \range{pages}{31}
     \endentry
     \entry{gottesman97}{misc}{}
       \name{author}{1}{}{%
@@ -410,6 +410,46 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1142/S0129055X03001710
+      \endverb
+    \endentry
+    \entry{kimura03}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f96dbe2969ae09c7d2123f837dcdd808}{%
+           family={Kimura},
+           familyi={K\bibinitperiod},
+           given={Gen},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{f96dbe2969ae09c7d2123f837dcdd808}
+      \strng{fullhash}{f96dbe2969ae09c7d2123f837dcdd808}
+      \strng{bibnamehash}{f96dbe2969ae09c7d2123f837dcdd808}
+      \strng{authorbibnamehash}{f96dbe2969ae09c7d2123f837dcdd808}
+      \strng{authornamehash}{f96dbe2969ae09c7d2123f837dcdd808}
+      \strng{authorfullhash}{f96dbe2969ae09c7d2123f837dcdd808}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0375-9601}
+      \field{journaltitle}{Physics Letters A}
+      \field{month}{8}
+      \field{number}{5-6}
+      \field{title}{The Bloch vector for N-level systems}
+      \field{volume}{314}
+      \field{year}{2003}
+      \field{pages}{339\bibrangedash 349}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/s0375-9601(03)00941-1
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/S0375-9601(03)00941-1
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/S0375-9601(03)00941-1
       \endverb
     \endentry
   \enddatalist

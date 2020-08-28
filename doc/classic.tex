@@ -1,29 +1,46 @@
-\todo{elaborate on relaxation, general stuff like duals, solvability etc}
-\todo{describe classical maxcut sdp relaxation algorithm, goemans}
-\todo{maxqpcharikar}
-In semidefinite programing we try to maximize a linear function, such that an affine combination of symmetric matrices is positive semidefinite. \cite{vandenberghe96}
+For productstate approximation algorithms, many techniques from classical computing are used and generalized.
+Finding the maximal eigenvalue of a traceless 2-local hamiltonian is the quantum analogue to maximizing a binary quadratic program:
+Given a matrix $A$ with $a_{ii}=0$ maximize \[
+	\sum_{i=1}^{n}\sum_{j=1}^{n} a_{ij}x_{i}x_{j}\quad \text{s.t.}\quad x_{i}\in \{-1,1 \}\quad \forall ~ i
+.\]
+The first algorithm proposed by Charikar and Wirth \cite{charikar04} has a $\Omega\left( \frac{1}{\log n} \right)$ approximation ratio.
+It uses relaxation of a semidefinite program (SDP), which has been pioneered by Goemans and Williamson.\\
+In semidefinite programing we try to maximize a linear function, such that an affine combination of symmetric matrices is positive semidefinite.
 An affine combination is a linear combination $\sum_{i=1}^{n}a_ix_i$ where $x_i$ are elements of a vector space, such that $\sum_{i=1}^{n}a_i=1$.
-Semidefinite programs are very useful, as they can be solved efficiently both in theory and in practice.\\
-For approximating the optimal solution to the max-cut problem, Goemans and Williamson \cite{goemans95} start with reformulating the problem itself: \begin{align*}
-	\text{Maximize}\ \frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-y_iy_j \right) \\
-	\text{subject to:}\ y_i \in S=\{-1,1\}\, \forall i \in V
-\end{align*}\todo{fix notation and definitions}
+Semidefinite programs are very useful, as they can be solved efficiently both in theory and in practice.\cite{vandenberghe96}\\
+For approximating the optimal solution to the max-cut problem, Goemans and Williamson \cite{goemans95} start with reformulating the problem itself: \begin{flalign*}
+	\text{max}\ \frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-y_iy_j \right) \\
+	\text{s.t.}\quad y_i \in S=\{-1,1\}\quad \forall ~ i \in V
+\end{flalign*}
 given a vertex set $ V=\{1,\ldots n\} $ and non-negative weights $w_{i,j}=w_{j,i}$.
 As this is in NP, we need to relax the constraints.
 This is accomplished by extending the objective function to a larger space, namely $S^n= \{-1,1\}^n$.
 We then have to consider vectors $v_i$ and look at the inner product  $v_i\cdot v_j$
 The program therefore changes accordingly:
- \begin{align*}
+ \begin{flalign*}
 	\label{eq:}
-	\text{Maximize}\ \frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-v_iv_j \right) \\
-	\text{subject to:}\ v_i \in S^n=\{-1,1\}^n\, \forall i \in V
-\end{align*}
-The algorithm that approximates the solution is:
+	\text{max}\ \frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-v_iv_j \right) \\
+	\text{s.t.} \quad v_i \in S^n=\{-1,1\}^n \quad \forall ~ i \in V
+\end{flalign*}
+The algorithm proposed by Goemans and Williamson proceeds by partitioning the vertices of the graph based on randomized rounding.\\
+The max-cut problem is a special case of the problem of maximizing a binary quadratic program.
+For this, our relaxed semidefinite program is
+\todo{tex this}
+\begin{flalign*}
+	\text{max} \sum_{ij} a_{ij}v_{i}\cdot v_{j}\\
+	\text{s.t.} \quad  v_i\cdot v_i =1 \quad \forall ~ i\\
+				v_i\in\IR^n
+\end{flalign*}
+
+Using this, the algorithm is then:
+
 \begin{enumerate}
-	\item Solve the relaxed semidefinite program, obtaining an optimal set of vectors $v_i$
-	\item Let $r$ be a vector uniformly distributed on the unit sphere
-	\item Set the cut to $S=\{i|v_i\cdot r \ge 0\} $
+	\item Obtain an optimal solution $ \{v_i\} $ to the SDP
+	\item Create vector $r$ in which the $r_i$ are independently distributed over the normal distribution
+	\item Let $z_i=v_i\cdot r /T$, where $T=\sqrt{4\log n} $
+	\item If $\left| z_i \right| > 1$ then $y_i=sgn(z_i)$, otherwise $y_i=z_i$
+	\item Round the $y_i$ to $\pm 1$
 \end{enumerate}
-We can build a good geometrical intuition for this.
-Think of the vector $r$ as the normal of a hyperplane through the origin, and partition the vertices into ones that lie below it and above it.
-This algorithm has an approximation rate of $0.878$.
+To proof that this fullfils the approximation ratio, the idea is to first proof that the $y_i$ are a good approximation to the $z_i$, i.e. that $\Delta_{ij}=z_iz_j-y_iy_j$ is sufficiently small.
+\todo{bigO}
+\todo{general sdp stuff like duals, solvability etc}

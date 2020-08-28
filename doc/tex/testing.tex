@@ -1,1 +1,15 @@
 % Here i will describe the models i used for computation, mainly the transverse field ising model and how to find the spectrum and maximal eigenvalue
+As an elementary example, let us look at a two qubit Hamiltonian: \[
+H=X_1X_2+Z_1Z_2
+.\]
+The state achieving the maximal eigenvalue $\lambda_{max}=2$ is the EPR-state $\ket{EPR}=\frac{\bra{00}+\bra{11}}{\sqrt{2}}$ .
+This is a maximally entangled state.
+To find out the product state which approximates this the best, look at a general product state and maximize the overlap.
+\[
+	\ket{\psi}=\ket{\psi_1}\otimes\ket{\psi_2}=\left(a_1\ket{0}+b_1\ket{1}\right)\otimes\left(a_2\ket{0}+b_2\ket{1}\right)
+.\] with $a_1^2+b_1^2=a_2+b_2^2=1$
+\[
+\max_{\psi_1,\psi_2}\left(\left|\braket{\text{EPR}}{\psi}\right|^2\right)=\max\left(\left|\frac{1}{\sqrt{2}}\left(a_1a_2+b_1b_2\right)\right|^2\right)=\frac{1}{2}
+.\]
+With either $a_1=a_2=1$ and $b_1=b_2=0$ or $b_1=b_2=1$ and $a_1=a_2=0$.
+Therefore, the product states with the maximal overlap are $\ket{00}$ and $\ket{11}$ with maximal eigenvalue $\lambda_{sep}=1$, the approximation ratio being  $\frac{\lambda_{sep}}{\lambda_{max}} = 0.5 $\\
