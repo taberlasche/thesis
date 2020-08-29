@@ -1,39 +1,49 @@
+\todo{the tex of the programs is atrocious}
 For productstate approximation algorithms, many techniques from classical computing are used and generalized.
-Finding the maximal eigenvalue of a traceless 2-local hamiltonian is the quantum analogue to maximizing a binary quadratic program:
+Finding the maximal eigenvalue of a traceless 2-local hamiltonian is the quantum analogue to maximizing a binary quadratic program (MaxQP):
 Given a matrix $A$ with $a_{ii}=0$ maximize \[
 	\sum_{i=1}^{n}\sum_{j=1}^{n} a_{ij}x_{i}x_{j}\quad \text{s.t.}\quad x_{i}\in \{-1,1 \}\quad \forall ~ i
 .\]
-The first algorithm proposed by Charikar and Wirth \cite{charikar04} has a $\Omega\left( \frac{1}{\log n} \right)$ approximation ratio.
-It uses relaxation of a semidefinite program (SDP), which has been pioneered by Goemans and Williamson.\\
+An important tool for solving such problems is the relaxation of a semidefinite program (SDP), which has been pioneered by Goemans and Williamson.\\
 In semidefinite programing we try to maximize a linear function, such that an affine combination of symmetric matrices is positive semidefinite.
 An affine combination is a linear combination $\sum_{i=1}^{n}a_ix_i$ where $x_i$ are elements of a vector space, such that $\sum_{i=1}^{n}a_i=1$.
-Semidefinite programs are very useful, as they can be solved efficiently both in theory and in practice.\cite{vandenberghe96}\\
-For approximating the optimal solution to the max-cut problem, Goemans and Williamson \cite{goemans95} start with reformulating the problem itself: \begin{flalign*}
-	\text{max}\ \frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-y_iy_j \right) \\
-	\text{s.t.}\quad y_i \in S=\{-1,1\}\quad \forall ~ i \in V
-\end{flalign*}
-given a vertex set $ V=\{1,\ldots n\} $ and non-negative weights $w_{i,j}=w_{j,i}$.
-As this is in NP, we need to relax the constraints.
-This is accomplished by extending the objective function to a larger space, namely $S^n= \{-1,1\}^n$.
-We then have to consider vectors $v_i$ and look at the inner product  $v_i\cdot v_j$
-The program therefore changes accordingly:
- \begin{flalign*}
-	\label{eq:}
-	\text{max}\ \frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-v_iv_j \right) \\
-	\text{s.t.} \quad v_i \in S^n=\{-1,1\}^n \quad \forall ~ i \in V
-\end{flalign*}
-The algorithm proposed by Goemans and Williamson proceeds by partitioning the vertices of the graph based on randomized rounding.\\
-The max-cut problem is a special case of the problem of maximizing a binary quadratic program.
-For this, our relaxed semidefinite program is
-\todo{tex this}
+Semidefinite programs are very useful, as they can be solved efficiently both in theory and in practice.\cite{vandenberghe96}
+We can write a general SDP as:
 \begin{flalign*}
-	\text{max} \sum_{ij} a_{ij}v_{i}\cdot v_{j}\\
-	\text{s.t.} \quad  v_i\cdot v_i =1 \quad \forall ~ i\\
-				v_i\in\IR^n
+	\text{minimize} &\quad C \cdot X\\
+	\text{subject to} &\quad A_i \cdot X = b_i,\quad i=1,\ldots,m\\
+	                  &\quad X \ge 0
 \end{flalign*}
+where $C$ and $A_i$ are symmetric matrices and $b_i\in\IR^{m}$ a vector.
+This is called the primal problem.
+The dual of a SDP is its reformulated version, such that instead of minimizing (maximizing) an objective function, we maximize (minimize) another:
+\begin{flalign*}
+	\text{maximize} &\quad \sum_{i=1}^{m} y_{i}b_i\\
+	\text{subject to} &\quad C - \sum_{i=1}^{m} y_iA_i \ge 0
+\end{flalign*}
+If the optimal value of the primal and the dual problem are the same, we say that \emph{strong dualitity} holds.
+While this is not the case in general, it usually holds for SDPs.
+For SDPs we can use Slaters condition for strong duality, which states that if there is an $x^*$ that is strictly feasible (i.e. all constraints are satisfied and inequalities hold), then the problem is strictly dual.\cite{boyd04}\\
+The relaxation of a SDP was first proposed by Goemans and Williamson as part of an approximation algorithm for the max-cut problem, which is a special case of MaxQP.
+In max-cut, we are given a graph and are to find a partition of the vertices into two sets, such that the number of edges between the two sets is as large as possible.
+Goemans and Williamson start by formulating the problem into a semidefinite program.
+Given a vertex set $ V=\{1,\ldots n\} $ and non-negative weights $w_{i,j}=w_{j,i}$, maximize the objective function $\frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-y_iy_j \right)$ such that  $y_i \in S=\{-1,1\}\quad \forall ~ i \in V$.
+As this is in NP, we need to relax the constraints, which is accomplished by extending the objective function to a larger space, namely $S^n= \{-1,1\}^n$.
+We then have to consider vectors $v_i$ and look at the inner product  $v_i\cdot v_j$
+The algorithm proposed by Goemans and Williamson proceeds by partitioning the vertices of the graph based on randomized rounding.
+The rounding is based on a random hyperplane cut of the vectors.
+It has a approximation ratio of $0.878$.\\
+The first algorithm for approximating an optimal solution of MaxQP was proposed by Charikar and Wirth and has a $\Omega\left( \frac{1}{\log n} \right)$ approximation ratio. \cite{charikar04}
+It also uses relaxation of a SDP and randomized rounding, but instead of partitioning based on a random hyperplane cut through the origin, it takes into account the size of zhe projections of a random vector onto the solution vectors.
+For this, the relaxed semidefinite program is
+\begin{flalign*}
+	\text{max} &\quad \sum_{ij} a_{ij}v_{i}\cdot v_{j}\\
+	\text{s.t.} &\quad  v_i\cdot v_i =1 \quad \forall ~ i\\
+	            &\quad v_i\in\IR^n
+\end{flalign*}
+\todo{more text}
 
-Using this, the algorithm is then:
-
+Using this, the algorithm, which can be solved in polynomial time is:
 \begin{enumerate}
 	\item Obtain an optimal solution $ \{v_i\} $ to the SDP
 	\item Create vector $r$ in which the $r_i$ are independently distributed over the normal distribution
@@ -42,5 +52,4 @@ Using this, the algorithm is then:
 	\item Round the $y_i$ to $\pm 1$
 \end{enumerate}
 To proof that this fullfils the approximation ratio, the idea is to first proof that the $y_i$ are a good approximation to the $z_i$, i.e. that $\Delta_{ij}=z_iz_j-y_iy_j$ is sufficiently small.
-\todo{bigO}
-\todo{general sdp stuff like duals, solvability etc}
+The algorithm described in the following chapter parallelizes this procedure.

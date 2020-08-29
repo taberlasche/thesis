@@ -5,7 +5,7 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Introduction to quantum information theory}{2}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Relevant classical methods}{5}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Approximation algorithms for the groundstate energy of traceless 2-local-Hamiltonians}{7}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Testing specific models}{12}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Generalization to qutrits}{13}{chapter.6}%
-\contentsline {chapter}{\nonumberline Bibliography}{14}{chapter*.23}%
+\contentsline {chapter}{\numberline {4}Approximation algorithms for the groundstate energy of traceless 2-local-Hamiltonians}{8}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Testing specific models}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Generalization to qutrits}{14}{chapter.6}%
+\contentsline {chapter}{\nonumberline Bibliography}{15}{chapter*.21}%

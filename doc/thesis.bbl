@@ -85,33 +85,6 @@
       \verb 10.1002/9781118337462
       \endverb
     \endentry
-    \entry{gharibian19}{article}{}
-      \name{author}{2}{}{%
-        {{hash=94bf6a44f0b9ba010d5309cb3caff66a}{%
-           family={Gharibian},
-           familyi={G\bibinitperiod},
-           given={Sevag},
-           giveni={S\bibinitperiod}}}%
-        {{hash=4920c31b76ff713f91bbec5a8f0f52b8}{%
-           family={Parekh},
-           familyi={P\bibinitperiod},
-           given={Ojas},
-           giveni={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{fullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{bibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{authorbibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{authornamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{authorfullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1909.08846}
-      \field{title}{Almost optimal classical approximation algorithms for a quantum generalization of Max-Cut}
-      \field{year}{2019}
-    \endentry
     \entry{kempe06}{article}{}
       \name{author}{3}{}{%
         {{hash=ff688c2df5014b142928d37ce3c683ce}{%
@@ -136,8 +109,8 @@
       \strng{authorbibnamehash}{08f643e3bbad9f66c47848af501fc184}
       \strng{authornamehash}{08f643e3bbad9f66c47848af501fc184}
       \strng{authorfullhash}{08f643e3bbad9f66c47848af501fc184}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{SIAM Journal on Computing}
@@ -190,42 +163,40 @@
       \strng{authorbibnamehash}{32e34f2d117e1841f6089a540f90c6b5}
       \strng{authornamehash}{32e34f2d117e1841f6089a540f90c6b5}
       \strng{authorfullhash}{32e34f2d117e1841f6089a540f90c6b5}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0821832298}
       \field{title}{Classical and Quantum Computation}
       \field{year}{2002}
     \endentry
-    \entry{charikar04}{article}{}
+    \entry{gharibian19}{article}{}
       \name{author}{2}{}{%
-        {{hash=13aaccfa6ed2de7e175e19b1efec3b3d}{%
-           family={Charikar},
-           familyi={C\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=61a6d517d03c2b983b319073c8f28d9c}{%
-           family={Wirth},
-           familyi={W\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
+        {{hash=94bf6a44f0b9ba010d5309cb3caff66a}{%
+           family={Gharibian},
+           familyi={G\bibinitperiod},
+           given={Sevag},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4920c31b76ff713f91bbec5a8f0f52b8}{%
+           family={Parekh},
+           familyi={P\bibinitperiod},
+           given={Ojas},
+           giveni={O\bibinitperiod}}}%
       }
-      \strng{namehash}{0d4261448b2ab5e328461eeb580f82fa}
-      \strng{fullhash}{0d4261448b2ab5e328461eeb580f82fa}
-      \strng{bibnamehash}{0d4261448b2ab5e328461eeb580f82fa}
-      \strng{authorbibnamehash}{0d4261448b2ab5e328461eeb580f82fa}
-      \strng{authornamehash}{0d4261448b2ab5e328461eeb580f82fa}
-      \strng{authorfullhash}{0d4261448b2ab5e328461eeb580f82fa}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \strng{namehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{fullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{bibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{authorbibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{authornamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{authorfullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{45th Annual IEEE Symposium on Foundations of Computer Science}
-      \field{title}{Maximizing quadratic programs: extending Grothendieck's inequality}
-      \field{year}{2004}
-      \field{pages}{54\bibrangedash 60}
-      \range{pages}{7}
+      \field{journaltitle}{arXiv preprint arXiv:1909.08846}
+      \field{title}{Almost optimal classical approximation algorithms for a quantum generalization of Max-Cut}
+      \field{year}{2019}
     \endentry
     \entry{vandenberghe96}{article}{}
       \name{author}{2}{}{%
@@ -270,35 +241,67 @@
       \verb https://doi.org/10.1137/1038003
       \endverb
     \endentry
-    \entry{goemans95}{article}{}
+    \entry{boyd04}{book}{}
       \name{author}{2}{}{%
-        {{hash=b064c6042cf492d2a9c396f25aa9c366}{%
-           family={Goemans},
-           familyi={G\bibinitperiod},
-           given={M.\bibnamedelimi X.},
-           giveni={M\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
-        {{hash=46fe91d24ac1c8530d9e60ed85cccf1e}{%
-           family={Williamson},
-           familyi={W\bibinitperiod},
-           given={D.P.},
-           giveni={D\bibinitperiod}}}%
+        {{hash=ec94d94cc487dd71939a90cbeaaf47d0}{%
+           family={Boyd},
+           familyi={B\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2608d599a0bc2a784c301329a8da5f7b}{%
+           family={Vandenberghe},
+           familyi={V\bibinitperiod},
+           given={Lieven},
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{fullhash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{bibnamehash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{authorbibnamehash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{authornamehash}{c6363792d222200641c2adec88b7b6c6}
-      \strng{authorfullhash}{c6363792d222200641c2adec88b7b6c6}
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{fullhash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{bibnamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{authorbibnamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{authornamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
+      \strng{authorfullhash}{436abed3bce8d1b1d30640d4e5ff3d58}
       \field{sortinit}{8}
       \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the ACM}
-      \field{title}{Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming}
-      \field{volume}{42}
-      \field{year}{1995}
-      \field{pages}{1115\bibrangedash 1145}
-      \range{pages}{31}
+      \field{isbn}{0521833787}
+      \field{title}{Convex Optimization}
+      \field{year}{2004}
+    \endentry
+    \entry{charikar04}{article}{}
+      \name{author}{2}{}{%
+        {{hash=13aaccfa6ed2de7e175e19b1efec3b3d}{%
+           family={Charikar},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=61a6d517d03c2b983b319073c8f28d9c}{%
+           family={Wirth},
+           familyi={W\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{fullhash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{bibnamehash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{authorbibnamehash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{authornamehash}{0d4261448b2ab5e328461eeb580f82fa}
+      \strng{authorfullhash}{0d4261448b2ab5e328461eeb580f82fa}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{45th Annual IEEE Symposium on Foundations of Computer Science}
+      \field{title}{Maximizing quadratic programs: extending Grothendieck's inequality}
+      \field{year}{2004}
+      \field{pages}{54\bibrangedash 60}
+      \range{pages}{7}
     \endentry
     \entry{gottesman97}{misc}{}
       \name{author}{1}{}{%
@@ -314,8 +317,8 @@
       \strng{authorbibnamehash}{7547b3f3d9b6b3aebccf1577d598b7de}
       \strng{authornamehash}{7547b3f3d9b6b3aebccf1577d598b7de}
       \strng{authorfullhash}{7547b3f3d9b6b3aebccf1577d598b7de}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Stabilizer Codes and Quantum Error Correction}

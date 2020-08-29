@@ -276,3 +276,11 @@
    year =	{2008},
    eprint =	{0808.0369}
 }
+@book{boyd04,
+   author =	{Boyd, Stephen and Vandenberghe, Lieven},
+   title =	{Convex Optimization},
+   year =	{2004},
+   isbn =	{0521833787},
+   publisher =	{Cambridge University Press},
+   address =	{USA}
+}
