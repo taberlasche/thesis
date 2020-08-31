@@ -1,4 +1,3 @@
-\todo{the tex of the programs is atrocious}
 For productstate approximation algorithms, many techniques from classical computing are used and generalized.
 Finding the maximal eigenvalue of a traceless 2-local hamiltonian is the quantum analogue to maximizing a binary quadratic program (MaxQP):
 Given a matrix $A$ with $a_{ii}=0$ maximize \[
@@ -11,7 +10,7 @@ Semidefinite programs are very useful, as they can be solved efficiently both in
 We can write a general SDP as:
 \begin{flalign*}
 	\text{minimize} &\quad C \cdot X\\
-	\text{subject to} &\quad A_i \cdot X = b_i,\quad i=1,\ldots,m\\
+	\text{s.t.} &\quad A_i \cdot X = b_i,\quad i=1,\ldots,m\\
 	                  &\quad X \ge 0
 \end{flalign*}
 where $C$ and $A_i$ are symmetric matrices and $b_i\in\IR^{m}$ a vector.
@@ -19,7 +18,7 @@ This is called the primal problem.
 The dual of a SDP is its reformulated version, such that instead of minimizing (maximizing) an objective function, we maximize (minimize) another:
 \begin{flalign*}
 	\text{maximize} &\quad \sum_{i=1}^{m} y_{i}b_i\\
-	\text{subject to} &\quad C - \sum_{i=1}^{m} y_iA_i \ge 0
+	\text{s. t.} &\quad C - \sum_{i=1}^{m} y_iA_i \ge 0
 \end{flalign*}
 If the optimal value of the primal and the dual problem are the same, we say that \emph{strong dualitity} holds.
 While this is not the case in general, it usually holds for SDPs.
@@ -34,22 +33,27 @@ The algorithm proposed by Goemans and Williamson proceeds by partitioning the ve
 The rounding is based on a random hyperplane cut of the vectors.
 It has a approximation ratio of $0.878$.\\
 The first algorithm for approximating an optimal solution of MaxQP was proposed by Charikar and Wirth and has a $\Omega\left( \frac{1}{\log n} \right)$ approximation ratio. \cite{charikar04}
-It also uses relaxation of a SDP and randomized rounding, but instead of partitioning based on a random hyperplane cut through the origin, it takes into account the size of zhe projections of a random vector onto the solution vectors.
+It also uses relaxation of a SDP and randomized rounding, but instead of partitioning based on a random hyperplane cut through the origin, it takes into account the size of the projections of a random vector onto the solution vectors.
 For this, the relaxed semidefinite program is
 \begin{flalign*}
 	\text{max} &\quad \sum_{ij} a_{ij}v_{i}\cdot v_{j}\\
 	\text{s.t.} &\quad  v_i\cdot v_i =1 \quad \forall ~ i\\
 	            &\quad v_i\in\IR^n
 \end{flalign*}
-\todo{more text}
-
 Using this, the algorithm, which can be solved in polynomial time is:
 \begin{enumerate}
 	\item Obtain an optimal solution $ \{v_i\} $ to the SDP
 	\item Create vector $r$ in which the $r_i$ are independently distributed over the normal distribution
 	\item Let $z_i=v_i\cdot r /T$, where $T=\sqrt{4\log n} $
-	\item If $\left| z_i \right| > 1$ then $y_i=sgn(z_i)$, otherwise $y_i=z_i$
+	\item If $\left| z_i \right| > 1$ then $y_i=\text{sgn}(z_i)$, otherwise $y_i=z_i$
 	\item Round the $y_i$ to $\pm 1$
 \end{enumerate}
-To proof that this fullfils the approximation ratio, the idea is to first proof that the $y_i$ are a good approximation to the $z_i$, i.e. that $\Delta_{ij}=z_iz_j-y_iy_j$ is sufficiently small.
+Step four truncates any values outside $\left[ -1,+1\right] $
+The last rounding step is based on the size of the $y_{i}\in\left[ -1,1\right]^{n}$: \[
+x_{i}=\begin{cases}
+	-1, \quad \text{with probability} \frac{1-y_{i}}{2}\\
+	+1, \quad \text{with probability} \frac{1+y_{i}}{2}
+\end{cases}
+.\]
+It is important that $\bm{E}(x_{i}x_{j})=y_{i}y_{j}$ for $i\neq j$.\\
 The algorithm described in the following chapter parallelizes this procedure.

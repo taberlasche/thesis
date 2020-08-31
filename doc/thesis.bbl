@@ -303,6 +303,61 @@
       \field{pages}{54\bibrangedash 60}
       \range{pages}{7}
     \endentry
+    \entry{bravyi19}{article}{}
+      \name{author}{4}{}{%
+        {{hash=964ccce884d5c27e980e285b18d587cd}{%
+           family={Bravyi},
+           familyi={B\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7c0fc8eb0c4a0c7e8f54d801d5604d12}{%
+           family={Gosset},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=845f999abb01eff57f6c976b4c2c108c}{%
+           family={König},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=68b8d929f9cb9fea3f1f9991863a6439}{%
+           family={Temme},
+           familyi={T\bibinitperiod},
+           given={Kristan},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{fullhash}{57397fbabe3f77446979104411b134df}
+      \strng{bibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authorbibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authornamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authorfullhash}{57397fbabe3f77446979104411b134df}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1089-7658}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Approximation algorithms for quantum many-body problems}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{pages}{032203}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.5085428
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1063/1.5085428
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1063/1.5085428
+      \endverb
+    \endentry
     \entry{gottesman97}{misc}{}
       \name{author}{1}{}{%
         {{hash=7547b3f3d9b6b3aebccf1577d598b7de}{%
@@ -377,6 +432,56 @@
       \verb quant-ph/0204172
       \endverb
     \endentry
+    \entry{horodecki03}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5c25b08f5584a91f410b0f6587b0fa72}{%
+           family={Horodecki},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7082a9c99d5d51479d4cfba6bbac2d30}{%
+           family={Shor},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=93acf59bab7fd7cc10f95e1c6ec630dc}{%
+           family={Ruskai},
+           familyi={R\bibinitperiod},
+           given={Mary\bibnamedelima Beth},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific Pub Co Pte Lt}%
+      }
+      \strng{namehash}{1ebfd56014d795ff0df5bda559246634}
+      \strng{fullhash}{1ebfd56014d795ff0df5bda559246634}
+      \strng{bibnamehash}{1ebfd56014d795ff0df5bda559246634}
+      \strng{authorbibnamehash}{1ebfd56014d795ff0df5bda559246634}
+      \strng{authornamehash}{1ebfd56014d795ff0df5bda559246634}
+      \strng{authorfullhash}{1ebfd56014d795ff0df5bda559246634}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1793-6659}
+      \field{journaltitle}{Reviews in Mathematical Physics}
+      \field{month}{8}
+      \field{number}{06}
+      \field{title}{Entanglement Breaking Channels}
+      \field{volume}{15}
+      \field{year}{2003}
+      \field{pages}{629\bibrangedash 641}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1142/s0129055x03001709
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1142/S0129055X03001709
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1142/S0129055X03001709
+      \endverb
+    \endentry
     \entry{ruskai03}{article}{}
       \name{author}{1}{}{%
         {{hash=93acf59bab7fd7cc10f95e1c6ec630dc}{%
@@ -415,6 +520,50 @@
       \verb https://doi.org/10.1142/S0129055X03001710
       \endverb
     \endentry
+    \entry{harrow17}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6bc7275eb8de2a3404fd3f07e6c21a2a}{%
+           family={Harrow},
+           familyi={H\bibinitperiod},
+           given={Aram\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=bd78a1f9d6e5f3fbbf33e0967436bb75}{%
+           family={Montanaro},
+           familyi={M\bibinitperiod},
+           given={Ashley},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}%
+      }
+      \strng{namehash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{fullhash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{bibnamehash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{authorbibnamehash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{authornamehash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{authorfullhash}{9cbfb5ccf6fc615bc38952468347659b}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2521-327X}
+      \field{journaltitle}{Quantum}
+      \field{month}{4}
+      \field{title}{Extremal eigenvalues of local Hamiltonians}
+      \field{volume}{1}
+      \field{year}{2017}
+      \field{pages}{6}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22331/q-2017-04-25-6
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.22331/q-2017-04-25-6
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.22331/q-2017-04-25-6
+      \endverb
+    \endentry
     \entry{kimura03}{article}{}
       \name{author}{1}{}{%
         {{hash=f96dbe2969ae09c7d2123f837dcdd808}{%
@@ -432,8 +581,8 @@
       \strng{authorbibnamehash}{f96dbe2969ae09c7d2123f837dcdd808}
       \strng{authornamehash}{f96dbe2969ae09c7d2123f837dcdd808}
       \strng{authorfullhash}{f96dbe2969ae09c7d2123f837dcdd808}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0375-9601}
@@ -456,7 +605,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{horodecki08}
 \endrefsection
 \endinput
 

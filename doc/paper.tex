@@ -1,23 +1,40 @@
-The aim is to find bounds for the maximum energy of traceless $2$-local-Hamiltonians.\todo{better description of the purpose}
+The algorithm discussed here is able to efficiently find a product state approximation for a general traceless $2$-local Hamiltonian with an approximation ratio $\Omega(\frac{1}{\log n})$. \cite{bravyi19}
+I will explain the algorithm and the central results that enable and validate it.\\
 Before looking at the algorithm itself, there is a prelimary lemma we have to look at.
-\todo{proof ideas lemma 2 and 3}
-\todo{abs constant}
-Hamiltonians of the kind $H = H_1+H_2$ where $H_1 = \sum_{j=1}^{3n} D_jP_j, ~ H_2  = \sum_{i,j=1}^{3n} C_{i,j}P_iP_j$ have terms, that are linear in Pauli operators.
-For the theorems presented in this paper, the following lemma will enable us to reduce this Hamiltonian to a purely quadratic one.
+Hamiltonians of the kind $H = H_1+H_2$ as deined as in \eqref{ham} have terms that are linear in Pauli operators.
+The following lemma will let us reduce this Hamiltonian to a purely quadratic one, for the theorems presented in this paper.
 We form a new $n+1$-qubit Hamiltonian: \[
 H'=H_2+Z_{n+1}H_1
 .\]
-Lemma1\todo{typesetting}
-	$\lambda_{max}\left( H' \right) =\lambda_{max}\left( H \right)$. Moreover, given any $(n+1)$-qubit state  $\omega$ we can efficiently compute an $n$-qubit state $\phi$ such that \[
-	\bra{\phi}H\ket{\phi} \ge \bra{\omega}H'\ket{\omega}.
+
+\begin{lma}
+	\emph{$\lambda_{max}\left( H' \right) =\lambda_{max}\left( H \right)$. Moreover, given any $(n+1)$-qubit state  $\omega$ we can efficiently compute an $n$-qubit state $\phi$ such that \[
+	\bra{\phi}H\ket{\phi} \ge \bra{\omega}H'\ket{\omega}
 	.\]
-If $\omega$ is a tensor product of single qubit stabilizer states then so is $\phi$.
-The idea is now, that for any $n-qubit$ Hamiltonian with linear terms, there is a purely quadratic $(n+1)$-qubit Hamiltonian that has the same maximal eigenvalue and has an at best equally good product state approximation.
+If $\omega$ is a tensor product of single qubit stabilizer states then so is $\phi$.}
+\end{lma}
+The idea is, that for any $n$-qubit traceless $2$-local Hamiltonian with linear terms, there is a purely quadratic $(n+1)$-qubit traceless $2$-local Hamiltonian that has the same maximal eigenvalue and has an at best equally good product state approximation.
 Therefore, the bounds that we proof for quadratic Hamiltonians are valid also for Hamiltonians with linear terms.
-This enables us to set $H_1=0$
-The proof idea is that all eigenvalues of $H'$ are either eigenvalues of $H_2-H_1$ or $H_1+H_2$, and that $H_2-H_1$ can be obtained from $H_1+H_2$ by operations that conserve the spectrum.\todo{compute that. including time reversal?}
-We can then choose the product state $\ket{\phi}$ according to $\ket{\omega}$, such that its eigenvalues will always be at least equal. \todo{show computation} \\
-The last statement in the lemma references an elegant concept that is very useful to quantum error correction.
+This enables us to set $H_1=0$.
+To proof this, we first show that all eigenvalues of $H'$ are either eigenvalues of $H_2-H_1$ or $H_1+H_2$.
+This is the case because $H'$ commutes with $Z_{n+1}$ and therefore they share a common set of eigenvectors $\ket{\psi}$: \[
+Z_{n+1}H_1\ket{\psi} = \lambda(Z_{n+1})\lambda(H_1)\ket{\psi}=\pm \lambda(H_1)\ket{\psi} = \lambda(Z_{n+1}H_1)\ket{\psi}
+.\]
+$H_2-H_1$ can be obtained from $H_1+H_2$ by the time reversal map:
+\[
+	\left( Y^{\otimes n}\left( H_2+H_1 \right) Y^{\otimes n} \right) ^{T} = H_2-H_1
+.\]
+To see why this is true, we need the following properties of the Pauli matrices $\sigma_{i}$: \[
+	\sigma_a\sigma_b=\delta_{ab}\1 + i\epsilon_{abc}\sigma_c
+.\]
+and \[
+	X^{T}=X, \quad Y^{T}=-Y, \quad Z^{T}=Z.
+.\]
+We can see that the map takes any Pauli operator $P_a$ to $-P_a$.
+This means it takes  $H_1$ to $-H_1$ and leaves $H_2$ unchanged since it is quadratic in Pauli operators.
+Both the matrix transpose and the conjugation by a unitary operator conserves the spectrum, so we have proven that  $H$ and $H'$ have the same spectrum and also the same maximal eigenvalue.
+Using similar arguments, we can then choose the product state $\ket{\phi}$ according to $\ket{\omega}$, such that its eigenvalues will always be at least equal.\todo{since the argumentation is very similar, should i still show it? i think not, as i already demonstrated that i understood it in principle}\\
+The last statement in the lemma referes to an elegant concept that is very useful to quantum error correction.
 We say an operator $A$ stabilizes a state $\ket{\psi}$ if $A\ket{\psi}=\ket{\psi}$.
 Conversely, a state is called a stabilizer state of an operator, if it is in its $+1$-eigenspace.
 For practicality, we look at operators from the $n$-qubit Pauli group.
@@ -25,44 +42,55 @@ This is favorable because they are unitary and their eigenvalues  $(\pm 1)$ diff
 If we are given a set of operators $S=\{A,B,C\ldots\}$, we know that any errors (which are also from the Pauli group) either commute or anticommute with elements in $S$.
 One can correct any error $E$ that anticommutes with $S$, and if the error lies in $S$ it is correctable if they commute with $S$.\cite{gottesman97}
 We say an operator commutes with a group, or is in the normalizer of the group, if for some $A,B\in S$: $EA=BE$ with possibly $A\neq B$.
-This criterion is very easy to check and gives us a useful mathematical toolbox.\todo{now explain the sentence in the lemma} \\
-We will now look at the algorithm presented, and then understand the ideas as to why it is indeed accurate.
-It is largely in parallel to the classical max-cut approximation algorithm by Goemans and Williamson.
+This criterion is very easy to check and gives us a useful mathematical toolbox.
+For choosing the product state $\ket{\phi}$, we use operations on $\ket{\omega}$ that take eigenvectors of matrices from the Pauli group to eigenvectors of matrices from the Pauli group.
+Therefore, if $\omega$ is a tensor product of single qubit stabilizer states, $\phi$ is, too.\\
+\begin{thm}\emph{
+		There is an efficient classical algorithm which, given $H$ of the form \eqref{ham}, outputs a product state $\ket{\phi} = \ket{\phi_1}\otimes\ldots\otimes \ket{\phi_n}$ such that with probability at least $\frac{2}{3}$ \[
+			\bra{\phi}H\ket{\phi}\ge \frac{\lambda_{max}(H)}{O(\log{}n)}.
+		.\]
+		Moreover, each single-qubit state $\phi_i$ in an eigenstate of one of the Pauli operators $X$, $Y$ or $Z$
+}\end{thm}
+It is largely mirrors the MaxQP algorithm by Charikar and Wirth presented earlier.
+I will first present the semidefinite program, explain the algorithm and then demonstrate the ideas of the proof that Theorem 1 holds.
 In our case, the semidefinite program is:
-\begin{align*}
-max ~ tr\left( CM \right)\\
-s.t. M_{i,i} = 1 \\
-M \ge 0
-\end{align*}\todo{why ~exactly~ is this equivalent to program shown earlier}
-where M is a real symmetric matrix.
+\begin{flalign*}
+	\text{max} &\quad Tr\left( CM \right)\\
+	\text{s.t.} &\quad M_{i,i} = 1\\
+	            &\quad M \ge 0
+\end{flalign*}
+where M is a hermitian matrix.
 The ideal solution $M$ is connected to our state in the following way:\cite{gharibian19}\[
 	M_{i,j} = tr\left( \rho P_{i}P_j \right) ~ i,j=1\ldots 3n
 .\]
-Setting M as a real symmetric matrix is without loss of generality, because if the Pauli operators act on different matrices they commute, and therefore the matrix entry is real in this case.
+We can set M as a real symmetric matrix without loss of generality, because if the Pauli operators act on different matrices they commute, and therefore the matrix entry is real in this case.
 If they act on the same qubit, the matrix entry is purely imaginary because the operators anticommute.
 We can eliminate these terms using $M'=\frac{M+M*}{2}$ because they represent linear terms.
 This does not change the outcome of the objective function and is therefore fully without loss of generality.
 From this perspective the constraints can be understood in the following way:
-$$M_{i,i}=tr\left( \rho P_i P_i\right) = tr\left( \rho\right) = 1  $$ since $P_iP_i=1$
-$$M\ge 0\leftrightarrow x^TMx=tr\left(\rho\left(\sum_{i}^{3n} x_iP_i\right)\left(\sum_{j}^{3n} x_jP_j\right)\right)=tr\left(\rho X^2\right)\ge 0$$ where $X=\sum_{i}^{3n} x_iP_i$ and since $X^2,\rho\ge 0$
-\todo{typesetting is ugly here} \\
+\begin{flalign*}
+	& M_{i,i}=tr\left( \rho P_i P_i\right) = tr\left( \rho\right) = 1 \quad\text{since}\quad P_iP_i=1\\
+	& M\ge 0\Leftrightarrow x^TMx=tr(\rho(\sum_{i}^{3n} x_iP_i)(\sum_{j}^{3n} x_jP_j))=tr(\rho X^2)\ge 0
+\end{flalign*}
+where $X=\sum_{i}^{3n} x_iP_i$ and since $X^2,\rho\ge 0$.
 Since $M$ is real and symmetric, we can express any matrix element as $M_{i,j}=\braket{v^i}{v^j}$ for some unit vectors $v^1, v^2,\ldots, v^{3n+1}$.
-The vectors have unit norm, since $M_{i,i}=1$.
-What we have done until now substitutes for the first step in the classical version.
-In the quantum version, we can interpret the geometry in a different, more instructive way.
-Since we have to preserve the mathematical structure that states have to fulfill.
+The vectors have unit norm, since $M_{i,i}=1$.\\
+After solving the SDP, we choose a random vector $\ket{r}$, the components of which are drawn from the normal distribution and project our solution vectors on it.
+This is identical to the MaxQP algorithm discussed earlier, except for the constant $T$ which has to be chosen differently.
+We can build a good geometrical intuiton for the truncation step.
+We have to preserve the mathematical conditions that states have to fulfill.
 Geometrically, this means that our blochvectors are restricted to a sphere of radius one.
-Since we will still project our optimal vectors obtained from the semidefinite program to a random hyperplane through the origin, we have to make sure trough rounding, that the projections correspond to valid bloch vector components.
+Since we will project our optimal vectors obtained from the semidefinite program to the random vector $\ket{r}$, we have to make sure that the projections correspond to valid bloch vector components.
 We ask the following question: What is the maximal value that a component of a valid bloch vector can have, if all three components have the same value?
-In other words, if we pick every value without knowing the others, what is the maximal value that we can assign to it so that it is part of the unit sphere?\[
+In other words, if we pick every value without knowing the others, what is the maximal value that we can assign to it such that the vector is part of the unit sphere?\[
 \|z\|=\sqrt{z_1^2+z_2^2+z_3^2}=\sqrt{3z_1^2}=1
 .\]
 Therefore the maximal value, above which we should round down is $\frac{1}{\sqrt{3}}$.
-If we round such that no bloch vector component can be above this value, we will always have a valid state.
+If we truncate such that no bloch vector component can be above this value, we will always have a valid state.
 Visually, this is the same as fitting a cube inside the bloch sphere and reducing our state space to inside the cube.
-The edges of the cube which touch the sphere are the pure states that are possible if all components are $\pm 1$.
 \todo{prove this to be sure its true}
-The projections are $z_i=\frac{\braket{r}{v^i}}{c\sqrt{\log{}n}}$ with $c=O(\log{}n)$.
+The projections are $z_i=\braket{r}{v^i}/T$ with $T=c\sqrt{\log{}n}$ and $c=O(\log{}n)$.
+This constant will be discussed later.
 The algorithm looks like this:
 \begin{enumerate}
 	\item Solve the relaxed semidefinite program, obtaining an optimal set of vectors $v_i$
@@ -72,31 +100,28 @@ The algorithm looks like this:
 As output we take $ \rho=\rho_1\otimes\ldots\otimes\rho_n$ where:\[
 	\rho_a=\frac{1}{2}\left(\1 +y_{3a-2}P_{3a-2}+y_{3a-1}P_{3a-1}+y_{3a}P_{3a}\right).
 .\]
-The energy of this system is then \[
-	Tr\left(H\rho\right) = y^TCy
-.\]
-\todo{tex thm1}
-One now has to think about why this works and how good the approximation is.
-In the introduction, we have found the best product approximation that can be found for the EPR-state.
-We call the highest eigenvalue achievable by a product state: \[
-	\lambda_{sep}(H)=\max_{\phi_1,\ldots,\phi_n}\bra{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}H\ket{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}
-.\]
-We know the following:\todo{lieb citation} \todo{Theorem 2 typesetting}\\
-Suppose $H$ is traceless 2-local Hamiltonian. then \[
+We want to show that this algorithm fullfils the approximation ratio $\frac{1}{\log{}n}$ with probability $\frac{2}{3}$.\\
+First we demonstrate that the approximation ratio is bounded below by a constant.\todo{lieb citation}
+\begin{thm}\emph{
+	Suppose $H$ is traceless 2-local Hamiltonian. then \[
 	\lambda_{sep}(H)\ge \frac{1}{9}\lambda_{max}(H)
+.\]}
+\end{thm}
+Where we call $\lambda_{sep}$ the highest eigenvalue achievable by a product state: \[
+	\lambda_{sep}(H)=\max_{\phi_1,\ldots,\phi_n}\bra{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}H\ket{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}
 .\]
 We can proof this using entanglement-breaking depolarizing channels.
 Depolarizing channels are a simple model for noise in quantum information theory. \cite{nielsen11}
-They are implemented by a map $\Delta_{\lambda}$, which maps a state  $\rho$ into a linear combination of itself and the identity matrix:\cite{king02}\[
+They are implemented by a map $\Delta_{\lambda}$, which maps a state  $\rho$ onto a linear combination of itself and the identity matrix:\cite{king02}\[
 	\Delta_{\lambda}(\rho)=\lambda\rho+\frac{1-\lambda}{d}\1,
 .\]
-where d is the dimension of state. The parameter $\lambda$ must satisfy \[
-	-\frac{1}{d^2-1}\le\lambda\le_1
+where $d$ is the dimension of state. The parameter $\lambda$ must satisfy \[
+	-\frac{1}{d^2-1}\le\lambda\le 1
 .\]
-This channel maps pure states to mixed states and all output states have eigenvalues $\lambda+\frac{1-\lambda}{d}$ (multiplicity $1$) and $\frac{1-\lambda}{d}$ (multiplicity $d-1$).
+This channel maps pure states to mixed states.
 For $\lambda=0$ we get the maximally noisy channel, for $\lambda=1$ the identity.
 In our case we look at entanglement breaking channels.
-These are channels for which the output state is always seperable, i.e. if any entangled density matrix is mapped to a seperable one.\cite{horodecki08}
+These are channels for which the output state is always seperable, i.e. if any entangled density matrix is mapped to a seperable one.\cite{horodecki03}
 Here, the relevant map $\mathcal{E}_{\delta}$ is defined by its action on the Pauli group: \[
 	\mathcal{E}_{\delta}(I)=I\quad\mathcal{E}_{\delta}(P)=\delta P\quad P\in \{X,Y,Z\}
 .\]
@@ -109,7 +134,7 @@ We can write this as $\bm{T}=\begin{pmatrix}
 	1 & 0 \\
 	\bm{t} & T
 \end{pmatrix} $, where we can assume without loss of generality that $T$ is diagonal, which follows directly from the Kraus representation Theorem.\todo{im not sure on this}
-Then $\bm{T}$ has the canonical form \[
+$\bm{T}$ has then the canonical form \[
 \bm{T} = \begin{pmatrix}
 	1 & 0 & 0 & 0\\
 	t_1 & \lambda_1 & 0 & 0\\
@@ -122,12 +147,29 @@ Unital qubit channels are entanglement breaking if and only if $\sum_{j} \left| 
 This implies that qubit channels of the form we look at in the paper are entanglement breaking for $\delta\le \frac{1}{3}$ as we have $\lambda_1=\lambda_2=\lambda_3=\delta$.
 Using our definition of $\mathcal{E}$, we see \[
 	Tr\left( \sigma P_{j_1}P_{j_2}\ldots P_{j_L} \right) = \frac{1}{3^L}Tr\left( \rho P_{j_1}P_{j_2}\ldots P_{j_L} \right)
-.\].
+.\]
 With this, we can proof the Theorem due to Lieb.\\
 We consider the $n$-qubit state $\psi$ satisfying $\bra{\psi}H\ket{\psi}=\lambda_{max}(H)$
 With the identity shown above, the depolarized state \[
 	\sigma = \mathcal{E}^{\otimes n}_{\frac{1}{3}}\left( \ket{\psi}\bra{\psi} \right)
-.\] is seperable and \[
+.\] is separable and \[
 \lambda_{sep}(H) \ge Tr(\sigma H)=\frac{1}{9}\bra{\psi}H\ket{\psi}
 .\] which is the wanted statement.\\
-This gives a clear bound on how good a seperable state can be in the worst case.
+It is then shown that the $y_i$ are a good approximation to the $z_i$, i.e. that the expectation value of $\Delta_{ij}=z_iz_j-y_iy_j$ is sufficiently small.
+Specifically, \[
+	\mathbb{E}_r\left| \Delta_{i,j} \right|  \le e^{-\Omega(T^2)} \quad 0\le i<j\le 3n
+.\]
+Using this, one can show that the approximation ration holds.
+To find out more about the constant $T$, we can look at a recent publication by Harrow and Montanaro \cite{harrow17}.
+An algorithm is presented which gives an product state approximation ratio to traceless $k$-local Hamiltonians with respect to the $1$-norm of the coefficients of the Hamiltonian, $C_{i,j}$ and $D_j$ in our case.
+This result uses a different notion of approximation ratio but is converned with the same kind of Hamiltonians.
+We use the following equation which is proven in the paper: \[
+	\sum_{i,j=1}^{3n} \left| C_{i,j} \right| \le Kn\lambda_{max}(H)
+.\]
+$K>0$ is an absolute constant, that we can use to shwow that the approximation ratio $\Omega(\frac{1}{\log{}n})$ holds, if we choose $T$ and $c$ as described.
+For $2$-local Hamiltonians, Harrow and Montanaro show that \[
+	\lambda_{min}(H)\le - \|\hat{H}\|_1/(24l)
+\]
+where $l$ is the maximal number of terms that each qubit participates in and $\|\hat{H}\|_1$ the $1$-norm of the coefficients.
+Another relevant recent result is an algorithm by Ghabarian and Parekh \cite{gharibian19}, which finds a constant approximation ratio for the quantum Heisenberg model.
+The methods are similar to the algorithm presented above, but instead of general traceless

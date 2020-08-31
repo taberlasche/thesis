@@ -1,21 +1,23 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[85] biber:322> INFO - === Sa Aug 29, 2020, 20:34:31
+[85] biber:322> INFO - === Mo Aug 31, 2020, 18:23:02
 [99] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[169] Biber.pm:943> INFO - Found 14 citekeys in bib section 0
-[186] Biber.pm:4256> INFO - Processing section 0
-[186] Utils.pm:75> INFO - Globbing data source 'thesis.bib'
-[186] Utils.pm:91> INFO - Globbed data source 'thesis.bib' to thesis.bib
-[199] Biber.pm:4455> INFO - Looking for bibtex format file 'thesis.bib' for section 0
-[201] bibtex.pm:1653> INFO - LaTeX decoding ...
-[240] bibtex.pm:1471> INFO - Found BibTeX data source 'thesis.bib'
+[167] Biber.pm:943> INFO - Found 16 citekeys in bib section 0
+[182] Biber.pm:4256> INFO - Processing section 0
+[183] Utils.pm:75> INFO - Globbing data source 'thesis.bib'
+[183] Utils.pm:91> INFO - Globbed data source 'thesis.bib' to thesis.bib
+[194] Biber.pm:4455> INFO - Looking for bibtex format file 'thesis.bib' for section 0
+[196] bibtex.pm:1653> INFO - LaTeX decoding ...
+[235] bibtex.pm:1471> INFO - Found BibTeX data source 'thesis.bib'
+[237] Utils.pm:304> WARN - Duplicate entry key: 'horodecki03' in file 'thesis.bib', skipping ...
 [334] Utils.pm:304> WARN - ISBN '1107002176,9781107002173' in entry 'nielsen11' is invalid - run biber with '--validate_datamodel' for details.
-[345] Utils.pm:304> WARN - month field 'Aug' in entry 'kimura03' is not an integer - this will probably not sort properly.
-[346] Utils.pm:304> WARN - I didn't find a database entry for 'horodecki08' (section 0)
-[366] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[366] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[366] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[366] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
-[379] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[386] bbl.pm:755> INFO - Output to thesis.bbl
-[386] Biber.pm:128> INFO - WARNINGS: 3
+[344] Utils.pm:304> WARN - month field 'Aug' in entry 'horodecki03' is not an integer - this will probably not sort properly.
+[354] Utils.pm:304> WARN - month field 'Apr' in entry 'harrow17' is not an integer - this will probably not sort properly.
+[358] Utils.pm:304> WARN - month field 'Aug' in entry 'kimura03' is not an integer - this will probably not sort properly.
+[380] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[380] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[380] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[380] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[395] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[403] bbl.pm:755> INFO - Output to thesis.bbl
+[403] Biber.pm:128> INFO - WARNINGS: 5

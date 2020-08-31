@@ -2192,14 +2192,17 @@
     <bcf:citekey order="7">vandenberghe96</bcf:citekey>
     <bcf:citekey order="8">boyd04</bcf:citekey>
     <bcf:citekey order="9">charikar04</bcf:citekey>
-    <bcf:citekey order="10">gottesman97</bcf:citekey>
-    <bcf:citekey order="11">gharibian19</bcf:citekey>
-    <bcf:citekey order="12">nielsen11</bcf:citekey>
-    <bcf:citekey order="13">king02</bcf:citekey>
-    <bcf:citekey order="14">horodecki08</bcf:citekey>
-    <bcf:citekey order="15">ruskai03</bcf:citekey>
+    <bcf:citekey order="10">bravyi19</bcf:citekey>
+    <bcf:citekey order="11">gottesman97</bcf:citekey>
+    <bcf:citekey order="12">gharibian19</bcf:citekey>
+    <bcf:citekey order="13">nielsen11</bcf:citekey>
+    <bcf:citekey order="14">king02</bcf:citekey>
+    <bcf:citekey order="15">horodecki03</bcf:citekey>
     <bcf:citekey order="16">ruskai03</bcf:citekey>
-    <bcf:citekey order="17">kimura03</bcf:citekey>
+    <bcf:citekey order="17">ruskai03</bcf:citekey>
+    <bcf:citekey order="18">harrow17</bcf:citekey>
+    <bcf:citekey order="19">gharibian19</bcf:citekey>
+    <bcf:citekey order="20">kimura03</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
