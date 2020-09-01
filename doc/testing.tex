@@ -1,18 +1,54 @@
 I will now discuss the results of my implementation of the algorithm and the implemented Hamiltonians.
-The Ising model with a transverse field has physical relevance because it can be used to study order disorder ferroelectrics with a tunneling effect.
+The code is written in Python, while for the semidefinite program the interface picos is used.
+I implemented two models and plotted the approximation ratio in relation to the qubit number.
 
-
-As an elementary example, let us look at a two qubit Hamiltonian: \[
-H=X_1X_2+Z_1Z_2
+The Ising model with a transverse field has physical relevance because it can be used to study quantum phase transitions of ferroelectrics with a tunneling effect or systems of interacting magnetic spins with an outer field.
+The Hamiltonian,
+\[
+H=\alpha \sum_{i} Z_i + \beta \sum_{i} X_iX_{i+1}
+\]
+has been exactly solved in one dimension in \cite{pfeuty70}.
+One way to do this by transforming the Hamiltonian into a quadratic form of Fermi operators and diagonalize it. \todo{should i describe it in detail?}
+The parameter $\alpha$ corresponds to the tunneling energy and $\beta$ to the nearest neighbour interaction.
+We here look at a closed chain, meaning $1\le i \le n, \quad X_{n+1}=X_{1}$.
+I have first implemented the model with $\alpha =0, \quad \beta =1$.
+This is a model of a one-dimensional chain with nearest neighbor interaction with out an outer field.
+The state that is stabilized by all terms simultaneously is the state achieving the maximal eigenvalue.
+In this case, it is the $n$-fold tensor product of the $+1$-eigenvector of $X$: \[
+\ket{\psi}= \ket{+X_1}\otimes\ldots\otimes\ket{+X_n}
+,\] where \[
+\ket{+X_i}= \frac{\ket{0}_i+\ket{1}_i}{\sqrt{2}}
 .\]
-The state achieving the maximal eigenvalue $\lambda_{max}=2$ is the EPR-state $\ket{EPR}=\frac{\bra{00}+\bra{11}}{\sqrt{2}}$ .
+The maximal eigenvalue of the Hamiltonian is therefore $\lambda_{max}=n$, since it has $n$ terms.
+\todo{should i describe how i implemented it?}
+Fig. 1 is the result of my implementation of this model.
+It exhibits the expected behaviour of $\Omega(\frac{1}{\log{}n})$.
+I have also implemented the transverse field Ising model for non-zero $\alpha$.
+Since this Hamiltonian has terms that are linear in Pauli operators, we have to transform it as discussed in chapter 4.
+The Hamiltonian that was implemented is \[
+H = H_2 + Z_{n+1}H_1 =\alpha Z_{n+1}\sum_{i} Z_i + \beta \sum_{i} X_iX_{i+1}
+.\]
+\todo{the graph isnt pretty here should i even mention it}
+
+\ldots\\
+The second Hamiltonian implemented is \[
+	H = \sum_{i=1}^{\frac{n}{4}} X_iX_{i+1}+Z_iZ_{i+1}+X_{i+2}+X_{i+3},
+\]
+where we restrict $n$ to be a multiple of $4$.
+In contrast to the transverse field model, the maximal eigenvalue can not be achieved by a product state in this case.
+To find out the maximal eigenvalue lets look at the first two quadratic terms:
+\[
+H_2=X_1X_2+Z_1Z_2
+.\]
+The state achieving the maximal eigenvalue $\lambda_{max}(H_2)=2$ is the EPR-state $\ket{\text{EPR}}=\frac{\bra{00}+\bra{11}}{\sqrt{2}}$
 This is a maximally entangled state.
 To find out the product state which approximates this the best, look at a general product state and maximize the overlap.
 \[
 	\ket{\psi}=\ket{\psi_1}\otimes\ket{\psi_2}=\left(a_1\ket{0}+b_1\ket{1}\right)\otimes\left(a_2\ket{0}+b_2\ket{1}\right)
-.\] with $a_1^2+b_1^2=a_2+b_2^2=1$
+\] with $a_1^2+b_1^2=a_2+b_2^2=1$.
 \[
 \max_{\psi_1,\psi_2}\left(\left|\braket{\text{EPR}}{\psi}\right|^2\right)=\max\left(\left|\frac{1}{\sqrt{2}}\left(a_1a_2+b_1b_2\right)\right|^2\right)=\frac{1}{2}
-.\]
-With either $a_1=a_2=1$ and $b_1=b_2=0$ or $b_1=b_2=1$ and $a_1=a_2=0$.
-Therefore, the product states with the maximal overlap are $\ket{00}$ and $\ket{11}$ with maximal eigenvalue $\lambda_{sep}=1$, the approximation ratio being  $\frac{\lambda_{sep}}{\lambda_{max}} = 0.5 $\\
+\]
+with either $a_1=a_2=1$ and $b_1=b_2=0$ or $b_1=b_2=1$ and $a_1=a_2=0$.
+Therefore, the product states with the maximal overlap are $\ket{00}$ and $\ket{11}$ with maximal eigenvalue $\lambda_{sep}(H_2)=1$, the approximation ratio being  $\frac{\lambda_{sep}H(2)}{\lambda_{max}(H_2)} = 0.5$.\\
+In general the maximal product state of the Hamiltonian is therefore $\lambda_{max}(H)=n$, and the best achievable eigenvalue by a product state is $\lambda_{sep}(H)\frac{3}{4}n$.

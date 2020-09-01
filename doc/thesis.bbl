@@ -564,6 +564,194 @@
       \verb http://dx.doi.org/10.22331/q-2017-04-25-6
       \endverb
     \endentry
+    \entry{pfeuty70}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6ea25921b547574dab57c4cc9eff8d9d}{%
+           family={Pfeuty},
+           familyi={P\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ea25921b547574dab57c4cc9eff8d9d}
+      \strng{fullhash}{6ea25921b547574dab57c4cc9eff8d9d}
+      \strng{bibnamehash}{6ea25921b547574dab57c4cc9eff8d9d}
+      \strng{authorbibnamehash}{6ea25921b547574dab57c4cc9eff8d9d}
+      \strng{authornamehash}{6ea25921b547574dab57c4cc9eff8d9d}
+      \strng{authorfullhash}{6ea25921b547574dab57c4cc9eff8d9d}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-4916}
+      \field{journaltitle}{Annals of Physics}
+      \field{number}{1}
+      \field{title}{The one-dimensional Ising model with a transverse field}
+      \field{volume}{57}
+      \field{year}{1970}
+      \field{pages}{79\bibrangedash 90}
+      \range{pages}{12}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0003-4916(70)90270-8
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/0003491670902708
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/0003491670902708
+      \endverb
+    \endentry
+    \entry{campbell14}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8d0c8d1ae5f95b7658accba7c342c4f3}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Earl\bibnamedelima T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{8d0c8d1ae5f95b7658accba7c342c4f3}
+      \strng{fullhash}{8d0c8d1ae5f95b7658accba7c342c4f3}
+      \strng{bibnamehash}{8d0c8d1ae5f95b7658accba7c342c4f3}
+      \strng{authorbibnamehash}{8d0c8d1ae5f95b7658accba7c342c4f3}
+      \strng{authornamehash}{8d0c8d1ae5f95b7658accba7c342c4f3}
+      \strng{authorfullhash}{8d0c8d1ae5f95b7658accba7c342c4f3}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{12}
+      \field{number}{23}
+      \field{title}{Enhanced Fault-Tolerant Quantum Computing ind-Level Systems}
+      \field{volume}{113}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1103/physrevlett.113.230501
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.113.230501
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.113.230501
+      \endverb
+    \endentry
+    \entry{bechmann00}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d3b15f37f4d1dc39d7e27a98ec472ff2}{%
+           family={Bechmann-Pasquinucci},
+           familyi={B\bibinithyphendelim P\bibinitperiod},
+           given={Helle},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9fc737e2158b7231de1c864a26497567}{%
+           family={Peres},
+           familyi={P\bibinitperiod},
+           given={Asher},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{6f51fb401b5507877bb225a76af23014}
+      \strng{fullhash}{6f51fb401b5507877bb225a76af23014}
+      \strng{bibnamehash}{6f51fb401b5507877bb225a76af23014}
+      \strng{authorbibnamehash}{6f51fb401b5507877bb225a76af23014}
+      \strng{authornamehash}{6f51fb401b5507877bb225a76af23014}
+      \strng{authorfullhash}{6f51fb401b5507877bb225a76af23014}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{10}
+      \field{number}{15}
+      \field{title}{Quantum Cryptography with 3-State Systems}
+      \field{volume}{85}
+      \field{year}{2000}
+      \field{pages}{3313\bibrangedash 3316}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/physrevlett.85.3313
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.85.3313
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.85.3313
+      \endverb
+    \endentry
+    \entry{blok20}{misc}{}
+      \name{author}{10}{}{%
+        {{hash=d5a28f83bfbc2f3f4e3ed070e66a71b3}{%
+           family={Blok},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4790c822940dd261b7218bb76833bba1}{%
+           family={Ramasesh},
+           familyi={R\bibinitperiod},
+           given={V.\bibnamedelimi V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=19ec300540820aeb824392dddb5cfa91}{%
+           family={Schuster},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=76f233db82d51e42d11123b1ab434d0f}{%
+           family={O'Brien},
+           familyi={O\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b72643fd9743f45a5f32801a7ed690ae}{%
+           family={Kreikebaum},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ce8098905a8928d57f66a6cec9f0b5de}{%
+           family={Dahlen},
+           familyi={D\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7f001ab480f3d7deab2ae7bac3604bb8}{%
+           family={Morvan},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=25c07fbd9a0f8f9ed098fefc87801804}{%
+           family={Yoshida},
+           familyi={Y\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=810e6921467e1889765dc372c576f7a6}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={N.\bibnamedelimi Y.},
+           giveni={N\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=4d5e83278371be79436430e7e7733c3b}{%
+           family={Siddiqi},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5858a56941e629beb6bb6030100d72e}
+      \strng{fullhash}{af00642dd1091562d25fc3ab9783cd4b}
+      \strng{bibnamehash}{e5858a56941e629beb6bb6030100d72e}
+      \strng{authorbibnamehash}{e5858a56941e629beb6bb6030100d72e}
+      \strng{authornamehash}{e5858a56941e629beb6bb6030100d72e}
+      \strng{authorfullhash}{af00642dd1091562d25fc3ab9783cd4b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum Information Scrambling in a Superconducting Qutrit Processor}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2003.03307
+      \endverb
+    \endentry
     \entry{kimura03}{article}{}
       \name{author}{1}{}{%
         {{hash=f96dbe2969ae09c7d2123f837dcdd808}{%
