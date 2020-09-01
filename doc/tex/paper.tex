@@ -1,7 +1,7 @@
 The algorithm discussed here is able to efficiently find a product state approximation for a general traceless $2$-local Hamiltonian with an approximation ratio $\Omega(\frac{1}{\log n})$. \cite{bravyi19}
 I will explain the algorithm and the central results that enable and validate it.\\
 Before looking at the algorithm itself, there is a prelimary lemma we have to look at.
-Hamiltonians of the kind $H = H_1+H_2$ as deined as in \eqref{ham} have terms that are linear in Pauli operators.
+Hamiltonians of the kind $H = H_1+H_2$ as defined in \eqref{ham} have terms that are linear in Pauli operators.
 The following lemma will let us reduce this Hamiltonian to a purely quadratic one, for the theorems presented in this paper.
 We form a new $n+1$-qubit Hamiltonian: \[
 H'=H_2+Z_{n+1}H_1
@@ -32,7 +32,7 @@ and \[
 .\]
 We can see that the map takes any Pauli operator $P_a$ to $-P_a$.
 This means it takes  $H_1$ to $-H_1$ and leaves $H_2$ unchanged since it is quadratic in Pauli operators.
-Both the matrix transpose and the conjugation by a unitary operator conserves the spectrum, so we have proven that  $H$ and $H'$ have the same spectrum and also the same maximal eigenvalue.
+Both the matrix transpose and the conjugation by a unitary operator conserve the spectrum, so we have proven that  $H$ and $H'$ have the same spectrum and also the same maximal eigenvalue.
 Using similar arguments, we can then choose the product state $\ket{\phi}$ according to $\ket{\omega}$, such that its eigenvalues will always be at least equal.\todo{since the argumentation is very similar, should i still show it? i think not, as i already demonstrated that i understood it in principle}\\
 The last statement in the lemma referes to an elegant concept that is very useful to quantum error correction.
 We say an operator $A$ stabilizes a state $\ket{\psi}$ if $A\ket{\psi}=\ket{\psi}$.
@@ -45,14 +45,15 @@ We say an operator commutes with a group, or is in the normalizer of the group, 
 This criterion is very easy to check and gives us a useful mathematical toolbox.
 For choosing the product state $\ket{\phi}$, we use operations on $\ket{\omega}$ that take eigenvectors of matrices from the Pauli group to eigenvectors of matrices from the Pauli group.
 Therefore, if $\omega$ is a tensor product of single qubit stabilizer states, $\phi$ is, too.\\
+The following Theorem is the main result of the part of the publication described here.
 \begin{thm}\emph{
 		There is an efficient classical algorithm which, given $H$ of the form \eqref{ham}, outputs a product state $\ket{\phi} = \ket{\phi_1}\otimes\ldots\otimes \ket{\phi_n}$ such that with probability at least $\frac{2}{3}$ \[
 			\bra{\phi}H\ket{\phi}\ge \frac{\lambda_{max}(H)}{O(\log{}n)}.
 		.\]
 		Moreover, each single-qubit state $\phi_i$ in an eigenstate of one of the Pauli operators $X$, $Y$ or $Z$
 }\end{thm}
-It is largely mirrors the MaxQP algorithm by Charikar and Wirth presented earlier.
-I will first present the semidefinite program, explain the algorithm and then demonstrate the ideas of the proof that Theorem 1 holds.
+The algorithm largely mirrors the MaxQP algorithm by Charikar and Wirth presented earlier.
+I will first present the semidefinite program, explain the algorithm and then demonstrate the ideas of proving Theorem 1.
 In our case, the semidefinite program is:
 \begin{flalign*}
 	\text{max} &\quad Tr\left( CM \right)\\
@@ -66,7 +67,7 @@ The ideal solution $M$ is connected to our state in the following way:\cite{ghar
 We can set M as a real symmetric matrix without loss of generality, because if the Pauli operators act on different matrices they commute, and therefore the matrix entry is real in this case.
 If they act on the same qubit, the matrix entry is purely imaginary because the operators anticommute.
 We can eliminate these terms using $M'=\frac{M+M*}{2}$ because they represent linear terms.
-This does not change the outcome of the objective function and is therefore fully without loss of generality.
+This does not change the outcome of the objective function and is therefore fully without loss of generality.\\
 From this perspective the constraints can be understood in the following way:
 \begin{flalign*}
 	& M_{i,i}=tr\left( \rho P_i P_i\right) = tr\left( \rho\right) = 1 \quad\text{since}\quad P_iP_i=1\\
@@ -78,8 +79,6 @@ The vectors have unit norm, since $M_{i,i}=1$.\\
 After solving the SDP, we choose a random vector $\ket{r}$, the components of which are drawn from the normal distribution and project our solution vectors on it.
 This is identical to the MaxQP algorithm discussed earlier, except for the constant $T$ which has to be chosen differently.
 We can build a good geometrical intuiton for the truncation step.
-We have to preserve the mathematical conditions that states have to fulfill.
-Geometrically, this means that our blochvectors are restricted to a sphere of radius one.
 Since we will project our optimal vectors obtained from the semidefinite program to the random vector $\ket{r}$, we have to make sure that the projections correspond to valid bloch vector components.
 We ask the following question: What is the maximal value that a component of a valid bloch vector can have, if all three components have the same value?
 In other words, if we pick every value without knowing the others, what is the maximal value that we can assign to it such that the vector is part of the unit sphere?\[
@@ -100,7 +99,7 @@ The algorithm looks like this:
 As output we take $ \rho=\rho_1\otimes\ldots\otimes\rho_n$ where:\[
 	\rho_a=\frac{1}{2}\left(\1 +y_{3a-2}P_{3a-2}+y_{3a-1}P_{3a-1}+y_{3a}P_{3a}\right).
 .\]
-We want to show that this algorithm fullfils the approximation ratio $\frac{1}{\log{}n}$ with probability $\frac{2}{3}$.\\
+We want to show that this algorithm fullfils the approximation ratio $\Omega(\frac{1}{\log{}n})$ with probability $\frac{2}{3}$.\\
 First we demonstrate that the approximation ratio is bounded below by a constant.\todo{lieb citation}
 \begin{thm}\emph{
 	Suppose $H$ is traceless 2-local Hamiltonian. then \[
@@ -126,7 +125,7 @@ Here, the relevant map $\mathcal{E}_{\delta}$ is defined by its action on the Pa
 	\mathcal{E}_{\delta}(I)=I\quad\mathcal{E}_{\delta}(P)=\delta P\quad P\in \{X,Y,Z\}
 .\]
 Therefore, the action on a qubit state in bloch representation is: \[
-	\mathcal{E}_{\delta}(\rho) =  \frac{1}{2}\1 + \delta \sum_{i=1}^{3n} \tau_i P_i
+	\mathcal{E}_{\delta}(\rho) =  \frac{1}{2}\1 + \delta \sum_{i=1}^{3} \tau_i P_i
 .\]
 Geometrically, this reduces the length of any bloch vector by a factor $\delta$.
 Generally, a CPT map $\Phi$ can be written as $\Phi(\rho)=\frac{1}{2}\left( \1 + (\bm{t}+T\tau)P_i \right)$ where $\bm{t}$ is a vector and $T$ a matrix.\cite{ruskai03}
@@ -147,7 +146,8 @@ Unital qubit channels are entanglement breaking if and only if $\sum_{j} \left| 
 This implies that qubit channels of the form we look at in the paper are entanglement breaking for $\delta\le \frac{1}{3}$ as we have $\lambda_1=\lambda_2=\lambda_3=\delta$.
 Using our definition of $\mathcal{E}$, we see \[
 	Tr\left( \sigma P_{j_1}P_{j_2}\ldots P_{j_L} \right) = \frac{1}{3^L}Tr\left( \rho P_{j_1}P_{j_2}\ldots P_{j_L} \right)
-.\]
+\]
+Where $\sigma=\mathcal{E}^{\otimes n}_{\frac{1}{3}}(\rho)$.
 With this, we can proof the Theorem due to Lieb.\\
 We consider the $n$-qubit state $\psi$ satisfying $\bra{\psi}H\ket{\psi}=\lambda_{max}(H)$
 With the identity shown above, the depolarized state \[
@@ -162,7 +162,7 @@ Specifically, \[
 Using this, one can show that the approximation ration holds.
 To find out more about the constant $T$, we can look at a recent publication by Harrow and Montanaro \cite{harrow17}.
 An algorithm is presented which gives an product state approximation ratio to traceless $k$-local Hamiltonians with respect to the $1$-norm of the coefficients of the Hamiltonian, $C_{i,j}$ and $D_j$ in our case.
-This result uses a different notion of approximation ratio but is converned with the same kind of Hamiltonians.
+This result uses a different notion of approximation ratio but is concerned with the same kind of Hamiltonians.
 We use the following equation which is proven in the paper: \[
 	\sum_{i,j=1}^{3n} \left| C_{i,j} \right| \le Kn\lambda_{max}(H)
 .\]
@@ -171,5 +171,4 @@ For $2$-local Hamiltonians, Harrow and Montanaro show that \[
 	\lambda_{min}(H)\le - \|\hat{H}\|_1/(24l)
 \]
 where $l$ is the maximal number of terms that each qubit participates in and $\|\hat{H}\|_1$ the $1$-norm of the coefficients.
-Another relevant recent result is an algorithm by Ghabarian and Parekh \cite{gharibian19}, which finds a constant approximation ratio for the quantum Heisenberg model.
-The methods are similar to the algorithm presented above, but instead of general traceless $$
+Another relevant recent result is an algorithm by Ghabarian and Parekh \cite{gharibian19}, which finds a constant approximation ratio for the quantum Heisenberg model.\todo{should i go deeper into these two and/or other algos, does it belong in this chapter}

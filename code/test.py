@@ -1,10 +1,11 @@
 from whole import *
 from tfieldising import *
+from qutritalgo import *
 import sys
 np.set_printoptions(threshold=sys.maxsize)
 # returns upon input of n the unabridged prettified solution of the sdp
-def test(n,a,b):
-    a = np.real(np.array(mc(cvx.matrix(tfiC(n,a,b)))))
+def test(n):
+    a = np.real(np.array(mc(cvx.matrix(tC(n)))))
     tol = 1e-8
     a.real[abs(a.real) < tol] = 0.0
     print(n)
@@ -17,5 +18,7 @@ def roundeig(M):
             if abs(w[i])<10e-8: w[i]=0
     return w
 
-
-tfiplot(20,4000,1,15,10,2,3)
+test(4)
+test(6)
+test(12)
+test(20)
