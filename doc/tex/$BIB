@@ -331,3 +331,14 @@
    year =	{2020},
    eprint =	{2003.03307},
 }
+@article{lieb73,
+   author =	{{Lieb}, Elliott H.},
+   title =	"{The classical limit of quantum spin systems}",
+   journal =	{Communications in Mathematical Physics},
+   year =	1973,
+   month =	dec,
+   volume =	{31},
+   number =	{4},
+   pages =	{327-340},
+   doi =	{10.1007/BF01646493},
+}

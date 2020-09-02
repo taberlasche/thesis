@@ -9,11 +9,10 @@ We call the Bloch space the space of states that fulfill the conditions presente
 A state $\rho$ can be represented in the following way:
 $$\rho = \frac{1}{d} \1 + \sum_{i=1}^{d^2-1} \tau_i \sigma_i$$
 where $\sigma_i$ are generators of $SU(d)$ obeying
-\[
+\begin{equation}\label{sig}
 	\sigma_i\sigma_j = \frac{2}{d}\delta_{ij} + d_{ijk}\sigma_k + if_{ijk}\sigma_k
-.\]
-
-the $f_{ijk}$ and $d_{ijk}$ are the structure constants of the Lie-Algebra.
+\end{equation}
+The $f_{ijk}$ and $d_{ijk}$ are the structure constants of the Lie-Algebra.
 $f_{ijk}$ is totally antisymmetric and equals the Levi-Civita-Symbol for $d=2$, $d_{ijk}$ is totally symmetric and vanishing for $d=2$.
 We can construct the generators as follows:\cite{kimura03}
  \[
@@ -31,6 +30,16 @@ The $\tau_i$ are the components of the bloch vector and are the expectation valu
 $$
 	 \tau_i = Tr(\rho\sigma_i)
 $$
-For $M\ge3$ there are bloch vectors with $\left|\tau\right|\le 1$ which do not correspond to a positive semi-definite matrix.
+The center of the Bloch space is the maximally mixed state $\rho_{*}=\frac{1}{d}\1$.
+For $d\ge3$ there are bloch vectors with $\left|\tau\right|\le 1$ which do not correspond to a positive semi-definite matrix.
 The space spanned by the bloch-vectors is therefore not a solid ball with radius $1$.
-The generators of  $SU(3)$ are the Gell-Mann-matrices. \todo{tex gellmann} \todo{more math on qudits}\\
+We can deduce using \eqref{sig} the following conditions that we have to put on the Bloch vector for the density matrix to describe a pure state \cite{bengtsson17}:
+\[
+\rho=\rho^2\Leftrightarrow \begin{cases}
+	\tau^2=\frac{d-1}{2d}\\
+	d_{ijk}\tau_j\tau_k=\frac{d-2}{d}\tau_i
+\end{cases}
+.\]
+The fist condition implies the Bloch vector of a pure state being confined to a $d^2-1$ dimensional outsphere.
+The second condition says that the vectors of the pure states are a well defined subset of the surface of the outsphere.
+The generators of  $SU(3)$ are the Gell-Mann-matrices. \todo{tex gellmann}\\

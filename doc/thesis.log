@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  2 SEP 2020 00:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  2 SEP 2020 23:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1609,10 +1609,6 @@ Package scrlayer-scrpage Warning: \headheight to low.
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
  [10]
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 103.
-
 [11]
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
@@ -1628,15 +1624,11 @@ chapter 5.
 (./testing.tex
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 11.
+. on input line 5.
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 23.
-
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 31.
+. on input line 13.
 
 [14
 
@@ -1647,11 +1639,7 @@ chapter 6.
 ]
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 36.
-
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 36.
+. on input line 45.
 
 ) [17]
 chapter without number
@@ -1693,11 +1681,12 @@ Overfull \hbox (19.10585pt too wide) in paragraph at lines 39--39
  . 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
 [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
+ [20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
- (./thesis.aux * soulpos - computing points - it may take a few seconds *
-(./thesis.upa))
+ (./thesis.aux
+* soulpos - computing points - it may take a few seconds * (./thesis.upa))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -1706,10 +1695,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 39948 strings out of 480478
- 780184 string characters out of 5905959
- 1629574 words of memory out of 5000000
- 55310 multiletter control sequences out of 15000+600000
+ 39953 strings out of 480478
+ 780359 string characters out of 5905959
+ 1630726 words of memory out of 5000000
+ 55314 multiletter control sequences out of 15000+600000
  554633 words of font info for 83 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  65i,20n,110p,10122b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1733,10 +1722,10 @@ er/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (23 pages, 391877 bytes).
+Output written on thesis.pdf (24 pages, 395742 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 331 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 391 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
  67 words of extra memory for PDF output out of 10000 (max. 10000000)
 

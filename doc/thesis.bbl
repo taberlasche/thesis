@@ -382,6 +382,36 @@
       \verb quant-ph/9705052
       \endverb
     \endentry
+    \entry{lieb73}{article}{}
+      \name{author}{1}{}{%
+        {{hash=298133a6b79dcce8ef5f6cb15b60f119}{%
+           family={{Lieb}},
+           familyi={L\bibinitperiod},
+           given={Elliott\bibnamedelima H.},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{298133a6b79dcce8ef5f6cb15b60f119}
+      \strng{fullhash}{298133a6b79dcce8ef5f6cb15b60f119}
+      \strng{bibnamehash}{298133a6b79dcce8ef5f6cb15b60f119}
+      \strng{authorbibnamehash}{298133a6b79dcce8ef5f6cb15b60f119}
+      \strng{authornamehash}{298133a6b79dcce8ef5f6cb15b60f119}
+      \strng{authorfullhash}{298133a6b79dcce8ef5f6cb15b60f119}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Mathematical Physics}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{{The classical limit of quantum spin systems}}
+      \field{volume}{31}
+      \field{year}{1973}
+      \field{pages}{327\bibrangedash 340}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/BF01646493
+      \endverb
+    \endentry
     \entry{nielsen11}{book}{}
       \name{author}{1}{}{%
         {{hash=4cbe85f9107182ba2bd60055ee44c7f9}{%
@@ -625,7 +655,7 @@
       \field{journaltitle}{Physical Review Letters}
       \field{month}{12}
       \field{number}{23}
-      \field{title}{Enhanced Fault-Tolerant Quantum Computing ind-Level Systems}
+      \field{title}{Enhanced Fault-Tolerant Quantum Computing in d-Level Systems}
       \field{volume}{113}
       \field{year}{2014}
       \verb{doi}
@@ -791,6 +821,32 @@
       \verb{url}
       \verb http://dx.doi.org/10.1016/S0375-9601(03)00941-1
       \endverb
+    \endentry
+    \entry{bengtsson17}{book}{}
+      \name{author}{1}{}{%
+        {{hash=42327d761afa18984da147e7edb4568e}{%
+           family={Ingemar\bibnamedelima Bengtsson},
+           familyi={I\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Karol\bibnamedelima Życzkowski},
+           giveni={K\bibinitperiod\bibinitdelim Ż\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{42327d761afa18984da147e7edb4568e}
+      \strng{fullhash}{42327d761afa18984da147e7edb4568e}
+      \strng{bibnamehash}{42327d761afa18984da147e7edb4568e}
+      \strng{authorbibnamehash}{42327d761afa18984da147e7edb4568e}
+      \strng{authornamehash}{42327d761afa18984da147e7edb4568e}
+      \strng{authorfullhash}{42327d761afa18984da147e7edb4568e}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{9781107026254,1107026253,9781107656147,1107656141}
+      \field{title}{Geometry of Quantum States an Introduction to Quantum Entanglement}
+      \field{year}{2017}
     \endentry
   \enddatalist
 \endrefsection
