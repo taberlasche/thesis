@@ -660,6 +660,72 @@
       \verb http://www.sciencedirect.com/science/article/pii/0003491670902708
       \endverb
     \endentry
+    \entry{nielsen05}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=afe17482fc813e497188aee3b3783879}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{afe17482fc813e497188aee3b3783879}
+      \strng{fullhash}{afe17482fc813e497188aee3b3783879}
+      \strng{bibnamehash}{afe17482fc813e497188aee3b3783879}
+      \strng{authorbibnamehash}{afe17482fc813e497188aee3b3783879}
+      \strng{authornamehash}{afe17482fc813e497188aee3b3783879}
+      \strng{authorfullhash}{afe17482fc813e497188aee3b3783879}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Fermionic canonical commutation relations and the Jordan-Wigner transform}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb http://michaelnielsen.org/blog/archive/notes/fermions_and_jordan_wigner.pdf
+      \endverb
+      \verb{url}
+      \verb http://michaelnielsen.org/blog/archive/notes/fermions_and_jordan_wigner.pdf
+      \endverb
+    \endentry
+    \entry{bogoljubov58}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c05ed886ebad5c91d25c4e8bdb472b21}{%
+           family={Bogoljubov},
+           familyi={B\bibinitperiod},
+           given={N.\bibnamedelimi N.},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=f4f7b98aa9431298e02405ed90abe8de}{%
+           family={Tolmachov},
+           familyi={T\bibinitperiod},
+           given={V.\bibnamedelimi V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=fc8934820d2566b46cfad28da3dd554f}{%
+           family={Širkov},
+           familyi={Š\bibinitperiod},
+           given={D.\bibnamedelimi V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{36c4b44c920eb40d1b11c110508cc361}
+      \strng{fullhash}{36c4b44c920eb40d1b11c110508cc361}
+      \strng{bibnamehash}{36c4b44c920eb40d1b11c110508cc361}
+      \strng{authorbibnamehash}{36c4b44c920eb40d1b11c110508cc361}
+      \strng{authornamehash}{36c4b44c920eb40d1b11c110508cc361}
+      \strng{authorfullhash}{36c4b44c920eb40d1b11c110508cc361}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fortschritte der Physik}
+      \field{number}{11‐12}
+      \field{title}{A New Method in the Theory of Superconductivity}
+      \field{volume}{6}
+      \field{year}{1958}
+      \field{pages}{605\bibrangedash 682}
+      \range{pages}{78}
+      \verb{doi}
+      \verb 10.1002/prop.19580061102
+      \endverb
+    \endentry
     \entry{campbell14}{article}{}
       \name{author}{1}{}{%
         {{hash=8d0c8d1ae5f95b7658accba7c342c4f3}{%
@@ -869,8 +935,8 @@
       \strng{authorbibnamehash}{42327d761afa18984da147e7edb4568e}
       \strng{authornamehash}{42327d761afa18984da147e7edb4568e}
       \strng{authorfullhash}{42327d761afa18984da147e7edb4568e}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2nd}

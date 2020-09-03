@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  3 SEP 2020 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  3 SEP 2020 19:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1643,33 +1643,46 @@ chapter 5.
 (./testing.tex
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 5.
+. on input line 6.
 
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 13.
+. on input line 14.
 
-<avgchainplotn(4,5200,2,20,20).png, id=185, 557.2017pt x 396.7623pt>
+<avgchainplotn(4,5200,2,20,20).png, id=188, 557.2017pt x 396.7623pt>
 File: avgchainplotn(4,5200,2,20,20).png Graphic file (type png)
 <use avgchainplotn(4,5200,2,20,20).png>
 Package pdftex.def Info: avgchainplotn(4,5200,2,20,20).png  used on input line 
-27.
+29.
 (pdftex.def)             Requested size: 358.50233pt x 255.27705pt.
 [14
 
 ]
-<tfiplot(4,5200,2,20,20,2,3).png, id=194, 505.1673pt x 395.3169pt>
+<tfiplot(4,5200,2,20,20,2,3).png, id=200, 505.1673pt x 395.3169pt>
 File: tfiplot(4,5200,2,20,20,2,3).png Graphic file (type png)
 <use tfiplot(4,5200,2,20,20,2,3).png>
-Package pdftex.def Info: tfiplot(4,5200,2,20,20,2,3).png  used on input line 41
+Package pdftex.def Info: tfiplot(4,5200,2,20,20,2,3).png  used on input line 42
 .
 (pdftex.def)             Requested size: 358.50233pt x 280.54425pt.
- [15 <./Abbildungen/avgchainplotn(4,5200,2,20,20).png>] [16 <./Abbildungen/tfip
-lot(4,5200,2,20,20,2,3).png>]
-<avgplotn(4,5200,2,20,20).png, id=208, 633.8079pt x 471.2004pt>
+
+
+Class tumphthesis Warning: Warning! There are \todo notes in the final document
+. on input line 43.
+
+
+Class tumphthesis Warning: Warning! There are \todo notes in the final document
+. on input line 43.
+
+[15 <./Abbildungen/avgchainplotn(4,5200,2,20,20).png>]
+
+Class tumphthesis Warning: Warning! There are \todo notes in the final document
+. on input line 49.
+
+[16 <./Abbildungen/tfiplot(4,5200,2,20,20,2,3).png>]
+<avgplotn(4,5200,2,20,20).png, id=220, 633.8079pt x 471.2004pt>
 File: avgplotn(4,5200,2,20,20).png Graphic file (type png)
 <use avgplotn(4,5200,2,20,20).png>
-Package pdftex.def Info: avgplotn(4,5200,2,20,20).png  used on input line 68.
+Package pdftex.def Info: avgplotn(4,5200,2,20,20).png  used on input line 70.
 (pdftex.def)             Requested size: 358.50233pt x 266.53069pt.
 ) [17 <./Abbildungen/avgplotn(4,5200,2,20,20).png>]
 chapter 6.
@@ -1720,6 +1733,13 @@ Overfull \hbox (19.10585pt too wide) in paragraph at lines 39--39
  . 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . 
  []
 
+
+Underfull \hbox (badness 2221) in paragraph at lines 39--39
+\T1/cmr/m/it/10.95 the Jordan-Wigner trans-form\T1/cmr/m/n/10.95 . 2005. \T1/cm
+r/m/sc/10.95 url\T1/cmr/m/n/10.95 : []$\T1/cmtt/m/n/10.95 http : [] [] michaeln
+ielsen .
+ []
+
 [21]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
  [22]
@@ -1734,10 +1754,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 40039 strings out of 480478
- 781999 string characters out of 5905959
- 1632321 words of memory out of 5000000
- 55390 multiletter control sequences out of 15000+600000
+ 40047 strings out of 480478
+ 782223 string characters out of 5905959
+ 1632953 words of memory out of 5000000
+ 55394 multiletter control sequences out of 15000+600000
  554633 words of font info for 83 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  65i,20n,110p,10122b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1761,10 +1781,10 @@ er/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (26 pages, 434693 bytes).
+Output written on thesis.pdf (26 pages, 438778 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
- 349 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 500000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
