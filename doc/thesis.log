@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  3 SEP 2020 21:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  3 SEP 2020 23:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1525,37 +1525,37 @@ bbildungen/tumlogo.pdf>] [2
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 12.06216pt
 number indent calculated (toc, 0): 0.0pt
 )
 \tf@toc=\write8
@@ -1649,7 +1649,7 @@ Class tumphthesis Warning: Warning! There are \todo notes in the final document
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 14.
 
-<avgchainplotn(4,5200,2,20,20).png, id=188, 557.2017pt x 396.7623pt>
+<avgchainplotn(4,5200,2,20,20).png, id=191, 557.2017pt x 396.7623pt>
 File: avgchainplotn(4,5200,2,20,20).png Graphic file (type png)
 <use avgchainplotn(4,5200,2,20,20).png>
 Package pdftex.def Info: avgchainplotn(4,5200,2,20,20).png  used on input line 
@@ -1658,7 +1658,7 @@ Package pdftex.def Info: avgchainplotn(4,5200,2,20,20).png  used on input line
 [14
 
 ]
-<tfiplot(4,5200,2,20,20,2,3).png, id=200, 505.1673pt x 395.3169pt>
+<tfiplot(4,5200,2,20,20,2,3).png, id=203, 505.1673pt x 395.3169pt>
 File: tfiplot(4,5200,2,20,20,2,3).png Graphic file (type png)
 <use tfiplot(4,5200,2,20,20,2,3).png>
 Package pdftex.def Info: tfiplot(4,5200,2,20,20,2,3).png  used on input line 42
@@ -1679,7 +1679,7 @@ Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 49.
 
 [16 <./Abbildungen/tfiplot(4,5200,2,20,20,2,3).png>]
-<avgplotn(4,5200,2,20,20).png, id=220, 633.8079pt x 471.2004pt>
+<avgplotn(4,5200,2,20,20).png, id=223, 633.8079pt x 471.2004pt>
 File: avgplotn(4,5200,2,20,20).png Graphic file (type png)
 <use avgplotn(4,5200,2,20,20).png>
 Package pdftex.def Info: avgplotn(4,5200,2,20,20).png  used on input line 70.
@@ -1688,7 +1688,13 @@ Package pdftex.def Info: avgplotn(4,5200,2,20,20).png  used on input line 70.
 chapter 6.
 (./qutrits.tex [18
 
-]) [19]
+]
+<tavgplot(4,2000,2,20,20).png, id=245, 535.5207pt x 385.1991pt>
+File: tavgplot(4,2000,2,20,20).png Graphic file (type png)
+<use tavgplot(4,2000,2,20,20).png>
+Package pdftex.def Info: tavgplot(4,2000,2,20,20).png  used on input line 60.
+(pdftex.def)             Requested size: 318.67212pt x 229.22275pt.
+) [19] [20 <./Abbildungen/tavgplot(4,2000,2,20,20).png>]
 chapter without number
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
 8.
@@ -1700,7 +1706,7 @@ Underfull \hbox (badness 3439) in paragraph at lines 39--39
 ournal on Com-put-ing \T1/cmr/m/n/10.95 35.5
  []
 
-[20
+[21
 
 
 ]
@@ -1735,9 +1741,9 @@ r/m/sc/10.95 url\T1/cmr/m/n/10.95 : []$\T1/cmtt/m/n/10.95 http : [] [] michaeln
 ielsen .
  []
 
-[21]
+[22]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
- [22]
+ [23]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
  (./thesis.aux
 * soulpos - computing points - it may take a few seconds * (./thesis.upa))
@@ -1749,10 +1755,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 40046 strings out of 480478
- 782212 string characters out of 5905959
- 1632922 words of memory out of 5000000
- 55394 multiletter control sequences out of 15000+600000
+ 40058 strings out of 480478
+ 782542 string characters out of 5905959
+ 1632059 words of memory out of 5000000
+ 55402 multiletter control sequences out of 15000+600000
  554633 words of font info for 83 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  65i,20n,110p,10122b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1776,10 +1782,10 @@ er/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (26 pages, 440013 bytes).
+Output written on thesis.pdf (27 pages, 453469 bytes).
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
- 362 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

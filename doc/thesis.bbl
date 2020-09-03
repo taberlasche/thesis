@@ -19,6 +19,93 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{abdulsattar12}{article}{}
+      \name{author}{1}{}{%
+        {{hash=76e58c1db370a7d2649fc905074269c3}{%
+           family={Abdulsattar},
+           familyi={A\bibinitperiod},
+           given={Mudar\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{76e58c1db370a7d2649fc905074269c3}
+      \strng{fullhash}{76e58c1db370a7d2649fc905074269c3}
+      \strng{bibnamehash}{76e58c1db370a7d2649fc905074269c3}
+      \strng{authorbibnamehash}{76e58c1db370a7d2649fc905074269c3}
+      \strng{authornamehash}{76e58c1db370a7d2649fc905074269c3}
+      \strng{authorfullhash}{76e58c1db370a7d2649fc905074269c3}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{number}{4}
+      \field{title}{SiGe superlattice nanocrystal infrared and Raman spectra: A density functional theory study}
+      \field{volume}{111}
+      \field{year}{2012}
+      \field{pages}{044306}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.3686610
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1063/1.3686610
+      \endverb
+    \endentry
+    \entry{bravyi19}{article}{}
+      \name{author}{4}{}{%
+        {{hash=964ccce884d5c27e980e285b18d587cd}{%
+           family={Bravyi},
+           familyi={B\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7c0fc8eb0c4a0c7e8f54d801d5604d12}{%
+           family={Gosset},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=845f999abb01eff57f6c976b4c2c108c}{%
+           family={König},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=68b8d929f9cb9fea3f1f9991863a6439}{%
+           family={Temme},
+           familyi={T\bibinitperiod},
+           given={Kristan},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{fullhash}{57397fbabe3f77446979104411b134df}
+      \strng{bibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authorbibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authornamehash}{84579f3f095941cba9a7e3acf22af7fc}
+      \strng{authorfullhash}{57397fbabe3f77446979104411b134df}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1089-7658}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Approximation algorithms for quantum many-body problems}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{pages}{032203}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.5085428
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1063/1.5085428
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1063/1.5085428
+      \endverb
+    \endentry
     \entry{choi75}{article}{}
       \name{author}{1}{}{%
         {{hash=e7be6d1b55bb4c33b8194dad4a789a5d}{%
@@ -33,8 +120,8 @@
       \strng{authorbibnamehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
       \strng{authornamehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
       \strng{authorfullhash}{e7be6d1b55bb4c33b8194dad4a789a5d}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0024-3795}
@@ -74,8 +161,8 @@
       \strng{authorbibnamehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
       \strng{authornamehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
       \strng{authorfullhash}{6e5844e9c79237cc5bd0980c0e69ec2d}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{12}
@@ -109,8 +196,8 @@
       \strng{authorbibnamehash}{08f643e3bbad9f66c47848af501fc184}
       \strng{authornamehash}{08f643e3bbad9f66c47848af501fc184}
       \strng{authorfullhash}{08f643e3bbad9f66c47848af501fc184}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{SIAM Journal on Computing}
@@ -163,8 +250,8 @@
       \strng{authorbibnamehash}{32e34f2d117e1841f6089a540f90c6b5}
       \strng{authornamehash}{32e34f2d117e1841f6089a540f90c6b5}
       \strng{authorfullhash}{32e34f2d117e1841f6089a540f90c6b5}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0821832298}
@@ -190,8 +277,8 @@
       \strng{authorbibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
       \strng{authornamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
       \strng{authorfullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1909.08846}
@@ -217,8 +304,8 @@
       \strng{authorbibnamehash}{9e875dab88dac5cc7782c7ba1a482ed6}
       \strng{authornamehash}{9e875dab88dac5cc7782c7ba1a482ed6}
       \strng{authorfullhash}{9e875dab88dac5cc7782c7ba1a482ed6}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{SIAM Review}
@@ -266,8 +353,8 @@
       \strng{authorbibnamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
       \strng{authornamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
       \strng{authorfullhash}{436abed3bce8d1b1d30640d4e5ff3d58}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0521833787}
@@ -293,8 +380,8 @@
       \strng{authorbibnamehash}{c6363792d222200641c2adec88b7b6c6}
       \strng{authornamehash}{c6363792d222200641c2adec88b7b6c6}
       \strng{authorfullhash}{c6363792d222200641c2adec88b7b6c6}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the ACM}
@@ -332,61 +419,6 @@
       \field{year}{2004}
       \field{pages}{54\bibrangedash 60}
       \range{pages}{7}
-    \endentry
-    \entry{bravyi19}{article}{}
-      \name{author}{4}{}{%
-        {{hash=964ccce884d5c27e980e285b18d587cd}{%
-           family={Bravyi},
-           familyi={B\bibinitperiod},
-           given={Sergey},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7c0fc8eb0c4a0c7e8f54d801d5604d12}{%
-           family={Gosset},
-           familyi={G\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=845f999abb01eff57f6c976b4c2c108c}{%
-           family={König},
-           familyi={K\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod}}}%
-        {{hash=68b8d929f9cb9fea3f1f9991863a6439}{%
-           family={Temme},
-           familyi={T\bibinitperiod},
-           given={Kristan},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP Publishing}%
-      }
-      \strng{namehash}{84579f3f095941cba9a7e3acf22af7fc}
-      \strng{fullhash}{57397fbabe3f77446979104411b134df}
-      \strng{bibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
-      \strng{authorbibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
-      \strng{authornamehash}{84579f3f095941cba9a7e3acf22af7fc}
-      \strng{authorfullhash}{57397fbabe3f77446979104411b134df}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1089-7658}
-      \field{journaltitle}{Journal of Mathematical Physics}
-      \field{month}{3}
-      \field{number}{3}
-      \field{title}{Approximation algorithms for quantum many-body problems}
-      \field{volume}{60}
-      \field{year}{2019}
-      \field{pages}{032203}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1063/1.5085428
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1063/1.5085428
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1063/1.5085428
-      \endverb
     \endentry
     \entry{gottesman97}{misc}{}
       \name{author}{1}{}{%
@@ -519,8 +551,8 @@
       \strng{authorbibnamehash}{1ebfd56014d795ff0df5bda559246634}
       \strng{authornamehash}{1ebfd56014d795ff0df5bda559246634}
       \strng{authorfullhash}{1ebfd56014d795ff0df5bda559246634}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1793-6659}
@@ -556,8 +588,8 @@
       \strng{authorbibnamehash}{93acf59bab7fd7cc10f95e1c6ec630dc}
       \strng{authornamehash}{93acf59bab7fd7cc10f95e1c6ec630dc}
       \strng{authorfullhash}{93acf59bab7fd7cc10f95e1c6ec630dc}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Reviews in Mathematical Physics}
@@ -868,8 +900,8 @@
       \strng{authorbibnamehash}{e5858a56941e629beb6bb6030100d72e}
       \strng{authornamehash}{e5858a56941e629beb6bb6030100d72e}
       \strng{authorfullhash}{af00642dd1091562d25fc3ab9783cd4b}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Quantum Information Scrambling in a Superconducting Qutrit Processor}
@@ -895,8 +927,8 @@
       \strng{authorbibnamehash}{f96dbe2969ae09c7d2123f837dcdd808}
       \strng{authornamehash}{f96dbe2969ae09c7d2123f837dcdd808}
       \strng{authorfullhash}{f96dbe2969ae09c7d2123f837dcdd808}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0375-9601}
