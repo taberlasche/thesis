@@ -18,7 +18,4 @@ def roundeig(M):
             if abs(w[i])<10e-8: w[i]=0
     return w
 
-test(4)
-test(6)
-test(12)
-test(20)
+print(test(4))

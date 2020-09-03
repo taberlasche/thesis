@@ -24,7 +24,11 @@ def tC(n):
     return C
 
 def tsdp(n):
-    return M
+    A = np.eye(8*n)
+    for i in range(0,n):
+        for j in range(0,n):
+            A[i*8][j*8] = 1
+    return A
 
 def ratio(C, y, maxeig):
     return np.inner(np.dot(y,C),np.transpose(y))/maxeig

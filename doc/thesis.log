@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  3 SEP 2020 19:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  3 SEP 2020 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1525,37 +1525,37 @@ bbildungen/tumlogo.pdf>] [2
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 )
 \tf@toc=\write8
@@ -1688,12 +1688,7 @@ Package pdftex.def Info: avgplotn(4,5200,2,20,20).png  used on input line 70.
 chapter 6.
 (./qutrits.tex [18
 
-]
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 45.
-
-) [19]
+]) [19]
 chapter without number
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
 8.
@@ -1754,9 +1749,9 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 40047 strings out of 480478
- 782223 string characters out of 5905959
- 1632953 words of memory out of 5000000
+ 40046 strings out of 480478
+ 782212 string characters out of 5905959
+ 1632922 words of memory out of 5000000
  55394 multiletter control sequences out of 15000+600000
  554633 words of font info for 83 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -1781,10 +1776,10 @@ er/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (26 pages, 438778 bytes).
+Output written on thesis.pdf (26 pages, 440013 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 364 compressed objects within 4 object streams
- 88 named destinations out of 1000 (max. 500000)
+ 425 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
