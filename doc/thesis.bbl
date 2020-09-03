@@ -274,6 +274,36 @@
       \field{title}{Convex Optimization}
       \field{year}{2004}
     \endentry
+    \entry{goemans95}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b064c6042cf492d2a9c396f25aa9c366}{%
+           family={Goemans},
+           familyi={G\bibinitperiod},
+           given={M.\bibnamedelimi X.},
+           giveni={M\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=46fe91d24ac1c8530d9e60ed85cccf1e}{%
+           family={Williamson},
+           familyi={W\bibinitperiod},
+           given={D.P.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{fullhash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{bibnamehash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{authorbibnamehash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{authornamehash}{c6363792d222200641c2adec88b7b6c6}
+      \strng{authorfullhash}{c6363792d222200641c2adec88b7b6c6}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the ACM}
+      \field{title}{Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming}
+      \field{volume}{42}
+      \field{year}{1995}
+      \field{pages}{1115\bibrangedash 1145}
+      \range{pages}{31}
+    \endentry
     \entry{charikar04}{article}{}
       \name{author}{2}{}{%
         {{hash=13aaccfa6ed2de7e175e19b1efec3b3d}{%
@@ -293,8 +323,8 @@
       \strng{authorbibnamehash}{0d4261448b2ab5e328461eeb580f82fa}
       \strng{authornamehash}{0d4261448b2ab5e328461eeb580f82fa}
       \strng{authorfullhash}{0d4261448b2ab5e328461eeb580f82fa}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{45th Annual IEEE Symposium on Foundations of Computer Science}
@@ -572,8 +602,8 @@
       \strng{authorbibnamehash}{9cbfb5ccf6fc615bc38952468347659b}
       \strng{authornamehash}{9cbfb5ccf6fc615bc38952468347659b}
       \strng{authorfullhash}{9cbfb5ccf6fc615bc38952468347659b}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2521-327X}

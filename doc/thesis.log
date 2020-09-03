@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  2 SEP 2020 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  3 SEP 2020 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,45 +1184,53 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count479
+\float@exts=\toks50
+\float@box=\box62
+\@float@everytoks=\toks51
+\@floatcapt=\box63
+)
 (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
 
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen283
-\ar@mcellbox=\box62
+\ar@mcellbox=\box64
 \extrarowheight=\dimen284
-\NC@list=\toks50
+\NC@list=\toks52
 \extratabsurround=\skip118
 \backup@length=\skip119
-\ar@cellbox=\box63
+\ar@cellbox=\box65
 )
 (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
 )
-\l__siunitx_tmp_box=\box64
+\l__siunitx_tmp_box=\box66
 \l__siunitx_tmp_dim=\dimen285
-\l__siunitx_tmp_int=\count479
-\l__siunitx_number_mantissa_length_int=\count480
-\l__siunitx_number_uncert_length_int=\count481
-\l__siunitx_round_int=\count482
-\l__siunitx_process_decimal_int=\count483
-\l__siunitx_process_uncertainty_int=\count484
-\l__siunitx_process_fixed_int=\count485
-\l__siunitx_process_integer_min_int=\count486
-\l__siunitx_process_precision_int=\count487
-\l__siunitx_group_min_int=\count488
-\l__siunitx_angle_marker_box=\box65
-\l__siunitx_angle_unit_box=\box66
+\l__siunitx_tmp_int=\count480
+\l__siunitx_number_mantissa_length_int=\count481
+\l__siunitx_number_uncert_length_int=\count482
+\l__siunitx_round_int=\count483
+\l__siunitx_process_decimal_int=\count484
+\l__siunitx_process_uncertainty_int=\count485
+\l__siunitx_process_fixed_int=\count486
+\l__siunitx_process_integer_min_int=\count487
+\l__siunitx_process_precision_int=\count488
+\l__siunitx_group_min_int=\count489
+\l__siunitx_angle_marker_box=\box67
+\l__siunitx_angle_unit_box=\box68
 \l__siunitx_angle_marker_dim=\dimen286
 \l__siunitx_angle_unit_dim=\dimen287
-\l__siunitx_unit_int=\count489
-\l__siunitx_unit_denominator_int=\count490
-\l__siunitx_unit_numerator_int=\count491
-\l__siunitx_unit_prefix_int=\count492
-\l__siunitx_unit_prefix_base_int=\count493
-\l__siunitx_unit_prefix_gram_int=\count494
-\l__siunitx_number_product_int=\count495
+\l__siunitx_unit_int=\count490
+\l__siunitx_unit_denominator_int=\count491
+\l__siunitx_unit_numerator_int=\count492
+\l__siunitx_unit_prefix_int=\count493
+\l__siunitx_unit_prefix_base_int=\count494
+\l__siunitx_unit_prefix_gram_int=\count495
+\l__siunitx_number_product_int=\count496
 \c__siunitx_one_fill_skip=\skip120
 \l__siunitx_table_unit_align_skip=\skip121
 \l__siunitx_table_exponent_dim=\dimen288
@@ -1234,10 +1242,10 @@ Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_fill_pre_dim=\dimen294
 \l__siunitx_table_fill_post_dim=\dimen295
 \l__siunitx_table_fill_mid_dim=\dimen296
-\l__siunitx_table_pre_box=\box67
-\l__siunitx_table_post_box=\box68
-\l__siunitx_table_mantissa_box=\box69
-\l__siunitx_table_result_box=\box70
+\l__siunitx_table_pre_box=\box69
+\l__siunitx_table_post_box=\box70
+\l__siunitx_table_mantissa_box=\box71
+\l__siunitx_table_result_box=\box72
 \l__siunitx_table_number_align_skip=\skip122
 \l__siunitx_table_text_align_skip=\skip123
 
@@ -1277,7 +1285,7 @@ Package tocstyle Warning: THIS IS A DEPRECATED ALPHA VERSION!
 (tocstyle)                THERE IS NO SUPPORT, IF YOU USE THIS PACKAGE!
 (tocstyle)                Maybe it would be better, not to load this package.
 
-\tocstyle@indentstyle=\count496
+\tocstyle@indentstyle=\count497
 Package tocstyle Info: no tocstyle.cfg found on input line 951.
 )
 exclude: leaders
@@ -1293,8 +1301,8 @@ exclude: leaders
 exclude: leaders
 exclude: leaders
 exclude: leaders
-\c@thm=\count497
-\c@lma=\count498
+\c@thm=\count498
+\c@lma=\count499
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1320,17 +1328,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count499
+\scratchcounter=\count500
 \scratchdimen=\dimen297
-\scratchbox=\box71
-\nofMPsegments=\count500
-\nofMParguments=\count501
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count502
+\scratchbox=\box73
+\nofMPsegments=\count501
+\nofMParguments=\count502
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count503
 \MPscratchDim=\dimen298
-\MPnumerator=\count503
-\makeMPintoPDFobject=\count504
-\everyMPtoPDFconversion=\toks52
+\MPnumerator=\count504
+\makeMPintoPDFobject=\count505
+\everyMPtoPDFconversion=\toks54
 )
 Preview: Fontsize 10.95pt
 Preview: PDFoutput 1
@@ -1340,17 +1348,17 @@ Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
 
 (/usr/share/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks53
-\SOUL@lasttoken=\toks54
-\SOUL@cmds=\toks55
-\SOUL@buffer=\toks56
-\SOUL@token=\toks57
+\SOUL@word=\toks55
+\SOUL@lasttoken=\toks56
+\SOUL@cmds=\toks57
+\SOUL@buffer=\toks58
+\SOUL@token=\toks59
 \SOUL@spaceskip=\skip124
 \SOUL@ttwidth=\dimen299
 \SOUL@uldp=\dimen300
 \SOUL@ulht=\dimen301
 ))
-\AtBeginShipoutBox=\box72
+\AtBeginShipoutBox=\box74
 Package hyperref Info: Link coloring OFF on input line 16.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1359,7 +1367,7 @@ Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count505
+\c@section@level=\count506
 )
 LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
@@ -1384,7 +1392,7 @@ File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
 Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input lin
 e 168.
-\BKM@id=\count506
+\BKM@id=\count507
 ))
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
@@ -1423,6 +1431,7 @@ Package biblatex Info: ... file 'thesis.bbl' found.
 Package biblatex Info: Reference section=0 on input line 16.
 Package biblatex Info: Reference segment=0 on input line 16.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English
@@ -1557,19 +1566,26 @@ number indent calculated (toc, 0): 0.0pt
 
 ]
 chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface.
+
 (./intro.tex) [1
 
 ]
 chapter 2.
-(./qit.tex
-Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
- line 20.
-
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 20.
-
-[2
+(./qit.tex [2
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 48--63
@@ -1585,6 +1601,9 @@ chapter 4.
 (./paper.tex [8
 
 ]
+Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
+ line 36.
+
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 36.
@@ -1630,18 +1649,38 @@ Class tumphthesis Warning: Warning! There are \todo notes in the final document
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 13.
 
+<avgchainplotn(4,5200,2,20,20).png, id=185, 557.2017pt x 396.7623pt>
+File: avgchainplotn(4,5200,2,20,20).png Graphic file (type png)
+<use avgchainplotn(4,5200,2,20,20).png>
+Package pdftex.def Info: avgchainplotn(4,5200,2,20,20).png  used on input line 
+27.
+(pdftex.def)             Requested size: 358.50233pt x 255.27705pt.
 [14
 
-]) [15]
+]
+<tfiplot(4,5200,2,20,20,2,3).png, id=194, 505.1673pt x 395.3169pt>
+File: tfiplot(4,5200,2,20,20,2,3).png Graphic file (type png)
+<use tfiplot(4,5200,2,20,20,2,3).png>
+Package pdftex.def Info: tfiplot(4,5200,2,20,20,2,3).png  used on input line 41
+.
+(pdftex.def)             Requested size: 358.50233pt x 280.54425pt.
+ [15 <./Abbildungen/avgchainplotn(4,5200,2,20,20).png>] [16 <./Abbildungen/tfip
+lot(4,5200,2,20,20,2,3).png>]
+<avgplotn(4,5200,2,20,20).png, id=208, 633.8079pt x 471.2004pt>
+File: avgplotn(4,5200,2,20,20).png Graphic file (type png)
+<use avgplotn(4,5200,2,20,20).png>
+Package pdftex.def Info: avgplotn(4,5200,2,20,20).png  used on input line 68.
+(pdftex.def)             Requested size: 358.50233pt x 266.53069pt.
+) [17 <./Abbildungen/avgplotn(4,5200,2,20,20).png>]
 chapter 6.
-(./qutrits.tex [16
+(./qutrits.tex [18
 
 ]
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 45.
 
-) [17]
+) [19]
 chapter without number
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
 8.
@@ -1653,7 +1692,7 @@ Underfull \hbox (badness 3439) in paragraph at lines 39--39
 ournal on Com-put-ing \T1/cmr/m/n/10.95 35.5
  []
 
-[18
+[20
 
 
 ]
@@ -1681,9 +1720,9 @@ Overfull \hbox (19.10585pt too wide) in paragraph at lines 39--39
  . 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . 
  []
 
-[19]
+[21]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
- [20]
+ [22]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
  (./thesis.aux
 * soulpos - computing points - it may take a few seconds * (./thesis.upa))
@@ -1695,10 +1734,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 39953 strings out of 480478
- 780359 string characters out of 5905959
- 1630726 words of memory out of 5000000
- 55314 multiletter control sequences out of 15000+600000
+ 40039 strings out of 480478
+ 781999 string characters out of 5905959
+ 1632321 words of memory out of 5000000
+ 55390 multiletter control sequences out of 15000+600000
  554633 words of font info for 83 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  65i,20n,110p,10122b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1722,10 +1761,10 @@ er/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb
 ></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/te
 xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (24 pages, 395742 bytes).
+Output written on thesis.pdf (26 pages, 434693 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 

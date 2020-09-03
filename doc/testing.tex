@@ -22,6 +22,12 @@ In this case, it is the $n$-fold tensor product of the $+1$-eigenvector of $X$: 
 \ket{+X_i}= \frac{\ket{0}_i+\ket{1}_i}{\sqrt{2}}
 .\]
 The maximal eigenvalue of the Hamiltonian is therefore $\lambda_{max}=n$, since it has $n$ terms.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{avgchainplotn(4,5200,2,20,20)}
+	\caption{blablabla}
+	\label{fig:1}
+\end{figure}
 Fig. 1 is the result of my implementation of this model.
 It exhibits the expected behaviour of $\Omega(\frac{1}{\log{}n})$.
 I have also implemented the transverse field Ising model for non-zero $\alpha$.
@@ -30,6 +36,12 @@ The Hamiltonian that was implemented is \[
 H = H_2 + Z_{n+1}H_1 =\alpha Z_{n+1}\sum_{i} Z_i + \beta \sum_{i} X_iX_{i+1}
 .\]
 Fig. 2 shows the result of implementing this model.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{tfiplot(4,5200,2,20,20,2,3)}
+	\caption{lalala}
+	\label{fig:2}
+\end{figure}
 The second Hamiltonian implemented is \[
 	H = \sum_{i=1}^{\frac{n}{4}} X_iX_{i+1}+Z_iZ_{i+1}+X_{i+2}+X_{i+3},
 \]
@@ -51,3 +63,9 @@ To find out the product state which approximates this the best, look at a genera
 with either $a_1=a_2=1$ and $b_1=b_2=0$ or $b_1=b_2=1$ and $a_1=a_2=0$.
 Therefore, the product states with the maximal overlap are $\ket{00}$ and $\ket{11}$ with maximal eigenvalue $\lambda_{sep}(H_2)=1$, the approximation ratio being  $\frac{\lambda_{sep}H(2)}{\lambda_{max}(H_2)} = 0.5$.\\
 In general the maximal product state of the Hamiltonian is therefore $\lambda_{max}(H)=n$, and the best achievable eigenvalue by a product state is $\lambda_{sep}(H)\frac{3}{4}n$.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{avgplotn(4,5200,2,20,20)}
+	\caption{lalalala}
+	\label{fig:avgplotn}
+\end{figure}

@@ -23,7 +23,7 @@ The dual of a SDP is its reformulated version, such that instead of minimizing (
 If the optimal value of the primal and the dual problem are the same, we say that \emph{strong dualitity} holds.
 While this is not the case in general, it usually holds for SDPs.
 For SDPs we can use Slaters condition for strong duality, which states that if there is an $x^*$ that is strictly feasible (i.e. all constraints are satisfied and inequalities hold), then the problem is strictly dual.\cite{boyd04}\\
-The relaxation of a SDP was first proposed by Goemans and Williamson as part of an approximation algorithm for the max-cut problem, which is a special case of MaxQP.
+The relaxation of a SDP was first proposed by Goemans and Williamson in \cite{goemans95} as part of an approximation algorithm for the max-cut problem, which is a special case of MaxQP.
 In max-cut, we are given a graph and are to find a partition of the vertices into two sets, such that the number of edges between the two sets is as large as possible.
 Goemans and Williamson start by formulating the problem into a semidefinite program.
 Given a vertex set $ V=\{1,\ldots n\} $ and non-negative weights $w_{i,j}=w_{j,i}$, maximize the objective function $\frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-y_iy_j \right)$ such that  $y_i \in S=\{-1,1\}\quad \forall ~ i \in V$.
@@ -33,6 +33,7 @@ The algorithm proposed by Goemans and Williamson proceeds by partitioning the ve
 The rounding is based on a random hyperplane cut of the vectors.
 It has a approximation ratio of $0.878$.\\
 The first algorithm for approximating an optimal solution of MaxQP was proposed by Charikar and Wirth and has a $\Omega\left( \frac{1}{\log n} \right)$ approximation ratio. \cite{charikar04}
+Since the algorithm described in the next chapter uses a similar approach, I will now lay out the ideas of arriving at the classical result.
 It also uses relaxation of a SDP and randomized rounding, but instead of partitioning based on a random hyperplane cut through the origin, it takes into account the size of the projections of a random vector onto the solution vectors.
 For this, the relaxed semidefinite program is
 \begin{flalign*}
@@ -48,12 +49,22 @@ Using this, the algorithm, which can be solved in polynomial time is:
 	\item If $\left| z_i \right| > 1$ then $y_i=\text{sgn}(z_i)$, otherwise $y_i=z_i$
 	\item Round the $y_i$ to $\pm 1$
 \end{enumerate}
-Step four truncates any values outside $\left[ -1,+1\right] $
+Step 4 truncates any values outside $\left[ -1,+1\right] $
 The last rounding step is based on the size of the $y_{i}\in\left[ -1,1\right]^{n}$: \[
 x_{i}=\begin{cases}
 	-1, \quad \text{with probability} \frac{1-y_{i}}{2}\\
 	+1, \quad \text{with probability} \frac{1+y_{i}}{2}
 \end{cases}
 .\]
-It is important that $\mathbb{E}(x_{i}x_{j})=y_{i}y_{j}$ for $i\neq j$.\\
-The algorithm described in the following chapter parallelizes this procedure.
+The result then clearly lies in $\left[ -1,+1\right]$.
+The proof that this algorithm indeed has an approximation ratio of $\Omega(\frac{1}{\log{}n)}$ exploits the spherical symmetry of the distribution of the vector $r$ to show that \[
+T^2\mathbb{E}\left[ z_iz_j \right] = v_i\cdot v_j
+.\]
+Therefore, if every $\left| z_i \right| $ would be at most one, the approximation ratio would be $\frac{1}{T^2}$.
+Since this isnt the case, we have to proof that the expected value of $\Delta_{ij}=z_iz_j - y_iy_j$ is small in magnitude.
+In this case \[
+	\left|\mathbb{E}(\Delta_{ij})\right|<8e^{-\frac{T^2}{2}}
+.\]
+This can be used to finally show that the $x_i$ are a good approximation to the $y_i$.
+This algorithm also efficiently solves max-cut and can therefore be seen as a generalization of \cite{goemans95}.
+In the next chapter, we will see the techniques used here to tackle the problem of approximating the maximal value of a traceless $2$-local Hamiltonian.

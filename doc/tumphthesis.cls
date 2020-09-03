@@ -155,7 +155,7 @@
 \RequirePackage{caption}
 \RequirePackage{multirow}
 \RequirePackage{xspace}
-
+\RequirePackage{float}
 % Mit dem Paket siunitx lassen sich einheitenbehaftete Größen auf einfache Weise
 % korrekt setzen.
 \if@loadsiunitx
