@@ -18,4 +18,4 @@ def roundeig(M):
             if abs(w[i])<10e-8: w[i]=0
     return w
 
-print(test(4))
+tavgplot(4,2000,2,20,20)

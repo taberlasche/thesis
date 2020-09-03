@@ -1,5 +1,6 @@
 import numpy as np
 import math
+from whole import *
 # for a 2-local hamiltonian on qutrits returns bloch vector  upon input of C and c
 def trund(v, c, C):
     N=C.size[0]
@@ -30,7 +31,7 @@ def tsdp(n):
             A[i*8][j*8] = 1
     return A
 
-def ratio(C, y, maxeig):
+def tratio(C, y, maxeig):
     return np.inner(np.dot(y,C),np.transpose(y))/maxeig
 
 def tsample(n, c, o, C):
@@ -38,11 +39,11 @@ def tsample(n, c, o, C):
     ratlist=[]
     i=0
     while i < o:
-        ratlist.append(ratio(C, trund(v,c,cvx.matrix(C))["blochvec"], n))
+        ratlist.append(tratio(C, trund(v,c,cvx.matrix(C))["blochvec"], n))
         i=i+1
     return ratlist
 
-def avgplot(ni,nf,c,o,s):
+def tavgplot(ni,nf,c,o,s):
     y=[]
     x=[]
     a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
@@ -50,12 +51,12 @@ def avgplot(ni,nf,c,o,s):
         i = int(4*round(i/4.))
         x.append(i)
     for i in range(len(x)):
-        y.append(avg(sample(x[i],c,o,buildC(x[i]))))
+        y.append(avg(tsample(x[i],c,o,tC(x[i]))))
         print(x[i])
     plt.scatter(x,y,marker="o",s=5)
     plt.xlabel('log(n)')
     plt.ylabel('ratio')
     #plt.ylabel('log(ratio)')
     plt.xscale('log')
-    plt.title('nplot')
+    plt.title('Qutrit Approximation Algorithm')
     plt.show()
