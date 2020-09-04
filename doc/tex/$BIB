@@ -378,3 +378,9 @@
    doi =	{10.1063/1.3686610},
    eprint =	{https://doi.org/10.1063/1.3686610}
 }
+@article{anshu20,
+   title =	{Beyond product state approximations for a quantum analogue of Max Cut},
+   author =	{Anshu, Anurag and Gosset, David and Morenz, Karen},
+   journal =	{arXiv preprint arXiv:2003.14394},
+   year =	{2020}
+}

@@ -2,11 +2,12 @@ import picos as pic
 import cvxopt as cvx
 import cvxopt.lapack
 import numpy as np
+
 def mc(C):
     N = C.size[0]
     maxcut = pic.Problem()
 
-    # Add the symmetric matrix variable.
+    # Add the hermitian matrix variable.
     X=maxcut.add_variable('X', (N,N), 'hermitian')
 
     # Constrain X to have ones on the diagonal.

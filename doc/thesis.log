@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  3 SEP 2020 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  4 SEP 2020 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,17 +1078,42 @@ Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 )
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count456
+\lst@gtempboxa=\box60
+\lst@token=\toks44
+\lst@length=\count457
+\lst@currlwidth=\dimen262
+\lst@column=\count458
+\lst@pos=\count459
+\lst@lostspace=\dimen263
+\lst@width=\dimen264
+\lst@newlines=\count460
+\lst@lineno=\count461
+\lst@maxwidth=\dimen265
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count462
+\lst@skipnumbers=\count463
+\lst@framebox=\box61
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
 (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks44
-\thm@bodyfont=\toks45
-\thm@headfont=\toks46
-\thm@notefont=\toks47
-\thm@headpunct=\toks48
+\thm@style=\toks45
+\thm@bodyfont=\toks46
+\thm@headfont=\toks47
+\thm@notefont=\toks48
+\thm@headpunct=\toks49
 \thm@preskip=\skip107
 \thm@postskip=\skip108
 \thm@headsep=\skip109
-\dth@everypar=\toks49
+\dth@everypar=\toks50
 )
 (/usr/share/texmf-dist/tex/latex/xpatch/xpatch.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -1096,8 +1121,8 @@ Package: expl3 2020-06-03 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count456
-\l__pdf_internal_box=\box60
+\l__kernel_color_stack_int=\count464
+\l__pdf_internal_box=\box62
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
@@ -1105,10 +1130,10 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 Package: xparse 2020-05-15 L3 Experimental document command parser
 
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex
-\l__xparse_current_arg_int=\count457
-\g__xparse_grabber_int=\count458
-\l__xparse_m_args_int=\count459
-\l__xparse_v_nesting_int=\count460
+\l__xparse_current_arg_int=\count465
+\g__xparse_grabber_int=\count466
+\l__xparse_m_args_int=\count467
+\l__xparse_v_nesting_int=\count468
 )))
 Class scrbook Info: amsthm's \deferred@thm@head patched.
 
@@ -1120,39 +1145,39 @@ Package: shadethm 1999/11/23
 \shadedtextwidth=\skip113
 \shadeleftshift=\skip114
 \shaderightshift=\skip115
-\shadesavebox=\box61
+\shadesavebox=\box63
 )
-\c@shadehauptsatz=\count461
-\c@shadesatz=\count462
-\c@shadehilfssatz=\count463
-\c@shadetheorem=\count464
-\c@shadelemma=\count465
-\c@shadefolgerung=\count466
-\c@shadeproposition=\count467
-\c@shadedefinition=\count468
-\c@shadebeispiel=\count469
-\c@shadebemerkung=\count470
-\c@shadeaxiom=\count471
+\c@shadehauptsatz=\count469
+\c@shadesatz=\count470
+\c@shadehilfssatz=\count471
+\c@shadetheorem=\count472
+\c@shadelemma=\count473
+\c@shadefolgerung=\count474
+\c@shadeproposition=\count475
+\c@shadedefinition=\count476
+\c@shadebeispiel=\count477
+\c@shadebemerkung=\count478
+\c@shadeaxiom=\count479
 
 (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen262
-\lightrulewidth=\dimen263
-\cmidrulewidth=\dimen264
-\belowrulesep=\dimen265
-\belowbottomsep=\dimen266
-\aboverulesep=\dimen267
-\abovetopsep=\dimen268
-\cmidrulesep=\dimen269
-\cmidrulekern=\dimen270
-\defaultaddspace=\dimen271
-\@cmidla=\count472
-\@cmidlb=\count473
-\@aboverulesep=\dimen272
-\@belowrulesep=\dimen273
-\@thisruleclass=\count474
-\@lastruleclass=\count475
-\@thisrulewidth=\dimen274
+\heavyrulewidth=\dimen266
+\lightrulewidth=\dimen267
+\cmidrulewidth=\dimen268
+\belowrulesep=\dimen269
+\belowbottomsep=\dimen270
+\aboverulesep=\dimen271
+\abovetopsep=\dimen272
+\cmidrulesep=\dimen273
+\cmidrulekern=\dimen274
+\defaultaddspace=\dimen275
+\@cmidla=\count480
+\@cmidlb=\count481
+\@aboverulesep=\dimen276
+\@belowrulesep=\dimen277
+\@thisruleclass=\count482
+\@lastruleclass=\count483
+\@thisrulewidth=\dimen278
 )
 (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/05/10 v3.4j Customizing captions (AR)
@@ -1160,92 +1185,93 @@ Package: caption 2020/05/10 v3.4j Customizing captions (AR)
 (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/05/10 v1.11 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen275
-\captionmargin@=\dimen276
-\captionwidth=\dimen277
-\caption@tempdima=\dimen278
-\caption@indent=\dimen279
-\caption@parindent=\dimen280
-\caption@hangindent=\dimen281
+\captionmargin=\dimen279
+\captionmargin@=\dimen280
+\captionwidth=\dimen281
+\caption@tempdima=\dimen282
+\caption@indent=\dimen283
+\caption@parindent=\dimen284
+\caption@hangindent=\dimen285
 Package caption Info: KOMA-Script document class detected.
 )
 Package caption Info: KOMA-Script document class.
-\c@caption@flags=\count476
-\c@continuedfloat=\count477
+\c@caption@flags=\count484
+\c@continuedfloat=\count485
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 )
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip116
-\multirow@cntb=\count478
+\multirow@cntb=\count486
 \multirow@dima=\skip117
-\bigstrutjot=\dimen282
+\bigstrutjot=\dimen286
 )
 (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count479
-\float@exts=\toks50
-\float@box=\box62
-\@float@everytoks=\toks51
-\@floatcapt=\box63
+\c@float@type=\count487
+\float@exts=\toks51
+\float@box=\box64
+\@float@everytoks=\toks52
+\@floatcapt=\box65
 )
 (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
 
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen283
-\ar@mcellbox=\box64
-\extrarowheight=\dimen284
-\NC@list=\toks52
+\col@sep=\dimen287
+\ar@mcellbox=\box66
+\extrarowheight=\dimen288
+\NC@list=\toks53
 \extratabsurround=\skip118
 \backup@length=\skip119
-\ar@cellbox=\box65
+\ar@cellbox=\box67
 )
 (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
 )
-\l__siunitx_tmp_box=\box66
-\l__siunitx_tmp_dim=\dimen285
-\l__siunitx_tmp_int=\count480
-\l__siunitx_number_mantissa_length_int=\count481
-\l__siunitx_number_uncert_length_int=\count482
-\l__siunitx_round_int=\count483
-\l__siunitx_process_decimal_int=\count484
-\l__siunitx_process_uncertainty_int=\count485
-\l__siunitx_process_fixed_int=\count486
-\l__siunitx_process_integer_min_int=\count487
-\l__siunitx_process_precision_int=\count488
-\l__siunitx_group_min_int=\count489
-\l__siunitx_angle_marker_box=\box67
-\l__siunitx_angle_unit_box=\box68
-\l__siunitx_angle_marker_dim=\dimen286
-\l__siunitx_angle_unit_dim=\dimen287
-\l__siunitx_unit_int=\count490
-\l__siunitx_unit_denominator_int=\count491
-\l__siunitx_unit_numerator_int=\count492
-\l__siunitx_unit_prefix_int=\count493
-\l__siunitx_unit_prefix_base_int=\count494
-\l__siunitx_unit_prefix_gram_int=\count495
-\l__siunitx_number_product_int=\count496
+\l__siunitx_tmp_box=\box68
+\l__siunitx_tmp_dim=\dimen289
+\l__siunitx_tmp_int=\count488
+\l__siunitx_number_mantissa_length_int=\count489
+\l__siunitx_number_uncert_length_int=\count490
+\l__siunitx_round_int=\count491
+\l__siunitx_process_decimal_int=\count492
+\l__siunitx_process_uncertainty_int=\count493
+\l__siunitx_process_fixed_int=\count494
+\l__siunitx_process_integer_min_int=\count495
+\l__siunitx_process_precision_int=\count496
+\l__siunitx_group_min_int=\count497
+\l__siunitx_angle_marker_box=\box69
+\l__siunitx_angle_unit_box=\box70
+\l__siunitx_angle_marker_dim=\dimen290
+\l__siunitx_angle_unit_dim=\dimen291
+\l__siunitx_unit_int=\count498
+\l__siunitx_unit_denominator_int=\count499
+\l__siunitx_unit_numerator_int=\count500
+\l__siunitx_unit_prefix_int=\count501
+\l__siunitx_unit_prefix_base_int=\count502
+\l__siunitx_unit_prefix_gram_int=\count503
+\l__siunitx_number_product_int=\count504
 \c__siunitx_one_fill_skip=\skip120
 \l__siunitx_table_unit_align_skip=\skip121
-\l__siunitx_table_exponent_dim=\dimen288
-\l__siunitx_table_integer_dim=\dimen289
-\l__siunitx_table_mantissa_dim=\dimen290
-\l__siunitx_table_marker_dim=\dimen291
-\l__siunitx_table_result_dim=\dimen292
-\l__siunitx_table_uncert_dim=\dimen293
-\l__siunitx_table_fill_pre_dim=\dimen294
-\l__siunitx_table_fill_post_dim=\dimen295
-\l__siunitx_table_fill_mid_dim=\dimen296
-\l__siunitx_table_pre_box=\box69
-\l__siunitx_table_post_box=\box70
-\l__siunitx_table_mantissa_box=\box71
-\l__siunitx_table_result_box=\box72
+\l__siunitx_table_exponent_dim=\dimen292
+\l__siunitx_table_integer_dim=\dimen293
+\l__siunitx_table_mantissa_dim=\dimen294
+\l__siunitx_table_marker_dim=\dimen295
+\l__siunitx_table_result_dim=\dimen296
+\l__siunitx_table_uncert_dim=\dimen297
+\l__siunitx_table_fill_pre_dim=\dimen298
+\l__siunitx_table_fill_post_dim=\dimen299
+\l__siunitx_table_fill_mid_dim=\dimen300
+\l__siunitx_table_pre_box=\box71
+\l__siunitx_table_post_box=\box72
+\l__siunitx_table_mantissa_box=\box73
+\l__siunitx_table_result_box=\box74
 \l__siunitx_table_number_align_skip=\skip122
 \l__siunitx_table_text_align_skip=\skip123
 
@@ -1285,7 +1311,7 @@ Package tocstyle Warning: THIS IS A DEPRECATED ALPHA VERSION!
 (tocstyle)                THERE IS NO SUPPORT, IF YOU USE THIS PACKAGE!
 (tocstyle)                Maybe it would be better, not to load this package.
 
-\tocstyle@indentstyle=\count497
+\tocstyle@indentstyle=\count505
 Package tocstyle Info: no tocstyle.cfg found on input line 951.
 )
 exclude: leaders
@@ -1301,8 +1327,8 @@ exclude: leaders
 exclude: leaders
 exclude: leaders
 exclude: leaders
-\c@thm=\count498
-\c@lma=\count499
+\c@thm=\count506
+\c@lma=\count507
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1328,17 +1354,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count500
-\scratchdimen=\dimen297
-\scratchbox=\box73
-\nofMPsegments=\count501
-\nofMParguments=\count502
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count503
-\MPscratchDim=\dimen298
-\MPnumerator=\count504
-\makeMPintoPDFobject=\count505
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count508
+\scratchdimen=\dimen301
+\scratchbox=\box75
+\nofMPsegments=\count509
+\nofMParguments=\count510
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count511
+\MPscratchDim=\dimen302
+\MPnumerator=\count512
+\makeMPintoPDFobject=\count513
+\everyMPtoPDFconversion=\toks55
 )
 Preview: Fontsize 10.95pt
 Preview: PDFoutput 1
@@ -1348,17 +1374,17 @@ Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
 
 (/usr/share/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks55
-\SOUL@lasttoken=\toks56
-\SOUL@cmds=\toks57
-\SOUL@buffer=\toks58
-\SOUL@token=\toks59
+\SOUL@word=\toks56
+\SOUL@lasttoken=\toks57
+\SOUL@cmds=\toks58
+\SOUL@buffer=\toks59
+\SOUL@token=\toks60
 \SOUL@spaceskip=\skip124
-\SOUL@ttwidth=\dimen299
-\SOUL@uldp=\dimen300
-\SOUL@ulht=\dimen301
+\SOUL@ttwidth=\dimen303
+\SOUL@uldp=\dimen304
+\SOUL@ulht=\dimen305
 ))
-\AtBeginShipoutBox=\box74
+\AtBeginShipoutBox=\box76
 Package hyperref Info: Link coloring OFF on input line 16.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1367,7 +1393,7 @@ Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count506
+\c@section@level=\count514
 )
 LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
@@ -1392,7 +1418,7 @@ File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
 Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input lin
 e 168.
-\BKM@id=\count507
+\BKM@id=\count515
 ))
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
@@ -1430,6 +1456,7 @@ Package biblatex Info: ... file 'thesis.bbl' found.
  (./thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 16.
 Package biblatex Info: Reference segment=0 on input line 16.
+\c@lstlisting=\count516
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1525,37 +1552,37 @@ bbildungen/tumlogo.pdf>] [2
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 12.06216pt
+text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 )
 \tf@toc=\write8
@@ -1695,55 +1722,69 @@ File: tavgplot(4,2000,2,20,20).png Graphic file (type png)
 Package pdftex.def Info: tavgplot(4,2000,2,20,20).png  used on input line 60.
 (pdftex.def)             Requested size: 318.67212pt x 229.22275pt.
 ) [19] [20 <./Abbildungen/tavgplot(4,2000,2,20,20).png>]
+chapter A.
+(./code.tex (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 2.
+
+(/home/naigou/thesis/code/algo.py) (/home/naigou/thesis/code/sdp.py [21
+
+])
+(/home/naigou/thesis/code/hamiltonians.py [22] [23])
+(/home/naigou/thesis/code/gram.py [24] [25]) (/home/naigou/thesis/code/whole.py
+[26] [27] [28] [29] [30]) (/home/naigou/thesis/code/qutritalgo.py [31] [32]))
+[33]
 chapter without number
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-8.
+9.
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3439) in paragraph at lines 39--39
+Underfull \hbox (badness 3439) in paragraph at lines 40--40
 \T1/cmr/m/n/10.95 Local Hamilto-nian Prob-lem^^S. In: \T1/cmr/m/it/10.95 SIAM J
 ournal on Com-put-ing \T1/cmr/m/n/10.95 35.5
  []
 
-[21
+[34
 
 
 ]
-Underfull \hbox (badness 7504) in paragraph at lines 39--39
+Underfull \hbox (badness 7504) in paragraph at lines 40--40
 []\T1/cmr/m/n/10.95 Mary Beth Ruskai. ^^T  Qubit En-tan-gle-ment Break-ing Chan
 -nels^^S. In:
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 39--39
+Underfull \hbox (badness 7451) in paragraph at lines 40--40
 \T1/cmr/m/it/10.95 Re-views in Math-em-at-ical Phys-ics \T1/cmr/m/n/10.95 15.06
  (2003), pp. 643^^U662. \T1/cmr/m/sc/10.95 doi\T1/cmr/m/n/10.95 :
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 39--39
+Underfull \hbox (badness 6016) in paragraph at lines 40--40
 []$\T1/cmtt/m/n/10.95 10 . 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . eprin
 t: []$\T1/cmtt/m/n/10.95 https : [] [] doi . org[] 10 .
  []
 
 
-Overfull \hbox (19.10585pt too wide) in paragraph at lines 39--39
+Overfull \hbox (19.10585pt too wide) in paragraph at lines 40--40
 \T1/cmtt/m/n/10.95 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/
 10.95 url\T1/cmr/m/n/10.95 : []$\T1/cmtt/m/n/10.95 https : [] [] doi . org[] 10
  . 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . 
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 39--39
+Underfull \hbox (badness 2221) in paragraph at lines 40--40
 \T1/cmr/m/it/10.95 the Jordan-Wigner trans-form\T1/cmr/m/n/10.95 . 2005. \T1/cm
 r/m/sc/10.95 url\T1/cmr/m/n/10.95 : []$\T1/cmtt/m/n/10.95 http : [] [] michaeln
 ielsen .
  []
 
-[22]
+[35]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
- [23]
+ [36]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
  (./thesis.aux
 * soulpos - computing points - it may take a few seconds * (./thesis.upa))
@@ -1751,41 +1792,49 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 40058 strings out of 480478
- 782542 string characters out of 5905959
- 1632059 words of memory out of 5000000
- 55402 multiletter control sequences out of 15000+600000
- 554633 words of font info for 83 fonts, out of 8000000 for 9000
+ 42449 strings out of 480478
+ 814481 string characters out of 5905959
+ 1770000 words of memory out of 5000000
+ 57300 multiletter control sequences out of 15000+600000
+ 555355 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 65i,20n,110p,10122b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,20n,110p,10122b,3643s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/f
-onts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-fcc1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></u
-sr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
-er/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb
-></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/te
-xmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/
-type1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (27 pages, 453469 bytes).
+onts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/
+cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfsl1095.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sftt1095.pfb>
+Output written on thesis.pdf (40 pages, 503144 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 372 compressed objects within 4 object streams
- 90 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1042 PDF objects out of 1200 (max. 8388607)
+ 957 compressed objects within 10 object streams
+ 544 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

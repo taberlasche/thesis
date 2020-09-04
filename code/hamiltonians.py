@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.linalg import block_diag
 
-#This function assumes that n is a multiple of 4 it returns C for H' the form X1X2+Z1Z2#Z+X5X6+Z5Z6... upon input of the number of qubits
+# Assumes that n is a multiple of 4 it returns C for H' the form X1X2+Z1Z2#Z+X5X6+Z5Z6... upon input of the number of qubits
 def buildC(n):
     o1 = np.zeros((3,3))
     a = np.array([[1,0,0], [0,0,0], [0,0,1]])
@@ -20,6 +20,7 @@ def buildC(n):
         A[9+i*12][3*n+2] = 1
     return A
 
+# Returns the solution of the SDP for buildC(n)
 def sdp1(n):
     A = np.add(buildC(n),np.eye(3*n+3))
     if int(n/4)>1:k=1
@@ -38,8 +39,7 @@ def sdp1(n):
             A[12+i*12+k*9+12*j][9+i*12] = 1
     return A
 
-
-# returns the C for a chain of spins
+# Returns the C for a chain of spins
 def chainC(n):
     a = []
     a.extend([1,0,0] for i in range(n-1))
@@ -47,7 +47,8 @@ def chainC(n):
     C[0][3*n-3]=1
     C[3*n-3][0]=1
     return C
-# returns the sdp solution for chainC(n)
+
+# Returns the sdp solution for chainC(n)
 def sdp2(n):
     A = np.eye(3*n)
     for i in range(0,n):
@@ -55,6 +56,7 @@ def sdp2(n):
             A[i*3][j*3] = 1
     return A
 
+# Returns C for the transverse field Ising Model
 def tfiC(n,a,b):
     x = []
     x.extend([1,0,0] for i in range(n-1))
@@ -67,6 +69,7 @@ def tfiC(n,a,b):
         C[i][3*n+2]=-1*b
     return C
 
+# Returns the SDP solution for tfiC(n)
 def tfisdp(n):
     a = np.eye(3*n+3)
     b,c=[],[]

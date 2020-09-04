@@ -13,7 +13,7 @@ from gram import *
 from algo import *
 from operations import *
 
-# returns 1. the solution to the SDP 2. the gram vectors 3. dictionary with the state and bloch vector upon input of C and c(O(1))
+# returns 1. the solution to the SDP 2. the gram vectors 3. dictionary with the state and bloch vector upon input of C and c(O(1)).
 def solve(C, c):
     V = np.array(mc(C))
     K = (np.conj(V)+V)/2
@@ -22,11 +22,11 @@ def solve(C, c):
     print(sol)
     return sol
 
-# returns upon input of C, y and the maximal eigenvalue corresponding to C the ratio
+# returns upon input of C, y and the maximal eigenvalue corresponding to C the ratio.
 def ratio(C, y, maxeig):
     return np.inner(np.dot(y,C),np.transpose(y))/maxeig
 
-# returns list of ratios upon input of number of qubits, c and number of iterations
+# returns list of ratios upon input of number of qubits, c and number of iterations o, for buildC(n).
 def sample(n, c, o, C):
     v = findGenVecGram(sdp1(n))
     ratlist=[]
@@ -55,11 +55,12 @@ def sample2(n,c,o,C):
         eiglist.append(np.inner(np.dot(y,C),np.transpose(y)))
     return eiglist
 
+# Returns the average of the list.
 def avg(l):
     return sum(l)/len(l)
 
 
-# for the buildC(n) returns a plot of samples in a range of qubitnumbers upon input of start and end of range, c and the number of rounding attemps per qubitnumber
+# For the buildC(n) returns a plot of samples in a range of qubitnumbers upon input of start and end of range, c and the number of rounding attemps per qubitnumber
 def plotn(ni, nf, c, o, s):
     x=[]
     y=[]
@@ -69,12 +70,10 @@ def plotn(ni, nf, c, o, s):
     plt.scatter(x,y,marker=".",s=3)
     plt.xlabel('n')
     plt.ylabel('ratio')
-    #plt.ylabel('log(ratio)')
-    #plt.yscale('log')
     plt.title('nplot')
     plt.show()
 
-# does the same as plotn but returns the averages over the lists per n, and the steps are choosable for efficiency
+# Does the same as plotn but returns the averages over the lists per n, and the steps are choosable for efficiency
 def avgplotn(ni,nf,c,o,s):
     y=[]
     x=[]
@@ -88,12 +87,11 @@ def avgplotn(ni,nf,c,o,s):
     plt.scatter(x,y,marker="o",s=5)
     plt.xlabel('log(n)')
     plt.ylabel('ratio')
-    #plt.ylabel('log(ratio)')
     plt.xscale('log')
-    plt.title('nplot')
+    plt.title('Hamiltonian With Linear Terms')
     plt.show()
 
-# for the buildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is
+# For the buildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is. Not used.
 def plotc(ci, cf, n, o):
     C = buildC(n)
     x=[]
@@ -107,7 +105,7 @@ def plotc(ci, cf, n, o):
     plt.title('cplot')
     plt.show()
 
-# for the chainC(n) returns a plot of samples in a range of qubitnumbers upon input of start and end of range, c and the number of rounding attemps per qubitnumber
+# For the chainC(n) returns a plot of samples in a range of qubitnumbers upon input of start and end of range, c and the number of rounding attemps per qubitnumber.
 def chainplotn(ni, nf, c, o,s):
     x=[]
     y=[]
@@ -121,7 +119,7 @@ def chainplotn(ni, nf, c, o,s):
     plt.title('nplot')
     plt.show()
 
-# for the chainbuildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is
+# For the chainbuildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is.
 def chainplotc(ci, cf, n, o):
     C = chainC(n)
     x=[]
@@ -136,7 +134,8 @@ def chainplotc(ci, cf, n, o):
     plt.title('cplot')
     plt.show()
 
-def avgchainplotn(ni,nf,c,o,s):
+# Plots the averages of the lists of ratios for chainC(n).
+def Avgchainplotn(ni,nf,c,o,s):
     x=[]
     y=[]
     for i in range(ni,nf+1,s):
@@ -146,15 +145,16 @@ def avgchainplotn(ni,nf,c,o,s):
     plt.scatter(x,y,marker="o",s=5)
     plt.xlabel('log(n)')
     plt.ylabel('ratio')
-    #plt.ylabel('log(ratio)')
     plt.xscale('log')
     plt.title('nplot')
     plt.show()
 
+# Returns the maximal eigenvalue of the transverse field Ising model upon input of a, b, n and a constant d.
 def tfimaxeig(n,a,b,d):
     x = a+b/2+(2*a*n/math.pi)*(1+b/(2*a))*d
     return x
 
+# Returns list of ratios for the transverse field Ising model.
 def tfisample(n, c, o, C,a,b,d):
     v = findGenVecGram(tfisdp(n))
     ratlist=[]
@@ -164,6 +164,7 @@ def tfisample(n, c, o, C,a,b,d):
         i=i+1
     return ratlist
 
+# Plots the average of the list of ratios for the transverse field Ising model.
 def tfiplot(ni,nf,c,iterations,steps,a,b):
     l = math.sqrt((2*b/a)/((1+b/2*a)**2))
     d=scipy.special.ellipeinc(math.pi/2,l)
@@ -175,24 +176,6 @@ def tfiplot(ni,nf,c,iterations,steps,a,b):
         x.append(i)
     for i in range(len(x)):
         y.append(avg(tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d)))
-        print(x[i])
-    plt.scatter(x,y,marker="o",s=5)
-    plt.xlabel('log(n)')
-    plt.ylabel('ratio')
-    #plt.ylabel('log(ratio)')
-    plt.xscale('log')
-    plt.title('nplot')
-    plt.show()
-
-def tritplot(ni,nf,):
-    y=[]
-    x=[]
-    a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
-    for i in a:
-        i = int(4*round(i/4.))
-        x.append(i)
-    for i in range(len(x)):
-        y.append(avg(sample(x[i],c,o,buildC(x[i]))))
         print(x[i])
     plt.scatter(x,y,marker="o",s=5)
     plt.xlabel('log(n)')

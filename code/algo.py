@@ -4,10 +4,10 @@ import math
 def rund(v, c, C):
     N=C.size[0]
     n=N/3
-    T = c*math.sqrt(math.log(n)) #c=O(1)
+    T = c*math.sqrt(math.log(n))
     rd = {}
     y = []
-    r = np.random.normal(0,1,N) #vector of 3n i.d.d. N(0,1) random variables
+    r = np.random.normal(0,1,N)
     for i in range(0,N):
         z = np.inner(r, v[i])/T
         if np.linalg.norm(z) > 1/math.sqrt(3): y.append(np.sign(z)/math.sqrt(3))
