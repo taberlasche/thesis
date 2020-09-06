@@ -9,4 +9,4 @@
 \contentsline {chapter}{\numberline {5}Testing specific models}{14}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Generalization to qutrits}{18}{chapter.6}%
 \contentsline {chapter}{\numberline {A}Implementation of the discussed methods}{21}{appendix.A}%
-\contentsline {chapter}{\nonumberline Bibliography}{34}{chapter*.12}%
+\contentsline {chapter}{\nonumberline Bibliography}{34}{chapter*.10}%

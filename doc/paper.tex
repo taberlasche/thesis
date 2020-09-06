@@ -33,7 +33,7 @@ and \[
 We can see that the map takes any Pauli operator $P_a$ to $-P_a$.
 This means it takes  $H_1$ to $-H_1$ and leaves $H_2$ unchanged since it is quadratic in Pauli operators.
 Both the matrix transpose and the conjugation by a unitary operator conserve the spectrum, so we have proven that  $H$ and $H'$ have the same spectrum and also the same maximal eigenvalue.
-Using similar arguments, we can then choose the product state $\ket{\phi}$ according to $\ket{\omega}$, such that its eigenvalues will always be at least equal.\todo{since the argumentation is very similar, should i still show it? i think not, as i already demonstrated that i understood it in principle}\\
+Using similar arguments, we can then choose the product state $\ket{\phi}$ according to $\ket{\omega}$, such that its eigenvalues will always be at least equal.\\
 The last statement in the lemma refers to an elegant concept that is very useful to quantum error correction.
 We say an operator $A$ stabilizes a state $\ket{\psi}$ if $A\ket{\psi}=\ket{\psi}$.
 Conversely, a state is called a stabilizer state of an operator, if it is in its $+1$-eigenspace.
@@ -87,7 +87,6 @@ In other words, if we pick every value without knowing the others, what is the m
 Therefore the maximal value, above which we should round down is $\frac{1}{\sqrt{3}}$.
 If we truncate such that no Bloch vector component can be above this value, we will always have a valid state.
 Visually, this is the same as fitting a cube inside the Bloch sphere and reducing our state space to inside the cube.
-\todo{prove this to be sure its true}
 The projections are $z_i=\braket{r}{v^i}/T$ with $T=c\sqrt{\log{}n}$ and $c=O(\log{}n)$.
 This constant will be discussed later.
 The algorithm looks like this:

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  6 SEP 2020 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  6 SEP 2020 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1620,7 +1620,7 @@ chapter 2.
 (./qit.tex [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 49--64
+Underfull \hbox (badness 10000) in paragraph at lines 48--63
 
  []
 
@@ -1632,19 +1632,7 @@ chapter 3.
 chapter 4.
 (./paper.tex [8
 
-]
-Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
- line 36.
-
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 36.
-
-[9]
-
-Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 90.
-
+] [9]
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 27.2pt needed,
@@ -1654,16 +1642,19 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting typearea's option
 (scrlayer-scrpage)                `headheight=27.2pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 9
-4.
+3.
 
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
  [10]
 [11]
+Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input
+ line 134.
+
 
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
-. on input line 135.
+. on input line 134.
 
 [12]) [13]
 chapter 5.
@@ -1672,7 +1663,7 @@ chapter 5.
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 16.
 
-<avgchainplotn(4,5200,2,20,20).png, id=197, 557.2017pt x 396.7623pt>
+<avgchainplotn(4,5200,2,20,20).png, id=193, 557.2017pt x 396.7623pt>
 File: avgchainplotn(4,5200,2,20,20).png Graphic file (type png)
 <use avgchainplotn(4,5200,2,20,20).png>
 Package pdftex.def Info: avgchainplotn(4,5200,2,20,20).png  used on input line 
@@ -1681,7 +1672,7 @@ Package pdftex.def Info: avgchainplotn(4,5200,2,20,20).png  used on input line
 [14
 
 ]
-<tfiplot(4,5200,2,20,20,2,3).png, id=210, 505.1673pt x 395.3169pt>
+<tfiplot(4,5200,2,20,20,2,3).png, id=206, 505.1673pt x 395.3169pt>
 File: tfiplot(4,5200,2,20,20,2,3).png Graphic file (type png)
 <use tfiplot(4,5200,2,20,20,2,3).png>
 Package pdftex.def Info: tfiplot(4,5200,2,20,20,2,3).png  used on input line 46
@@ -1689,7 +1680,7 @@ Package pdftex.def Info: tfiplot(4,5200,2,20,20,2,3).png  used on input line 46
 (pdftex.def)             Requested size: 358.50233pt x 280.54425pt.
  [15 <./Abbildungen/avgchainplotn(4,5200,2,20,20).png>] [16 <./Abbildungen/tfip
 lot(4,5200,2,20,20,2,3).png>]
-<avgplotn(4,5200,2,20,20).png, id=225, 633.8079pt x 471.2004pt>
+<avgplotn(4,5200,2,20,20).png, id=221, 633.8079pt x 471.2004pt>
 File: avgplotn(4,5200,2,20,20).png Graphic file (type png)
 <use avgplotn(4,5200,2,20,20).png>
 Package pdftex.def Info: avgplotn(4,5200,2,20,20).png  used on input line 75.
@@ -1707,7 +1698,7 @@ Class tumphthesis Warning: Warning! There are \todo notes in the final document
 Class tumphthesis Warning: Warning! There are \todo notes in the final document
 . on input line 67.
 
-<tavgplot(4,2000,2,20,20).png, id=253, 535.5207pt x 385.1991pt>
+<tavgplot(4,2000,2,20,20).png, id=249, 535.5207pt x 385.1991pt>
 File: tavgplot(4,2000,2,20,20).png Graphic file (type png)
 <use tavgplot(4,2000,2,20,20).png>
 Package pdftex.def Info: tavgplot(4,2000,2,20,20).png  used on input line 70.
@@ -1793,9 +1784,9 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 42459 strings out of 480478
- 814835 string characters out of 5905959
- 1770975 words of memory out of 5000000
+ 42457 strings out of 480478
+ 814813 string characters out of 5905959
+ 1769974 words of memory out of 5000000
  57308 multiletter control sequences out of 15000+600000
  555355 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -1821,10 +1812,10 @@ b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/t
 exmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf-dist/fonts
 /type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sftt1095.pfb>
-Output written on thesis.pdf (40 pages, 507305 bytes).
+Output written on thesis.pdf (40 pages, 507106 bytes).
 PDF statistics:
- 1059 PDF objects out of 1200 (max. 8388607)
- 975 compressed objects within 10 object streams
- 546 named destinations out of 1000 (max. 500000)
+ 1055 PDF objects out of 1200 (max. 8388607)
+ 971 compressed objects within 10 object streams
+ 544 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
