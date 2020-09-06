@@ -19,36 +19,195 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{abdulsattar12}{article}{}
-      \name{author}{1}{}{%
-        {{hash=76e58c1db370a7d2649fc905074269c3}{%
-           family={Abdulsattar},
-           familyi={A\bibinitperiod},
-           given={Mudar\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+    \entry{kempe06}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ff688c2df5014b142928d37ce3c683ce}{%
+           family={Kempe},
+           familyi={K\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=59949d44a3903dfabb88bff3220ff2e0}{%
+           family={Kitaev},
+           familyi={K\bibinitperiod},
+           given={Alexei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f945cb644f60f5c1d47ef6bce1233586}{%
+           family={Regev},
+           familyi={R\bibinitperiod},
+           given={Oded},
+           giveni={O\bibinitperiod}}}%
       }
-      \strng{namehash}{76e58c1db370a7d2649fc905074269c3}
-      \strng{fullhash}{76e58c1db370a7d2649fc905074269c3}
-      \strng{bibnamehash}{76e58c1db370a7d2649fc905074269c3}
-      \strng{authorbibnamehash}{76e58c1db370a7d2649fc905074269c3}
-      \strng{authornamehash}{76e58c1db370a7d2649fc905074269c3}
-      \strng{authorfullhash}{76e58c1db370a7d2649fc905074269c3}
+      \strng{namehash}{08f643e3bbad9f66c47848af501fc184}
+      \strng{fullhash}{08f643e3bbad9f66c47848af501fc184}
+      \strng{bibnamehash}{08f643e3bbad9f66c47848af501fc184}
+      \strng{authorbibnamehash}{08f643e3bbad9f66c47848af501fc184}
+      \strng{authornamehash}{08f643e3bbad9f66c47848af501fc184}
+      \strng{authorfullhash}{08f643e3bbad9f66c47848af501fc184}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Applied Physics}
-      \field{number}{4}
-      \field{title}{SiGe superlattice nanocrystal infrared and Raman spectra: A density functional theory study}
-      \field{volume}{111}
-      \field{year}{2012}
-      \field{pages}{044306}
-      \range{pages}{1}
+      \field{journaltitle}{SIAM Journal on Computing}
+      \field{number}{5}
+      \field{title}{The Complexity of the Local Hamiltonian Problem}
+      \field{volume}{35}
+      \field{year}{2006}
+      \field{pages}{1070\bibrangedash 1097}
+      \range{pages}{28}
       \verb{doi}
-      \verb 10.1063/1.3686610
+      \verb 10.1137/S0097539704445226
       \endverb
       \verb{eprint}
-      \verb https://doi.org/10.1063/1.3686610
+      \verb https://doi.org/10.1137/S0097539704445226
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1137/S0097539704445226
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1137/S0097539704445226
+      \endverb
+    \endentry
+    \entry{gharibian19}{article}{}
+      \name{author}{2}{}{%
+        {{hash=94bf6a44f0b9ba010d5309cb3caff66a}{%
+           family={Gharibian},
+           familyi={G\bibinitperiod},
+           given={Sevag},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4920c31b76ff713f91bbec5a8f0f52b8}{%
+           family={Parekh},
+           familyi={P\bibinitperiod},
+           given={Ojas},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{fullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{bibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{authorbibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{authornamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{authorfullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1909.08846}
+      \field{title}{Almost optimal classical approximation algorithms for a quantum generalization of Max-Cut}
+      \field{year}{2019}
+    \endentry
+    \entry{gharibian12}{article}{}
+      \name{author}{2}{}{%
+        {{hash=94bf6a44f0b9ba010d5309cb3caff66a}{%
+           family={Gharibian},
+           familyi={G\bibinitperiod},
+           given={Sevag},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ff688c2df5014b142928d37ce3c683ce}{%
+           family={Kempe},
+           familyi={K\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{fullhash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{bibnamehash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{authorbibnamehash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{authornamehash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{authorfullhash}{7e915bc065153c35fe4f211ceedd538a}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Journal on Computing}
+      \field{number}{4}
+      \field{title}{Approximation Algorithms for QMA-Complete Problems}
+      \field{volume}{41}
+      \field{year}{2012}
+      \field{pages}{1028\bibrangedash 1050}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1137/110842272
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1137/110842272
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1137/110842272
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1137/110842272
+      \endverb
+    \endentry
+    \entry{brandao14}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=66db7554332962be2b0abe2cefe77501}{%
+           family={Brandão},
+           familyi={B\bibinitperiod},
+           given={Fernando\bibnamedelimb G.\bibnamedelimi S.\bibnamedelimi L.},
+           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=6bc7275eb8de2a3404fd3f07e6c21a2a}{%
+           family={Harrow},
+           familyi={H\bibinitperiod},
+           given={Aram\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{362a798986cb7af3174f17bf66e64cbf}
+      \strng{fullhash}{362a798986cb7af3174f17bf66e64cbf}
+      \strng{bibnamehash}{362a798986cb7af3174f17bf66e64cbf}
+      \strng{authorbibnamehash}{362a798986cb7af3174f17bf66e64cbf}
+      \strng{authornamehash}{362a798986cb7af3174f17bf66e64cbf}
+      \strng{authorfullhash}{362a798986cb7af3174f17bf66e64cbf}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Product-state Approximations to Quantum Ground States}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1310.0017
+      \endverb
+    \endentry
+    \entry{harrow17}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6bc7275eb8de2a3404fd3f07e6c21a2a}{%
+           family={Harrow},
+           familyi={H\bibinitperiod},
+           given={Aram\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=bd78a1f9d6e5f3fbbf33e0967436bb75}{%
+           family={Montanaro},
+           familyi={M\bibinitperiod},
+           given={Ashley},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}%
+      }
+      \strng{namehash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{fullhash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{bibnamehash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{authorbibnamehash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{authornamehash}{9cbfb5ccf6fc615bc38952468347659b}
+      \strng{authorfullhash}{9cbfb5ccf6fc615bc38952468347659b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2521-327X}
+      \field{journaltitle}{Quantum}
+      \field{month}{4}
+      \field{title}{Extremal eigenvalues of local Hamiltonians}
+      \field{volume}{1}
+      \field{year}{2017}
+      \field{pages}{6}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22331/q-2017-04-25-6
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.22331/q-2017-04-25-6
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.22331/q-2017-04-25-6
       \endverb
     \endentry
     \entry{bravyi19}{article}{}
@@ -106,6 +265,38 @@
       \verb http://dx.doi.org/10.1063/1.5085428
       \endverb
     \endentry
+    \entry{anshu20}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bc47228a2e33549728eb4b07e94f9c86}{%
+           family={Anshu},
+           familyi={A\bibinitperiod},
+           given={Anurag},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7c0fc8eb0c4a0c7e8f54d801d5604d12}{%
+           family={Gosset},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f34efd4b2df632342980be061120f28b}{%
+           family={Morenz},
+           familyi={M\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{2dc437deb1078ad10f7cb3391dd23049}
+      \strng{fullhash}{2dc437deb1078ad10f7cb3391dd23049}
+      \strng{bibnamehash}{2dc437deb1078ad10f7cb3391dd23049}
+      \strng{authorbibnamehash}{2dc437deb1078ad10f7cb3391dd23049}
+      \strng{authornamehash}{2dc437deb1078ad10f7cb3391dd23049}
+      \strng{authorfullhash}{2dc437deb1078ad10f7cb3391dd23049}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2003.14394}
+      \field{title}{Beyond product state approximations for a quantum analogue of Max Cut}
+      \field{year}{2020}
+    \endentry
     \entry{choi75}{article}{}
       \name{author}{1}{}{%
         {{hash=e7be6d1b55bb4c33b8194dad4a789a5d}{%
@@ -120,8 +311,8 @@
       \strng{authorbibnamehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
       \strng{authornamehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
       \strng{authorfullhash}{e7be6d1b55bb4c33b8194dad4a789a5d}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0024-3795}
@@ -134,12 +325,6 @@
       \range{pages}{6}
       \verb{doi}
       \verb https://doi.org/10.1016/0024-3795(75)90075-0
-      \endverb
-      \verb{urlraw}
-      \verb http://www.sciencedirect.com/science/article/pii/0024379575900750
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/0024379575900750
       \endverb
     \endentry
     \entry{imre12}{book}{}
@@ -161,8 +346,8 @@
       \strng{authorbibnamehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
       \strng{authornamehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
       \strng{authorfullhash}{6e5844e9c79237cc5bd0980c0e69ec2d}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{12}
@@ -171,119 +356,6 @@
       \verb{doi}
       \verb 10.1002/9781118337462
       \endverb
-    \endentry
-    \entry{kempe06}{article}{}
-      \name{author}{3}{}{%
-        {{hash=ff688c2df5014b142928d37ce3c683ce}{%
-           family={Kempe},
-           familyi={K\bibinitperiod},
-           given={Julia},
-           giveni={J\bibinitperiod}}}%
-        {{hash=59949d44a3903dfabb88bff3220ff2e0}{%
-           family={Kitaev},
-           familyi={K\bibinitperiod},
-           given={Alexei},
-           giveni={A\bibinitperiod}}}%
-        {{hash=f945cb644f60f5c1d47ef6bce1233586}{%
-           family={Regev},
-           familyi={R\bibinitperiod},
-           given={Oded},
-           giveni={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{08f643e3bbad9f66c47848af501fc184}
-      \strng{fullhash}{08f643e3bbad9f66c47848af501fc184}
-      \strng{bibnamehash}{08f643e3bbad9f66c47848af501fc184}
-      \strng{authorbibnamehash}{08f643e3bbad9f66c47848af501fc184}
-      \strng{authornamehash}{08f643e3bbad9f66c47848af501fc184}
-      \strng{authorfullhash}{08f643e3bbad9f66c47848af501fc184}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{SIAM Journal on Computing}
-      \field{number}{5}
-      \field{title}{The Complexity of the Local Hamiltonian Problem}
-      \field{volume}{35}
-      \field{year}{2006}
-      \field{pages}{1070\bibrangedash 1097}
-      \range{pages}{28}
-      \verb{doi}
-      \verb 10.1137/S0097539704445226
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1137/S0097539704445226
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1137/S0097539704445226
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1137/S0097539704445226
-      \endverb
-    \endentry
-    \entry{kitaev02}{book}{}
-      \name{author}{3}{}{%
-        {{hash=34266a35eedbd87dd79c5e408127a5e5}{%
-           family={Kitaev},
-           familyi={K\bibinitperiod},
-           given={A.\bibnamedelimi Yu.},
-           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=b1f2b77ab3ca5aab6163100dc5b507e2}{%
-           family={Shen},
-           familyi={S\bibinitperiod},
-           given={A.\bibnamedelimi H.},
-           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=7831ef8d53034bfdb516734e9f79dba6}{%
-           family={Vyalyi},
-           familyi={V\bibinitperiod},
-           given={M.\bibnamedelimi N.},
-           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {USA}%
-      }
-      \list{publisher}{1}{%
-        {American Mathematical Society}%
-      }
-      \strng{namehash}{32e34f2d117e1841f6089a540f90c6b5}
-      \strng{fullhash}{32e34f2d117e1841f6089a540f90c6b5}
-      \strng{bibnamehash}{32e34f2d117e1841f6089a540f90c6b5}
-      \strng{authorbibnamehash}{32e34f2d117e1841f6089a540f90c6b5}
-      \strng{authornamehash}{32e34f2d117e1841f6089a540f90c6b5}
-      \strng{authorfullhash}{32e34f2d117e1841f6089a540f90c6b5}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{0821832298}
-      \field{title}{Classical and Quantum Computation}
-      \field{year}{2002}
-    \endentry
-    \entry{gharibian19}{article}{}
-      \name{author}{2}{}{%
-        {{hash=94bf6a44f0b9ba010d5309cb3caff66a}{%
-           family={Gharibian},
-           familyi={G\bibinitperiod},
-           given={Sevag},
-           giveni={S\bibinitperiod}}}%
-        {{hash=4920c31b76ff713f91bbec5a8f0f52b8}{%
-           family={Parekh},
-           familyi={P\bibinitperiod},
-           given={Ojas},
-           giveni={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{fullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{bibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{authorbibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{authornamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{authorfullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1909.08846}
-      \field{title}{Almost optimal classical approximation algorithms for a quantum generalization of Max-Cut}
-      \field{year}{2019}
     \endentry
     \entry{vandenberghe96}{article}{}
       \name{author}{2}{}{%
@@ -420,6 +492,36 @@
       \field{pages}{54\bibrangedash 60}
       \range{pages}{7}
     \endentry
+    \entry{bethe31}{article}{}
+      \name{author}{1}{}{%
+        {{hash=edf7e1f0f9e42da57d807260b538c886}{%
+           family={{Bethe}},
+           familyi={B\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{edf7e1f0f9e42da57d807260b538c886}
+      \strng{fullhash}{edf7e1f0f9e42da57d807260b538c886}
+      \strng{bibnamehash}{edf7e1f0f9e42da57d807260b538c886}
+      \strng{authorbibnamehash}{edf7e1f0f9e42da57d807260b538c886}
+      \strng{authornamehash}{edf7e1f0f9e42da57d807260b538c886}
+      \strng{authorfullhash}{edf7e1f0f9e42da57d807260b538c886}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zeitschrift fur Physik}
+      \field{month}{3}
+      \field{number}{3-4}
+      \field{title}{Zur Theorie der Metalle}
+      \field{volume}{71}
+      \field{year}{1931}
+      \field{pages}{205\bibrangedash 226}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/BF01341708
+      \endverb
+    \endentry
     \entry{gottesman97}{misc}{}
       \name{author}{1}{}{%
         {{hash=7547b3f3d9b6b3aebccf1577d598b7de}{%
@@ -458,8 +560,8 @@
       \strng{authorbibnamehash}{298133a6b79dcce8ef5f6cb15b60f119}
       \strng{authornamehash}{298133a6b79dcce8ef5f6cb15b60f119}
       \strng{authorfullhash}{298133a6b79dcce8ef5f6cb15b60f119}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Communications in Mathematical Physics}
@@ -491,8 +593,8 @@
       \strng{authorbibnamehash}{4cbe85f9107182ba2bd60055ee44c7f9}
       \strng{authornamehash}{4cbe85f9107182ba2bd60055ee44c7f9}
       \strng{authorfullhash}{4cbe85f9107182ba2bd60055ee44c7f9}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{10 Anv}
@@ -514,8 +616,8 @@
       \strng{authorbibnamehash}{b1e13ecc9ce2215309a6e9e4085e9282}
       \strng{authornamehash}{b1e13ecc9ce2215309a6e9e4085e9282}
       \strng{authorfullhash}{b1e13ecc9ce2215309a6e9e4085e9282}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The capacity of the quantum depolarizing channel}
@@ -612,50 +714,6 @@
       \verb https://doi.org/10.1142/S0129055X03001710
       \endverb
     \endentry
-    \entry{harrow17}{article}{}
-      \name{author}{2}{}{%
-        {{hash=6bc7275eb8de2a3404fd3f07e6c21a2a}{%
-           family={Harrow},
-           familyi={H\bibinitperiod},
-           given={Aram\bibnamedelima W.},
-           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=bd78a1f9d6e5f3fbbf33e0967436bb75}{%
-           family={Montanaro},
-           familyi={M\bibinitperiod},
-           given={Ashley},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}%
-      }
-      \strng{namehash}{9cbfb5ccf6fc615bc38952468347659b}
-      \strng{fullhash}{9cbfb5ccf6fc615bc38952468347659b}
-      \strng{bibnamehash}{9cbfb5ccf6fc615bc38952468347659b}
-      \strng{authorbibnamehash}{9cbfb5ccf6fc615bc38952468347659b}
-      \strng{authornamehash}{9cbfb5ccf6fc615bc38952468347659b}
-      \strng{authorfullhash}{9cbfb5ccf6fc615bc38952468347659b}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2521-327X}
-      \field{journaltitle}{Quantum}
-      \field{month}{4}
-      \field{title}{Extremal eigenvalues of local Hamiltonians}
-      \field{volume}{1}
-      \field{year}{2017}
-      \field{pages}{6}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.22331/q-2017-04-25-6
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.22331/q-2017-04-25-6
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.22331/q-2017-04-25-6
-      \endverb
-    \endentry
     \entry{pfeuty70}{article}{}
       \name{author}{1}{}{%
         {{hash=6ea25921b547574dab57c4cc9eff8d9d}{%
@@ -684,12 +742,6 @@
       \range{pages}{12}
       \verb{doi}
       \verb https://doi.org/10.1016/0003-4916(70)90270-8
-      \endverb
-      \verb{urlraw}
-      \verb http://www.sciencedirect.com/science/article/pii/0003491670902708
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/0003491670902708
       \endverb
     \endentry
     \entry{nielsen05}{misc}{}
@@ -743,8 +795,8 @@
       \strng{authorbibnamehash}{36c4b44c920eb40d1b11c110508cc361}
       \strng{authornamehash}{36c4b44c920eb40d1b11c110508cc361}
       \strng{authorfullhash}{36c4b44c920eb40d1b11c110508cc361}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Fortschritte der Physik}
@@ -775,8 +827,8 @@
       \strng{authorbibnamehash}{8d0c8d1ae5f95b7658accba7c342c4f3}
       \strng{authornamehash}{8d0c8d1ae5f95b7658accba7c342c4f3}
       \strng{authorfullhash}{8d0c8d1ae5f95b7658accba7c342c4f3}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1079-7114}
@@ -818,8 +870,8 @@
       \strng{authorbibnamehash}{6f51fb401b5507877bb225a76af23014}
       \strng{authornamehash}{6f51fb401b5507877bb225a76af23014}
       \strng{authorfullhash}{6f51fb401b5507877bb225a76af23014}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1079-7114}
@@ -975,6 +1027,99 @@
       \field{isbn}{9781107026254,1107026253,9781107656147,1107656141}
       \field{title}{Geometry of Quantum States an Introduction to Quantum Entanglement}
       \field{year}{2017}
+    \endentry
+    \entry{mendas06}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4f19b915fc62378756793e22c3dec6bf}{%
+           family={Mendas},
+           familyi={M\bibinitperiod},
+           given={Istok\bibnamedelima P.},
+           giveni={I\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{4f19b915fc62378756793e22c3dec6bf}
+      \strng{fullhash}{4f19b915fc62378756793e22c3dec6bf}
+      \strng{bibnamehash}{4f19b915fc62378756793e22c3dec6bf}
+      \strng{authorbibnamehash}{4f19b915fc62378756793e22c3dec6bf}
+      \strng{authornamehash}{4f19b915fc62378756793e22c3dec6bf}
+      \strng{authorfullhash}{4f19b915fc62378756793e22c3dec6bf}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics A: Mathematical and General}
+      \field{month}{8}
+      \field{number}{36}
+      \field{title}{The classification of three-parameter density matrices for a qutrit}
+      \field{volume}{39}
+      \field{year}{2006}
+      \field{pages}{11313\bibrangedash 11324}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1088/0305-4470/39/36/012
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088%2F0305-4470%2F39%2F36%2F012
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088%2F0305-4470%2F39%2F36%2F012
+      \endverb
+    \endentry
+    \entry{goyal16}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bd2711393a8b7e3d758a845f36eee697}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Sandeep\bibnamedelima K},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=a2dc886a47d2a0dc3bcdb4f36f3bdb8f}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={B\bibnamedelima Neethi},
+           giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=7e40264f0f54cfe08b00af3932585c6b}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Rajeev},
+           giveni={R\bibinitperiod}}}%
+        {{hash=36b33b079f643cdf352ea70a44b869e8}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={Sudhavathani},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{8f2b9089e203e898f1945638dee5b4b5}
+      \strng{fullhash}{e816231f65c7f85ffacaaad6a6ce6830}
+      \strng{bibnamehash}{8f2b9089e203e898f1945638dee5b4b5}
+      \strng{authorbibnamehash}{8f2b9089e203e898f1945638dee5b4b5}
+      \strng{authornamehash}{8f2b9089e203e898f1945638dee5b4b5}
+      \strng{authorfullhash}{e816231f65c7f85ffacaaad6a6ce6830}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics A: Mathematical and Theoretical}
+      \field{month}{3}
+      \field{number}{16}
+      \field{title}{Geometry of the generalized Bloch sphere for qutrits}
+      \field{volume}{49}
+      \field{year}{2016}
+      \field{pages}{165203}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1751-8113/49/16/165203
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088%2F1751-8113%2F49%2F16%2F165203
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088%2F1751-8113%2F49%2F16%2F165203
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

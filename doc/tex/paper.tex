@@ -1,6 +1,6 @@
 The algorithm discussed here is able to efficiently find a product state approximation for a general traceless $2$-local Hamiltonian with an approximation ratio $\Omega(\frac{1}{\log n})$\cite{bravyi19}.
 I will explain the algorithm and the central results that enable and validate it.\\
-Before looking at the algorithm itself, there is a prelimary lemma we have to look at.
+Before looking at the algorithm itself, there is a preliminary lemma we have to look at.
 Hamiltonians of the kind $H = H_1+H_2$ as defined in \eqref{ham} have terms that are linear in Pauli operators.
 The following lemma will let us reduce this Hamiltonian to a purely quadratic one, for the theorems presented in this paper.
 We form a new $n+1$-qubit Hamiltonian: \[
@@ -34,7 +34,7 @@ We can see that the map takes any Pauli operator $P_a$ to $-P_a$.
 This means it takes  $H_1$ to $-H_1$ and leaves $H_2$ unchanged since it is quadratic in Pauli operators.
 Both the matrix transpose and the conjugation by a unitary operator conserve the spectrum, so we have proven that  $H$ and $H'$ have the same spectrum and also the same maximal eigenvalue.
 Using similar arguments, we can then choose the product state $\ket{\phi}$ according to $\ket{\omega}$, such that its eigenvalues will always be at least equal.\todo{since the argumentation is very similar, should i still show it? i think not, as i already demonstrated that i understood it in principle}\\
-The last statement in the lemma referes to an elegant concept that is very useful to quantum error correction.
+The last statement in the lemma refers to an elegant concept that is very useful to quantum error correction.
 We say an operator $A$ stabilizes a state $\ket{\psi}$ if $A\ket{\psi}=\ket{\psi}$.
 Conversely, a state is called a stabilizer state of an operator, if it is in its $+1$-eigenspace.
 For practicality, we look at operators from the $n$-qubit Pauli group.
@@ -78,28 +78,28 @@ Since $M$ is real and symmetric, we can express any matrix element as $M_{i,j}=\
 The vectors have unit norm, since $M_{i,i}=1$.\\
 After solving the SDP, we choose a random vector $\ket{r}$, the components of which are drawn from the normal distribution and project our solution vectors on it.
 This is identical to the MaxQP algorithm discussed earlier, except for the constant $T$ which has to be chosen differently.
-We can build a good geometrical intuiton for the truncation step.
-Since we will project our optimal vectors obtained from the semidefinite program to the random vector $\ket{r}$, we have to make sure that the projections correspond to valid bloch vector components.
-We ask the following question: What is the maximal value that a component of a valid bloch vector can have, if all three components have the same value?
+We can build a good geometrical intuition for the truncation step.
+Since we will project our optimal vectors obtained from the semidefinite program to the random vector $\ket{r}$, we have to make sure that the projections correspond to valid Bloch vector components.
+We ask the following question: What is the maximal value that a component of a valid Bloch vector can have, if all three components have the same value?
 In other words, if we pick every value without knowing the others, what is the maximal value that we can assign to it such that the vector is part of the unit sphere?\[
 \|z\|=\sqrt{z_1^2+z_2^2+z_3^2}=\sqrt{3z_1^2}=1
 .\]
 Therefore the maximal value, above which we should round down is $\frac{1}{\sqrt{3}}$.
-If we truncate such that no bloch vector component can be above this value, we will always have a valid state.
-Visually, this is the same as fitting a cube inside the bloch sphere and reducing our state space to inside the cube.
+If we truncate such that no Bloch vector component can be above this value, we will always have a valid state.
+Visually, this is the same as fitting a cube inside the Bloch sphere and reducing our state space to inside the cube.
 \todo{prove this to be sure its true}
 The projections are $z_i=\braket{r}{v^i}/T$ with $T=c\sqrt{\log{}n}$ and $c=O(\log{}n)$.
 This constant will be discussed later.
 The algorithm looks like this:
 \begin{enumerate}
 	\item Solve the relaxed semidefinite program, obtaining an optimal set of vectors $v_i$
-	\item Let $\ket{r}$ be a vector of $3n$ indepently and identically distributed $N(0,1)$ random variables
+	\item Let $\ket{r}$ be a vector of $3n$ independently and identically distributed $N(0,1)$ random variables
 	\item If $|z_i|>\frac{1}{\sqrt{3}}$, we round down: $y_i=\frac{sgn(z_i)}{\sqrt{3}}$. Otherwise $y_i=z_i$.
 \end{enumerate}
 As output we take $ \rho=\rho_1\otimes\ldots\otimes\rho_n$ where:\[
 	\rho_a=\frac{1}{2}\left(\1 +y_{3a-2}P_{3a-2}+y_{3a-1}P_{3a-1}+y_{3a}P_{3a}\right).
 .\]
-We want to show that this algorithm fullfils the approximation ratio $\Omega(\frac{1}{\log{}n})$ with probability $\frac{2}{3}$.\\
+We want to show that this algorithm fulfills the approximation ratio $\Omega(\frac{1}{\log{}n})$ with probability $\frac{2}{3}$.\\
 First we demonstrate that the approximation ratio is bounded below by a constant.\cite{lieb73}
 \begin{thm}\emph{
 	Suppose $H$ is traceless 2-local Hamiltonian. then \[
@@ -120,14 +120,14 @@ where $d$ is the dimension of state. The parameter $\lambda$ must satisfy \[
 This channel maps pure states to mixed states.
 For $\lambda=0$ we get the maximally noisy channel, for $\lambda=1$ the identity.
 In our case we look at entanglement breaking channels.
-These are channels for which the output state is always seperable, i.e. if any entangled density matrix is mapped to a seperable one.\cite{horodecki03}
+These are channels for which the output state is always separable, i.e. if any entangled density matrix is mapped to a separable one.\cite{horodecki03}
 Here, the relevant map $\mathcal{E}_{\delta}$ is defined by its action on the Pauli group: \[
 	\mathcal{E}_{\delta}(I)=I\quad\mathcal{E}_{\delta}(P)=\delta P\quad P\in \{X,Y,Z\}
 .\]
-Therefore, the action on a qubit state in bloch representation is: \[
+Therefore, the action on a qubit state in Bloch representation is: \[
 	\mathcal{E}_{\delta}(\rho) =  \frac{1}{2}\1 + \delta \sum_{i=1}^{3} \tau_i P_i
 .\]
-Geometrically, this reduces the length of any bloch vector by a factor $\delta$.
+Geometrically, this reduces the length of any Bloch vector by a factor $\delta$.
 Generally, a CPT map $\Phi$ can be written as $\Phi(\rho)=\frac{1}{2}\left( \1 + (\bm{t}+T\tau)P_i \right)$ where $\bm{t}$ is a vector and $T$ a matrix.\cite{ruskai03}
 We can write this as $\bm{T}=\begin{pmatrix}
 	1 & 0 \\
@@ -163,12 +163,11 @@ Using this, one can show that the approximation ration holds.
 To find out more about the constant $T$, we can look at a recent publication by Harrow and Montanaro \cite{harrow17}.
 An algorithm is presented which gives an product state approximation ratio to traceless $k$-local Hamiltonians with respect to the $1$-norm of the coefficients of the Hamiltonian, $C_{i,j}$ and $D_j$ in our case.
 This result uses a different notion of approximation ratio but is concerned with the same kind of Hamiltonians.
-We use the following equation which is proven in the paper: \[
+We use the following equation which is proved in the paper: \[
 	\sum_{i,j=1}^{3n} \left| C_{i,j} \right| \le Kn\lambda_{max}(H)
 .\]
 $K>0$ is an absolute constant, that we can use to show that the approximation ratio $\Omega(\frac{1}{\log{}n})$ holds, if we choose $T$ and $c$ as described.
-For $2$-local Hamiltonians, Harrow and Montanaro show that \[
+For traceless $2$-local Hamiltonians, Harrow and Montanaro show that \[
 	\lambda_{min}(H)\le - \|\hat{H}\|_1/(24l)
 \]
 where $l$ is the maximal number of terms that each qubit participates in and $\|\hat{H}\|_1$ the $1$-norm of the coefficients.
-Another relevant recent result is an algorithm by Ghabarian and Parekh \cite{gharibian19}, which finds a constant approximation ratio for the quantum Heisenberg model.\todo{should i go deeper into these two and/or other algos, does it belong in this chapter}

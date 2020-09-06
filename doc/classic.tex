@@ -1,4 +1,4 @@
-For productstate approximation algorithms, many techniques from classical computing are used and generalized.
+For product state approximation algorithms, many techniques from classical algorithms are used and generalized.
 Finding the maximal eigenvalue of a traceless 2-local hamiltonian is the quantum analogue to maximizing a binary quadratic program (MaxQP):
 Given a matrix $A$ with $a_{ii}=0$ maximize \[
 	\sum_{i=1}^{n}\sum_{j=1}^{n} a_{ij}x_{i}x_{j}\quad \text{s.t.}\quad x_{i}\in \{-1,1 \}\quad \forall ~ i
@@ -61,10 +61,22 @@ The proof that this algorithm indeed has an approximation ratio of $\Omega(\frac
 T^2\mathbb{E}\left[ z_iz_j \right] = v_i\cdot v_j
 .\]
 Therefore, if every $\left| z_i \right| $ would be at most one, the approximation ratio would be $\frac{1}{T^2}$.
-Since this isnt the case, we have to proof that the expected value of $\Delta_{ij}=z_iz_j - y_iy_j$ is small in magnitude.
+Since this is not the case, we have to proof that the expected value of $\Delta_{ij}=z_iz_j - y_iy_j$ is small in magnitude.
 In this case \[
 	\left|\mathbb{E}(\Delta_{ij})\right|<8e^{-\frac{T^2}{2}}
 .\]
 This can be used to finally show that the $x_i$ are a good approximation to the $y_i$.
 This algorithm also efficiently solves max-cut and can therefore be seen as a generalization of \cite{goemans95}.
-In the next chapter, we will see the techniques used here to tackle the problem of approximating the maximal value of a traceless $2$-local Hamiltonian.
+In the next chapter, we will see the techniques used here to tackle the problem of approximating the maximal value of a traceless $2$-local Hamiltonian.\\
+Others have studied the approximation algorithms for Hamiltonians which are positive semidefinite instead of traceless. \cite{gharibian19,anshu20,brandao14}
+An interesting example of this case is the Heisenberg model, which has already been studied by Bethe in 1931 in \cite{bethe31}, where the famous Bethe ansatz is presented.
+The Heisenberg model is a family of $2$-local Hamiltonians of the form \[
+H=\sum_{i,j} w_{ij}H_{ij}
+,\] where \[
+H_{ij}=\alpha X_iX_i + \beta Y_iY_j + \gamma Z_iZ_j
+.\]
+In \cite{gharibian19}, constant approximation ratios are achieved for special cases of $\alpha, \beta, \gamma$.
+For $\alpha+\beta+\gamma=3$, the problem of finding the maximal eigenvalue of an equivalent version of $H$, namely with  $H_{ij}=I-(\alpha X_iX_i + \beta Y_iY_j + \gamma Z_iZ_j)$, is equivalent to the max-cut problem.
+Gharibian and Parekh demonstrated a classical approximation algorithm with an approximation ratio of at least $0.498$.
+This year, Anshu \emph{et al.} \cite{anshu20} have shown an efficient classical approximation algorithm with a ratio of at least $0.53$ for the same problem, and that for specific instances of the problem there is a shallow quantum circuit that prepares a state with energy larger than the best product state and even its SDP relaxation.
+The circuit is efficiently computable and shallow means that its depth is independent of input size.

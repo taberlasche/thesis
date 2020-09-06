@@ -36,10 +36,11 @@ An arbitrary vector in the space can then be written \[
 .\]
 where $a$ and $b$ are complex numbers.
 The normalization condition of quantum states is equivalent to $\braket{\psi}{\psi}=1$ and $ \left| a \right|^2+\left| b \right|^2=1$.
-The orthogonal basis vectors of the state space are called computational basis.\\
+The orthogonal basis vectors of the state space are called computational basis.
+Per convention we let $\ket{0}$ and $\ket{1}$ be the $\pm 1$ eigenvectors of $Z$.\\
 The basic model of transmitting quantum information has three steps:
-We send a state $\rho$ through a quantum channel $\mathcal{N}$ and the reciever has to measure the outcome in order to extract information.
-Quantum channels can be understood either as geometrical transformations associated with the bloch representation, or as completely positive, trace preserving maps.
+We send a state $\rho$ through a quantum channel $\mathcal{N}$ and the receiver has to measure the outcome in order to extract information.
+Quantum channels can be understood either as geometrical transformations associated with the Bloch representation, or as completely positive, trace preserving maps.
 A quantum channel has to be trace preserving i.e. $Tr(\mathcal{N}(\rho))=Tr(\rho)$ in order for the outcome state to be normalized.
 It must be completely positive, i.e., the map $\1\otimes\mathcal{N}$ maps positive semidefinite hermitian matrices to positive semidefinite hermitian matrices for any identity matrix $\1$, in order for the outcome state to be positive.
 A completely positive map is trace preserving if and only if $\sum_{i} A_i^{\dagger}A_i = \1$.\\
@@ -49,9 +50,9 @@ By the Kraus representation Theorem \cite{choi75} a linear map $\Psi$ is complet
 Maps that are both completely positive and trace preserving are called CPT maps.
 We discern between unital and non-unital maps.
 Unital maps map the identity to itself.
-Geometrically, we can interpret this as the image of the map having the same center as the bloch sphere.
+Geometrically, we can interpret this as the image of the map having the same center as the Bloch sphere.
 Unital maps can be expressed as convex combinations of the Pauli operators and the identity.
-Their action in the bloch sphere are different rotations with shrinking parameters, since the Pauli matrices are unitary.\cite{imre12}\\
+Their action in the Bloch sphere are different rotations with shrinking parameters, since the Pauli matrices are unitary.\cite{imre12}\\
 The most commonly used model for quantum computation is the quantum circuit model, which generalizes its classical analogue.
 To classify quantum algorithms we use, in parallel to classical complexity theory, quantum complexity classes.
 The two prominent complexity classes in classical computation are P and NP.
@@ -59,11 +60,11 @@ P is the set of problems which can be solved by a deterministic Turing machine i
 The class QMA is the quantum analogue of NP in a probabilistic setting, the class of all problems which can be solved by a quantum verifier probabilistically in polynomial time.\cite{kempe06}
 We call a problem complete, if any other problem in its class can be reduced to it.
 Reduction means that for predicates $L_1$ and $L_2$ there is a polynomial $f$, such that $L_1(x)=L_2(f(x))$.
-We say that $f$ reduces  $L_1$ to $L_2$ polynomially.\cite{kitaev02}\\
+We say that $f$ reduces  $L_1$ to $L_2$ polynomially.\\
 
 The Hamiltonian of a system corresponds to its energy, the spectrum of the operator being the set of possible outcomes when measuring the total energy.
 A $k$-local-Hamiltonian is a hermitian matrix acting on $N$ qubits, which can be written as a sum of Hamiltonians where each acts on at most $k$ qubits.
-Physically, this corresponds to system, where the interaction energy between more than $k$ qubits is neglible.
+Physically, this corresponds to system, where the interaction energy between more than $k$ qubits is negligible
 Specifically, we look at $2$-local-Hamiltonians on qubits of the form \[
 H = H_1+H_2
 .\]
@@ -78,7 +79,7 @@ with the Pauli-operators \[
 The minimal eigenvalue of such a systems corresponds to its ground state.
 Since the quantum state achieving this optimal value might be an entangled state which might not be computable in polynomial time, we are interested in finding the product state that achieves the best approximation.
 It is equivalent to finding the best approximation to the maximal eigenvalue, because $\lambda_{max}(-H)=\lambda_{min}(H)$. \cite{gharibian19}\\
-In the local Hamiltonian problem, we are to determine, whether the groundstate energy of a given $k$-local Hamiltonian is below one threshold or above another.
+In the local Hamiltonian problem, we are to determine, whether the ground state energy of a given $k$-local Hamiltonian is below one threshold or above another.
 It is equivalent to the maximum constraint satisfaction problem from classical computation.
 The $2$-local Hamiltonian problem is QMA complete.\cite{kempe06}
 Specifically, we look at \emph{traceless} $2$-local Hamiltonians, as these are the quantum generalization of binary quadratic functions of the form \[

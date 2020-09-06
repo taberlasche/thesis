@@ -1,6 +1,6 @@
 import numpy as np
 import math
-# for a 2-local Hamiltonian on qubits returns bloch vector #and state# upon input of C and c
+# for a 2-local Hamiltonian on qubits returns bloch vector upon input of C and c
 def rund(v, c, C):
     N=C.size[0]
     n=N/3
