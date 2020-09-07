@@ -1,19 +1,19 @@
 I will now discuss the results of my implementation of the algorithm and the implemented Hamiltonians.
-The code is written in Python, while for the semidefinite program the interface picos is used.
-It can be found in appendix A.
+The code is written in Python 3.8, while for the semidefinite program the interface PICOS is used.
+All of it can be found in appendix A.
 To produce informative plots, the implementation executes the algorithm with output $y$ and computes the ratio $r=y^{T}Cy/\lambda_{max}$.
 It does this $o$ times per number of qubits $n$.
 The average of the $o$ ratios per $n$ is plotted, where a logarithmic scale is used for the $x$-axis.
 I have chosen to plot in the range of $n=4$ to $n=5200$ in equidistant steps on the logarithmic scale, using $o=20$.
 The computation time became infeasible for larger qubit numbers.\\
 The Ising model with a transverse field has physical relevance because it can be used to study quantum phase transitions of ferroelectrics with a tunneling effect or systems of interacting magnetic spins with an outer field.
-The Hamiltonian,
+The Hamiltonian
 \[
 H=\alpha \sum_{i} Z_i + \beta \sum_{i} X_iX_{i+1}
 \]
 has been exactly solved in one dimension in \cite{pfeuty70}.
 One way to do this by transforming the Hamiltonian into a quadratic form of Fermi operators via the Jordan-Wigner transformation \cite{nielsen05}.
-To diagonalize this Hamiltonian one can use the Bogoliubov transformation which is an isomorphism in the canonical commutation or anticommutation relation algebra.\cite{bogoljubov58}\todo{go more in depth?}\\
+To diagonalize this Hamiltonian, one can use the Bogoliubov transformation which is an isomorphism in the canonical commutation or anticommutation relation algebra.\cite{bogoljubov58}\todo{go more in depth?}\\
 The parameter $\alpha$ corresponds to the tunneling energy and $\beta$ to the nearest neighbour interaction in the ferroelectric problem.
 We here look at a closed chain, meaning $1\le i \le n, \quad X_{n+1}=X_{1}$.
 I have first implemented the model with $\alpha =0, \quad \beta =1$.
@@ -25,14 +25,14 @@ In this case, it is the $n$-fold tensor product of the $+1$-eigenvector of $X$: 
 \ket{+}_i= \frac{\ket{0}_i+\ket{1}_i}{\sqrt{2}}
 .\]
 The maximal eigenvalue of the Hamiltonian is therefore $\lambda_{max}=n$, since it has $n$ terms.
-Fig. \ref{fig:1} shows the result of computing numeric values of the approximation ratio over a range of $n$ qubit Hamiltonians of this kind.
+Figure \ref{fig:1} shows the result of computing numeric values of the approximation ratio over a range of $n$ qubit Hamiltonians of this kind.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{avgchainplotn(4,5200,2,20,20)}
 	\caption{The average of $20$ approximation ratios per $n$, plotted from $4$ to $5200$ qubits with logarithmic scale on the $x$-axis for the one dimensional Ising model with no transverse field.}
 	\label{fig:1}
 \end{figure}
-While we can only be sure for significantly larger qubit numbers, it seems to exhibit the expected behaviour of $\Omega(\frac{1}{\log{}n})$.\\
+\noindent While we can only be sure for significantly larger qubit numbers, it seems to exhibit the expected behaviour of $\Omega(\frac{1}{\log{}n})$.\\
 I have also implemented the transverse field Ising model for non-zero $\alpha$ and arbitrary $\beta$.
 To compute the maximal eigenvalue, I have followed \cite{pfeuty70}.
 Since the Hamiltonian has terms that are linear in Pauli operators, we have to transform it as discussed in chapter 4.
@@ -40,15 +40,15 @@ The Hamiltonian that was implemented is \[
 H = H_2 + Z_{n+1}H_1 =\alpha Z_{n+1}\sum_{i} Z_i + \beta \sum_{i} X_iX_{i+1}
 .\]
 Fig. \ref{fig:2} shows a result of implementing this model for $\alpha=2$ and $\beta=3$.
-The plot shows a similar behaviour to fig. \ref{fig:1}.
+The plot shows a similar behaviour to figure \ref{fig:1}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{tfiplot(4,5200,2,20,20,2,3)}
-	\caption{The average of $20$ approximation ratios per $n$, plotted from $4$ to $5200$ qubits with logarithmic scale on the $x$-axis for the transverse field Ising model. For testing I have chosen $\alpha=2$ and $\beta=3$.}
+	\caption{The average of $20$ approximation ratios per $n$, plotted from $4$ to $5200$ qubits with logarithmic scale on the $x$-axis for the transverse field Ising model. For testing $\alpha=2$ and $\beta=3$ is used.}
 	\label{fig:2}
 \end{figure}
 
-The second model implemented is \[
+\noindent The second model implemented is \[
 	H = \sum_{i=1}^{\frac{n}{4}} X_iX_{i+1}+Z_iZ_{i+1}+X_{i+2}+X_{i+3},
 \]
 where we restrict $n$ to be a multiple of $4$.
@@ -73,8 +73,8 @@ Fig. \ref{fig:3} seems to show the expected $\Omega\left( \frac{1}{\log{}n} \rig
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{avgplotn(4,5200,2,20,20)}
-	\caption{The average of $20$ approximation ratios per $n$, plotted from $4$ to $5200$ qubits with logarithmic scale on the $x$-axis for a chain with linear terms}
+	\caption{The average of $20$ approximation ratios per $n$, plotted from $4$ to $5200$ qubits with logarithmic scale on the $x$-axis for a chain with linear terms.}
 	\label{fig:3}
 \end{figure}
-Since the functionality and efficiency of this algorithm has been proved, the purpose of the implementation of the two models were of course mainly for testing the code itself.
-An open questions is if it is possible to make the implementation more efficient, to achieve feasible computation for larger qubit numbers, to then test if the code achieves the proved results.
+\noindent Since the functionality and efficiency of this algorithm has been proved, the purpose of the implementation of the two models were of course mainly for testing the code itself.
+An open questions would be if it is possible to make the implementation more efficient, to achieve feasible computation for larger qubit numbers, to then test if the code achieves the proved results.

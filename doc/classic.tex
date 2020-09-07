@@ -13,7 +13,7 @@ We can write a general SDP as:
 	\text{s.t.} &\quad A_i \cdot X = b_i,\quad i=1,\ldots,m\\
 	                  &\quad X \ge 0
 \end{flalign*}
-where $C$ and $A_i$ are symmetric matrices and $b_i\in\IR^{m}$ a vector.
+where $C$ and $A_i$ are symmetric matrices and $b_i\in\IR^{m}$ is a vector.
 This is called the primal problem.
 The dual of a SDP is its reformulated version, such that instead of minimizing (maximizing) an objective function, we maximize (minimize) another:
 \begin{flalign*}
@@ -25,10 +25,10 @@ While this is not the case in general, it usually holds for SDPs.
 For SDPs we can use Slaters condition for strong duality, which states that if there is an $x^*$ that is strictly feasible (i.e. all constraints are satisfied and inequalities hold), then the problem is strictly dual.\cite{boyd04}\\
 The relaxation of a SDP was first proposed by Goemans and Williamson in \cite{goemans95} as part of an approximation algorithm for the max-cut problem, which is a special case of MaxQP.
 In max-cut, we are given a graph and are to find a partition of the vertices into two sets, such that the number of edges between the two sets is as large as possible.
-Goemans and Williamson start by formulating the problem into a semidefinite program.
+Goemans and Williamson start by reformulating the problem as an SDP.
 Given a vertex set $ V=\{1,\ldots n\} $ and non-negative weights $w_{i,j}=w_{j,i}$, maximize the objective function $\frac{1}{2}\sum_{i<j} w_{i,j}\left( 1-y_iy_j \right)$ such that  $y_i \in S=\{-1,1\}\quad \forall ~ i \in V$.
 As this is in NP, we need to relax the constraints, which is accomplished by extending the objective function to a larger space, namely $S^n= \{-1,1\}^n$.
-We then have to consider vectors $v_i$ and look at the inner product  $v_i\cdot v_j$
+We then have to consider vectors $v_i$ and look at the inner product  $v_i\cdot v_j$.
 The algorithm proposed by Goemans and Williamson proceeds by partitioning the vertices of the graph based on randomized rounding.
 The rounding is based on a random hyperplane cut of the vectors.
 It has a approximation ratio of $0.878$.\\
@@ -39,9 +39,9 @@ For this, the relaxed semidefinite program is
 \begin{flalign*}
 	\text{max} &\quad \sum_{ij} a_{ij}v_{i}\cdot v_{j}\\
 	\text{s.t.} &\quad  v_i\cdot v_i =1 \quad \forall ~ i\\
-	            &\quad v_i\in\IR^n
+	            &\quad v_i\in\IR^n.
 \end{flalign*}
-Using this, the algorithm, which can be solved in polynomial time is:
+Using this the algorithm which can be solved in polynomial time is:
 \begin{enumerate}
 	\item Obtain an optimal solution $ \{v_i\} $ to the SDP
 	\item Create vector $r$ in which the $r_i$ are independently distributed over the normal distribution
@@ -55,9 +55,9 @@ x_{i}=\begin{cases}
 	-1, \quad \text{with probability} \frac{1-y_{i}}{2}\\
 	+1, \quad \text{with probability} \frac{1+y_{i}}{2}
 \end{cases}
-.\]
+\]
 The result then clearly lies in $\left[ -1,+1\right]$.
-The proof that this algorithm indeed has an approximation ratio of $\Omega(\frac{1}{\log{}n)}$ exploits the spherical symmetry of the distribution of the vector $r$ to show that \[
+The proof that this algorithm indeed has an approximation ratio of $\Omega(\frac{1}{\log{}n}$ exploits the spherical symmetry of the distribution of the vector $r$ to show that \[
 T^2\mathbb{E}\left[ z_iz_j \right] = v_i\cdot v_j
 .\]
 Therefore, if every $\left| z_i \right| $ would be at most one, the approximation ratio would be $\frac{1}{T^2}$.
@@ -65,10 +65,10 @@ Since this is not the case, we have to proof that the expected value of $\Delta_
 In this case \[
 	\left|\mathbb{E}(\Delta_{ij})\right|<8e^{-\frac{T^2}{2}}
 .\]
-This can be used to finally show that the $x_i$ are a good approximation to the $y_i$.
+The latter can be used to finally show that the $x_i$ are a good approximation to the $y_i$.
 This algorithm also efficiently solves max-cut and can therefore be seen as a generalization of \cite{goemans95}.
 In the next chapter, we will see the techniques used here to tackle the problem of approximating the maximal value of a traceless $2$-local Hamiltonian.\\
-Others have studied the approximation algorithms for Hamiltonians which are positive semidefinite instead of traceless. \cite{gharibian19,anshu20,brandao14}
+Others have studied the approximation algorithms for Hamiltonians which are positive semidefinite instead of traceless.\cite{gharibian19,anshu20,brandao14}
 An interesting example of this case is the Heisenberg model, which has already been studied by Bethe in 1931 in \cite{bethe31}, where the famous Bethe ansatz is presented.
 The Heisenberg model is a family of $2$-local Hamiltonians of the form \[
 H=\sum_{i,j} w_{ij}H_{ij}
@@ -78,5 +78,5 @@ H_{ij}=\alpha X_iX_i + \beta Y_iY_j + \gamma Z_iZ_j
 In \cite{gharibian19}, constant approximation ratios are achieved for special cases of $\alpha, \beta, \gamma$.
 For $\alpha+\beta+\gamma=3$, the problem of finding the maximal eigenvalue of an equivalent version of $H$, namely with  $H_{ij}=I-(\alpha X_iX_i + \beta Y_iY_j + \gamma Z_iZ_j)$, is equivalent to the max-cut problem.
 Gharibian and Parekh demonstrated a classical approximation algorithm with an approximation ratio of at least $0.498$.
-This year, Anshu \emph{et al.} \cite{anshu20} have shown an efficient classical approximation algorithm with a ratio of at least $0.53$ for the same problem, and that for specific instances of the problem there is a shallow quantum circuit that prepares a state with energy larger than the best product state and even its SDP relaxation.
+This year, Anshu \emph{et al.}\cite{anshu20} have shown an efficient classical approximation algorithm with a ratio of at least $0.53$ for the same problem, and that for specific instances of the problem there is a shallow quantum circuit that prepares a state with energy larger than the best product state and even its SDP relaxation.
 The circuit is efficiently computable and shallow means that its depth is independent of input size.
