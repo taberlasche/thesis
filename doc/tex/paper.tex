@@ -40,7 +40,7 @@ Conversely, a state is called a stabilizer state of an operator if it is in its 
 For practicality, we look at operators from the $n$-qubit Pauli group.
 This is favorable because they are unitary and their eigenvalues  $(\pm 1)$ differ significantly from another, such that we can easily perform phase estimations to find out the eigenvalue.
 If we are given a set of operators $S=\{A,B,C\ldots\}$, we know that any errors (which are also from the Pauli group) either commute or anticommute with elements in $S$.
-One can correct any error $E$ that anticommutes with $S$, and in case the error lies in $S$ it is correctable if it commutes with $S$.\cite{gottesman97}
+One can correct any error $E$ that anticommutes with $S$, and in case the error lies in $S$ it is correctable if it commutes with $S$ \cite{gottesman97}.
 We say an operator commutes with a group or is in the normalizer of the group if for some $A,B\in S$: $EA=BE$ with possibly $A\neq B$.
 This criterion is very easy to check and gives us a useful mathematical toolbox.
 For choosing the product state $\ket{\phi}$, we use operations on $\ket{\omega}$ that take eigenvectors of matrices from the Pauli group to eigenvectors of matrices from the Pauli group.
@@ -61,7 +61,7 @@ In our case, the semidefinite program is:
 	            &\quad M \ge 0
 \end{flalign*}
 where M is a hermitian matrix.
-The ideal solution $M$ is connected to our state in the following way\cite{gharibian19}:\[
+The ideal solution $M$ is connected to our state in the following way \cite{gharibian19}:\[
 	M_{i,j} = tr\left( \rho P_{i}P_j \right) ~ i,j=1\ldots 3n
 .\]
 We can set M as a real symmetric matrix without loss of generality, because if the Pauli operators act on different matrices they commute, and therefore the matrix entry is real in this case.
@@ -99,7 +99,7 @@ As output we take $ \rho=\rho_1\otimes\ldots\otimes\rho_n$ where:\[
 	\rho_a=\frac{1}{2}\left(\1 +y_{3a-2}P_{3a-2}+y_{3a-1}P_{3a-1}+y_{3a}P_{3a}\right).
 .\]
 We want to show that this algorithm fulfills the approximation ratio $\Omega(\frac{1}{\log{}n})$ with probability $\frac{2}{3}$.\\
-First we demonstrate that the approximation ratio is bounded below by a constant.\cite{lieb73}
+First we demonstrate that the approximation ratio is bounded below by a constant \cite{lieb73}
 \begin{thm}\emph{
 	Suppose $H$ is traceless 2-local Hamiltonian. Then \[
 	\lambda_{sep}(H)\ge \frac{1}{9}\lambda_{max}(H)
@@ -109,7 +109,7 @@ Where we call $\lambda_{sep}$ the highest eigenvalue achievable by a product sta
 	\lambda_{sep}(H)=\max_{\phi_1,\ldots,\phi_n}\bra{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}H\ket{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}
 .\]
 We can proof this using entanglement-breaking depolarizing channels.
-Depolarizing channels are a simple model for noise in quantum information theory.\cite{nielsen11}
+Depolarizing channels are a simple model for noise in quantum information theory \cite{nielsen11}.
 They are implemented by a map $\Delta_{\lambda}$, which maps a state  $\rho$ onto a linear combination of itself and the identity matrix:\cite{king02}\[
 	\Delta_{\lambda}(\rho)=\lambda\rho+\frac{1-\lambda}{d}\1,
 \]

@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import scipy
 from scipy import special
 import math
+import matplotlib.scale as scale
+import statistics
 
 from hamiltonians import *
 from sdp import *
@@ -46,19 +48,32 @@ def chainsample(n, c, o, C):
     return ratlist
 
 # returns the highest eigenvalue of the n-qubit productstate after performing the rounding o times
-def sample2(n,c,o,C):
-    K = np.add(C, np.identity(3*n))
-    v = findGenVecGram(K)
-    eiglist=[]
-    for i in range(o):
-        y=rund(v,c,cvx.matrix(C))["blochvec"]
-        eiglist.append(np.inner(np.dot(y,C),np.transpose(y)))
-    return eiglist
+def maxsample(n, c, o, C):
+    v = findGenVecGram(sdp1(n))
+    ratlist=[]
+    i=0
+    while i < o:
+        ratlist.append(ratio(C, rund(v,c,cvx.matrix(C))["blochvec"], n))
+        i=i+1
+    return max(ratlist)
+
+def maxchainsample(n,c,o,C):
+    v = findGenVecGram(sdp2(n))
+    ratlist=[]
+    i=0
+    while i < o:
+        ratlist.append(ratio(C, rund(v,c,cvx.matrix(C))["blochvec"], n))
+        i=i+1
+    return max(ratlist)
 
 # Returns the average of the list.
 def avg(l):
     return sum(l)/len(l)
 
+def forward(x):
+    return x**2
+def inverse(x):
+    return x**(1/2)
 
 # For the buildC(n) returns a plot of samples in a range of qubitnumbers upon input of start and end of range, c and the number of rounding attemps per qubitnumber
 def plotn(ni, nf, c, o, s):
@@ -74,7 +89,27 @@ def plotn(ni, nf, c, o, s):
     plt.show()
 
 # Does the same as plotn but returns the averages over the lists per n, and the steps are choosable for efficiency
-def avgplotn(ni,nf,c,o,s):
+def avgplot(ni,nf,c,o,s):
+    y=[]
+    x=[]
+    var=[]
+    a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
+    for i in a:
+        i = int(4*round(i/4.))
+        x.append(i)
+    for i in range(len(x)):
+        print(x[i])
+        list=sample(x[i],c,o,buildC(x[i]))
+        y.append(avg(list))
+        var.append(statistics.variance(list))
+    plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
+    plt.xlabel('n')
+    plt.ylabel('ratio')
+    plt.xscale('log')
+    plt.title('Hamiltonian With Linear Terms')
+    plt.show()
+
+def maxplot(ni,nf,c,o,s):
     y=[]
     x=[]
     a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
@@ -82,14 +117,17 @@ def avgplotn(ni,nf,c,o,s):
         i = int(4*round(i/4.))
         x.append(i)
     for i in range(len(x)):
-        y.append(avg(sample(x[i],c,o,buildC(x[i]))))
         print(x[i])
+        y.append(maxsample(x[i],c,o,buildC(x[i])))
     plt.scatter(x,y,marker="o",s=5)
     plt.xlabel('log(n)')
     plt.ylabel('ratio')
     plt.xscale('log')
     plt.title('Hamiltonian With Linear Terms')
     plt.show()
+
+
+
 
 # For the buildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is. Not used.
 def plotc(ci, cf, n, o):
@@ -106,9 +144,10 @@ def plotc(ci, cf, n, o):
     plt.show()
 
 # For the chainC(n) returns a plot of samples in a range of qubitnumbers upon input of start and end of range, c and the number of rounding attemps per qubitnumber.
-def chainplotn(ni, nf, c, o,s):
+def chainplot(ni, nf, c, o,s):
     x=[]
     y=[]
+    var=[]
     for i in range(ni,nf+1):
         x.append(i)
         y=y+avg(chainsample(i,c,o,chainC(i)))
@@ -117,6 +156,23 @@ def chainplotn(ni, nf, c, o,s):
     plt.ylabel('log(ratio)')
     plt.yscale('log')
     plt.title('nplot')
+    plt.show()
+
+def maxchainplot(ni,nf,c,o,s):
+    y=[]
+    x=[]
+    a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
+    for i in a:
+        i = int(4*round(i/4.))
+        x.append(i)
+    for i in range(len(x)):
+        y.append(avg(maxsample(x[i],c,o,buildC(x[i]))))
+        print(x[i])
+    plt.scatter(x,y,marker="o",s=5)
+    plt.xlabel('log(n)')
+    plt.ylabel('ratio')
+    plt.xscale('log')
+    plt.title('s')
     plt.show()
 
 # For the chainbuildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is.
@@ -135,18 +191,24 @@ def chainplotc(ci, cf, n, o):
     plt.show()
 
 # Plots the averages of the lists of ratios for chainC(n).
-def Avgchainplotn(ni,nf,c,o,s):
+def avgchainplot(ni,nf,c,o,s):
     x=[]
     y=[]
-    for i in range(ni,nf+1,s):
+    var=[]
+    a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
+    for i in a:
+        i = int(round(i))
         x.append(i)
-    for i in range(ni,nf+1,s):
-        y.append(avg(chainsample(i,c,o,chainC(i))))
-    plt.scatter(x,y,marker="o",s=5)
-    plt.xlabel('log(n)')
+    for i in range(len(x)):
+        print(x[i])
+        list=chainsample(x[i],c,o,chainC(x[i]))
+        y.append(avg(list))
+        var.append(statistics.variance(list))
+    plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
+    plt.xlabel('n')
     plt.ylabel('ratio')
     plt.xscale('log')
-    plt.title('nplot')
+    plt.title('One Dimensional Ising Model')
     plt.show()
 
 # Returns the maximal eigenvalue of the transverse field Ising model upon input of a, b, n and a constant d.
@@ -170,17 +232,19 @@ def tfiplot(ni,nf,c,iterations,steps,a,b):
     d=scipy.special.ellipeinc(math.pi/2,l)
     x=[]
     y=[]
-    k = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
-    for i in k:
+    var=[]
+    a = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
+    for i in a:
         i = int(2*round(i/2.))
         x.append(i)
     for i in range(len(x)):
-        y.append(avg(tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d)))
         print(x[i])
-    plt.scatter(x,y,marker="o",s=5)
-    plt.xlabel('log(n)')
+        list=tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d)
+        y.append(avg(list))
+        plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
+        var.append(statistics.variance(list))
+    plt.xlabel('n')
     plt.ylabel('ratio')
-    #plt.ylabel('log(ratio)')
     plt.xscale('log')
-    plt.title('nplot')
+    plt.title('Transverse Field Ising Model')
     plt.show()

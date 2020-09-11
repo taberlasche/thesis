@@ -6,7 +6,7 @@ Given a matrix $A$ with $a_{ii}=0$ maximize \[
 An important tool for solving such problems is the relaxation of a semidefinite program (SDP), which has been pioneered by Goemans and Williamson.\\
 In semidefinite programing we try to maximize a linear function, such that an affine combination of symmetric matrices is positive semidefinite.
 An affine combination is a linear combination $\sum_{i=1}^{n}a_ix_i$ where $x_i$ are elements of a vector space, such that $\sum_{i=1}^{n}a_i=1$.
-Semidefinite programs are very useful, as they can be solved efficiently both in theory and in practice.\cite{vandenberghe96}
+Semidefinite programs are very useful, as they can be solved efficiently both in theory and in practice \cite{vandenberghe96}.
 We can write a general SDP as:
 \begin{flalign*}
 	\text{minimize} &\quad C \cdot X\\
@@ -22,7 +22,7 @@ The dual of a SDP is its reformulated version, such that instead of minimizing (
 \end{flalign*}
 If the optimal value of the primal and the dual problem are the same, we say that \emph{strong dualitity} holds.
 While this is not the case in general, it usually holds for SDPs.
-For SDPs we can use Slaters condition for strong duality, which states that if there is an $x^*$ that is strictly feasible (i.e. all constraints are satisfied and inequalities hold), then the problem is strictly dual.\cite{boyd04}\\
+For SDPs we can use Slaters condition for strong duality, which states that if there is an $x^*$ that is strictly feasible (i.e. all constraints are satisfied and inequalities hold), then the problem is strictly dual \cite{boyd04}.\\
 The relaxation of a SDP was first proposed by Goemans and Williamson in \cite{goemans95} as part of an approximation algorithm for the max-cut problem, which is a special case of MaxQP.
 In max-cut, we are given a graph and are to find a partition of the vertices into two sets, such that the number of edges between the two sets is as large as possible.
 Goemans and Williamson start by reformulating the problem as an SDP.
@@ -32,7 +32,7 @@ We then have to consider vectors $v_i$ and look at the inner product  $v_i\cdot 
 The algorithm proposed by Goemans and Williamson proceeds by partitioning the vertices of the graph based on randomized rounding.
 The rounding is based on a random hyperplane cut of the vectors.
 It has a approximation ratio of $0.878$.\\
-The first algorithm for approximating an optimal solution of MaxQP was proposed by Charikar and Wirth and has a $\Omega\left( \frac{1}{\log n} \right)$ approximation ratio. \cite{charikar04}
+The first algorithm for approximating an optimal solution of MaxQP was proposed by Charikar and Wirth and has a $\Omega\left( \frac{1}{\log n} \right)$ approximation ratio \cite{charikar04}.
 Since the algorithm described in the next chapter uses a similar approach, I will now lay out the ideas of arriving at the classical result.
 It also uses relaxation of a SDP and randomized rounding, but instead of partitioning based on a random hyperplane cut through the origin, it takes into account the size of the projections of a random vector onto the solution vectors.
 For this, the relaxed semidefinite program is
@@ -68,7 +68,7 @@ In this case \[
 The latter can be used to finally show that the $x_i$ are a good approximation to the $y_i$.
 This algorithm also efficiently solves max-cut and can therefore be seen as a generalization of \cite{goemans95}.
 In the next chapter, we will see the techniques used here to tackle the problem of approximating the maximal value of a traceless $2$-local Hamiltonian.\\
-Others have studied the approximation algorithms for Hamiltonians which are positive semidefinite instead of traceless.\cite{gharibian19,anshu20,brandao14}
+Others have studied the approximation algorithms for Hamiltonians which are positive semidefinite instead of traceless \cite{gharibian19,anshu20,brandao14}.
 An interesting example of this case is the Heisenberg model, which has already been studied by Bethe in 1931 in \cite{bethe31}, where the famous Bethe ansatz is presented.
 The Heisenberg model is a family of $2$-local Hamiltonians of the form \[
 H=\sum_{i,j} w_{ij}H_{ij}
