@@ -1,5 +1,4 @@
 from whole import *
-from tfieldising import *
 from qutritalgo import *
 import sys
 np.set_printoptions(threshold=sys.maxsize)
@@ -18,4 +17,4 @@ def roundeig(M):
             if abs(w[i])<10e-8: w[i]=0
     return w
 
-tavgplot(4,2000,2,20,20)
+tfiplot(4,30,1,9,5,2,3)
