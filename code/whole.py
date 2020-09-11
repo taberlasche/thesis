@@ -227,24 +227,47 @@ def tfisample(n, c, o, C,a,b,d):
     return ratlist
 
 # Plots the average of the list of ratios for the transverse field Ising model.
+#def tfiplot(ni,nf,c,iterations,steps,a,b):
+#    l = math.sqrt((2*b/a)/((1+b/2*a)**2))
+#    d=scipy.special.ellipeinc(math.pi/2,l)
+#    x=[]
+#    y=[]
+#    var=[]
+#    a = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
+#    for i in a:
+#        i = int(2*round(i/2.))
+#        x.append(i)
+#    for i in range(len(x)):
+#        print(x[i])
+#        list=tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d)
+#        y.append(avg(list))
+#        var.append(statistics.variance(list))
+#    plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
+#    plt.xlabel('n')
+#    plt.ylabel('ratio')
+#    plt.xscale('log')
+#    plt.title('Transverse Field Ising Model')
+#    plt.show()
+
 def tfiplot(ni,nf,c,iterations,steps,a,b):
     l = math.sqrt((2*b/a)/((1+b/2*a)**2))
     d=scipy.special.ellipeinc(math.pi/2,l)
     x=[]
     y=[]
     var=[]
-    a = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
-    for i in a:
+    k = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
+    for i in k:
         i = int(2*round(i/2.))
         x.append(i)
     for i in range(len(x)):
         print(x[i])
-        list=tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d)
-        y.append(avg(list))
-        plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
-        var.append(statistics.variance(list))
+        alist=np.real(tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d))
+        y.append(avg(alist))
+        var.append(statistics.variance(alist))
+    plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
     plt.xlabel('n')
     plt.ylabel('ratio')
     plt.xscale('log')
-    plt.title('Transverse Field Ising Model')
+    plt.title('Transverse Field Isisng Model')
     plt.show()
+
