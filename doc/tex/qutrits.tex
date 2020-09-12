@@ -60,7 +60,10 @@ The geometry of the Bloch space for qutrits has been studied by many authors \ci
 The problem with generalizing the algorithm shown by Bravyi \emph{et al.} to qutrits is that we can not directly map the solution states of the SDP to the Bloch space in the same way, since it is not a solid ball with radius one.
 We therefore have to find a rounding scheme that takes into account the geometric restrictions of the Bloch space for three level systems.
 An elgant and simple method to reduce the space to a solid ball in the Bloch space.
-As proved in \cite{goyal16}, the boundary of the Bloch space of qutrits can never stray into the solid ball of radius $\frac{1}{2}$, meaning all bloch vectors with $ \left| \tau \right| \le \frac{1}{2}$ correspond to valid states. \todo{show proof?}
+As proved in \cite{goyal16}, the boundary of the Bloch space of qutrits can never stray into the solid ball of radius $\frac{1}{2}$, meaning all bloch vectors with $ \left| \tau \right| \le \frac{1}{2}$ correspond to valid states.
+This is proved by using that boundary vectors $\bm{\tau}\in\IR^{8}$ should necessarily satisfy \[
+	det \rho(\bm{\tau}) = 0
+.\]
 We can therefore apply the same rounding scheme as in the qubit case, modified for the smaller sphere.
 The cut-off value therefore becomes $\frac{1}{2\sqrt{8}}$.
 Visually, we fit a hypercube into the $8$-dimensional sphere of radius $\frac{1}{2}$ and round any states into the cube.

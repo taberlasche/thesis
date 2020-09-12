@@ -19,6 +19,76 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{gharibian19}{article}{}
+      \name{author}{2}{}{%
+        {{hash=94bf6a44f0b9ba010d5309cb3caff66a}{%
+           family={Gharibian},
+           familyi={G\bibinitperiod},
+           given={Sevag},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4920c31b76ff713f91bbec5a8f0f52b8}{%
+           family={Parekh},
+           familyi={P\bibinitperiod},
+           given={Ojas},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{fullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{bibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{authorbibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{authornamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \strng{authorfullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1909.08846}
+      \field{title}{Almost optimal classical approximation algorithms for a quantum generalization of Max-Cut}
+      \field{year}{2019}
+    \endentry
+    \entry{gharibian12}{article}{}
+      \name{author}{2}{}{%
+        {{hash=94bf6a44f0b9ba010d5309cb3caff66a}{%
+           family={Gharibian},
+           familyi={G\bibinitperiod},
+           given={Sevag},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ff688c2df5014b142928d37ce3c683ce}{%
+           family={Kempe},
+           familyi={K\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{fullhash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{bibnamehash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{authorbibnamehash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{authornamehash}{7e915bc065153c35fe4f211ceedd538a}
+      \strng{authorfullhash}{7e915bc065153c35fe4f211ceedd538a}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Journal on Computing}
+      \field{number}{4}
+      \field{title}{Approximation Algorithms for QMA-Complete Problems}
+      \field{volume}{41}
+      \field{year}{2012}
+      \field{pages}{1028\bibrangedash 1050}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1137/110842272
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1137/110842272
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1137/110842272
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1137/110842272
+      \endverb
+    \endentry
     \entry{kempe06}{article}{}
       \name{author}{3}{}{%
         {{hash=ff688c2df5014b142928d37ce3c683ce}{%
@@ -67,76 +137,6 @@
       \verb https://doi.org/10.1137/S0097539704445226
       \endverb
     \endentry
-    \entry{gharibian19}{article}{}
-      \name{author}{2}{}{%
-        {{hash=94bf6a44f0b9ba010d5309cb3caff66a}{%
-           family={Gharibian},
-           familyi={G\bibinitperiod},
-           given={Sevag},
-           giveni={S\bibinitperiod}}}%
-        {{hash=4920c31b76ff713f91bbec5a8f0f52b8}{%
-           family={Parekh},
-           familyi={P\bibinitperiod},
-           given={Ojas},
-           giveni={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{fullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{bibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{authorbibnamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{authornamehash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \strng{authorfullhash}{035a91de73fed36896e0c6f5f3c7ce7e}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1909.08846}
-      \field{title}{Almost optimal classical approximation algorithms for a quantum generalization of Max-Cut}
-      \field{year}{2019}
-    \endentry
-    \entry{gharibian12}{article}{}
-      \name{author}{2}{}{%
-        {{hash=94bf6a44f0b9ba010d5309cb3caff66a}{%
-           family={Gharibian},
-           familyi={G\bibinitperiod},
-           given={Sevag},
-           giveni={S\bibinitperiod}}}%
-        {{hash=ff688c2df5014b142928d37ce3c683ce}{%
-           family={Kempe},
-           familyi={K\bibinitperiod},
-           given={Julia},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{7e915bc065153c35fe4f211ceedd538a}
-      \strng{fullhash}{7e915bc065153c35fe4f211ceedd538a}
-      \strng{bibnamehash}{7e915bc065153c35fe4f211ceedd538a}
-      \strng{authorbibnamehash}{7e915bc065153c35fe4f211ceedd538a}
-      \strng{authornamehash}{7e915bc065153c35fe4f211ceedd538a}
-      \strng{authorfullhash}{7e915bc065153c35fe4f211ceedd538a}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{SIAM Journal on Computing}
-      \field{number}{4}
-      \field{title}{Approximation Algorithms for QMA-Complete Problems}
-      \field{volume}{41}
-      \field{year}{2012}
-      \field{pages}{1028\bibrangedash 1050}
-      \range{pages}{23}
-      \verb{doi}
-      \verb 10.1137/110842272
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1137/110842272
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1137/110842272
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1137/110842272
-      \endverb
-    \endentry
     \entry{brandao14}{misc}{}
       \name{author}{2}{}{%
         {{hash=66db7554332962be2b0abe2cefe77501}{%
@@ -156,8 +156,8 @@
       \strng{authorbibnamehash}{362a798986cb7af3174f17bf66e64cbf}
       \strng{authornamehash}{362a798986cb7af3174f17bf66e64cbf}
       \strng{authorfullhash}{362a798986cb7af3174f17bf66e64cbf}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Product-state Approximations to Quantum Ground States}
@@ -188,8 +188,8 @@
       \strng{authorbibnamehash}{9cbfb5ccf6fc615bc38952468347659b}
       \strng{authornamehash}{9cbfb5ccf6fc615bc38952468347659b}
       \strng{authorfullhash}{9cbfb5ccf6fc615bc38952468347659b}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2521-327X}
@@ -242,8 +242,8 @@
       \strng{authorbibnamehash}{84579f3f095941cba9a7e3acf22af7fc}
       \strng{authornamehash}{84579f3f095941cba9a7e3acf22af7fc}
       \strng{authorfullhash}{57397fbabe3f77446979104411b134df}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1089-7658}
@@ -289,8 +289,8 @@
       \strng{authorbibnamehash}{2dc437deb1078ad10f7cb3391dd23049}
       \strng{authornamehash}{2dc437deb1078ad10f7cb3391dd23049}
       \strng{authorfullhash}{2dc437deb1078ad10f7cb3391dd23049}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2003.14394}
@@ -311,8 +311,8 @@
       \strng{authorbibnamehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
       \strng{authornamehash}{e7be6d1b55bb4c33b8194dad4a789a5d}
       \strng{authorfullhash}{e7be6d1b55bb4c33b8194dad4a789a5d}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0024-3795}
@@ -346,8 +346,8 @@
       \strng{authorbibnamehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
       \strng{authornamehash}{6e5844e9c79237cc5bd0980c0e69ec2d}
       \strng{authorfullhash}{6e5844e9c79237cc5bd0980c0e69ec2d}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{12}
@@ -376,8 +376,8 @@
       \strng{authorbibnamehash}{9e875dab88dac5cc7782c7ba1a482ed6}
       \strng{authornamehash}{9e875dab88dac5cc7782c7ba1a482ed6}
       \strng{authorfullhash}{9e875dab88dac5cc7782c7ba1a482ed6}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{SIAM Review}
@@ -425,8 +425,8 @@
       \strng{authorbibnamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
       \strng{authornamehash}{436abed3bce8d1b1d30640d4e5ff3d58}
       \strng{authorfullhash}{436abed3bce8d1b1d30640d4e5ff3d58}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0521833787}
@@ -758,8 +758,8 @@
       \strng{authorbibnamehash}{afe17482fc813e497188aee3b3783879}
       \strng{authornamehash}{afe17482fc813e497188aee3b3783879}
       \strng{authorfullhash}{afe17482fc813e497188aee3b3783879}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Fermionic canonical commutation relations and the Jordan-Wigner transform}

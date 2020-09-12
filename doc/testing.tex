@@ -4,8 +4,11 @@ All of it can be found in appendix A.
 To produce informative plots, the implementation executes the algorithm with output $y$ and computes the ratio $r=y^{T}Cy/\lambda_{max}$.
 It does this $o$ times per number of qubits $n$.
 The average of the $o$ ratios per $n$ is plotted, where a logarithmic scale is used for the $x$-axis.
-I have chosen to plot in the range of $n=4$ to $n=5200$ in equidistant steps on the logarithmic scale, using $o=20$.
-The computation time became infeasible for larger qubit numbers.\\
+The variance has been visualized as error bars.
+I have chosen to plot in the range of $n=4$ to $n=5200$ in $25$ equidistant steps on the logarithmic scale, using $o=20$.
+The computation time became infeasible for larger qubit numbers, as the complexity of the function \emph{numpy.linalg.eig()}, used to to find the solution vectors, is $O\left(N^3\right) $.\\
+Secondly, I have done the same computation but instead of taking the average of the lists, I have picked the maximal approximation ratio and plotted it.
+While this does not specifically test the code for the behaviour of the approximation ratio, it provides information on the practical uses of the algorithm.
 The Ising model with a transverse field has physical relevance because it can be used to study quantum phase transitions of ferroelectrics with a tunneling effect or systems of interacting magnetic spins with an outer field.
 The Hamiltonian
 \[
@@ -13,7 +16,7 @@ H=\alpha \sum_{i} Z_i + \beta \sum_{i} X_iX_{i+1}
 \]
 has been exactly solved in one dimension in \cite{pfeuty70}.
 One way to do this by transforming the Hamiltonian into a quadratic form of Fermi operators via the Jordan-Wigner transformation \cite{nielsen05}.
-To diagonalize this Hamiltonian, one can use the Bogoliubov transformation which is an isomorphism in the canonical commutation or anticommutation relation algebra.\cite{bogoljubov58}\todo{go more in depth?}\\
+To diagonalize this Hamiltonian, one can use the Bogoliubov transformation which is an isomorphism in the canonical commutation or anticommutation relation algebra \cite{bogoljubov58}.\\
 The parameter $\alpha$ corresponds to the tunneling energy and $\beta$ to the nearest neighbour interaction in the ferroelectric problem.
 We here look at a closed chain, meaning $1\le i \le n, \quad X_{n+1}=X_{1}$.
 I have first implemented the model with $\alpha =0, \quad \beta =1$.
@@ -39,7 +42,7 @@ Since the Hamiltonian has terms that are linear in Pauli operators, we have to t
 The Hamiltonian that was implemented is \[
 H = H_2 + Z_{n+1}H_1 =\alpha Z_{n+1}\sum_{i} Z_i + \beta \sum_{i} X_iX_{i+1}
 .\]
-Fig. \ref{fig:2} shows a result of implementing this model for $\alpha=2$ and $\beta=3$.
+Fig. \ref{fig:2} shows a result of implementing this model for several ratios of $\alpha$ and $\beta$.
 The plot shows a similar behaviour to figure \ref{fig:1}.
 \begin{figure}[H]
 	\centering
@@ -49,8 +52,8 @@ The plot shows a similar behaviour to figure \ref{fig:1}.
 \end{figure}
 
 \noindent The second model implemented is \[
-	H = \sum_{i=1}^{\frac{n}{4}} X_iX_{i+1}+Z_iZ_{i+1}+X_{i+2}+X_{i+3},
-\]
+	H =  X_1X_{2}+Z_1Z_{2}+X_{3}+X_{4}+X_5X_{6}+Z_5Z_{6}+X_{7}+X_{8}\ldots
+,\]
 where we restrict $n$ to be a multiple of $4$.
 In contrast to the Ising model without a transverse field, the maximal eigenvalue can not be achieved by a product state in this case.
 To find out the maximal eigenvalue lets look at the first two quadratic terms:

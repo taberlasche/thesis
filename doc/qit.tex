@@ -51,12 +51,12 @@ We discern between unital and non-unital maps.
 Unital maps map the identity to itself.
 Geometrically, we can interpret this as the image of the map having the same center as the Bloch sphere.
 Unital maps can be expressed as convex combinations of the Pauli operators and the identity.
-Their action in the Bloch sphere are different rotations with shrinking parameters, since the Pauli matrices are unitary.\cite{imre12}\\
+Their action in the Bloch sphere are different rotations with shrinking parameters, since the Pauli matrices are unitary \cite{imre12}.\\
 The most commonly used model for quantum computation is the quantum circuit model, which generalizes its classical analogue.
 To classify quantum algorithms we use, in parallel to classical complexity theory, quantum complexity classes.
 The two prominent complexity classes in classical computation are P and NP.
 P is the set of problems which can be solved by a deterministic Turing machine in polynomial time, while NP is the set of problems which can be solved by a nondeterministic Turing machine in polynomial time.
-The class QMA is the quantum analogue of NP in a probabilistic setting, the class of all problems which can be solved by a quantum verifier probabilistically in polynomial time.\cite{kempe06}
+The class QMA is the quantum analogue of NP in a probabilistic setting, the class of all problems which can be solved by a quantum verifier probabilistically in polynomial time \cite{kempe06}.
 We call a problem complete if any other problem in its class can be reduced to it.
 Reduction means that for predicates $L_1$ and $L_2$ there is a polynomial $f$, such that $L_1(x)=L_2(f(x))$.
 We say that $f$ reduces  $L_1$ to $L_2$ polynomially.\\
@@ -76,10 +76,10 @@ with the Pauli-operators \[
 .\]\\
 The minimal eigenvalue of such a systems corresponds to its ground state.
 Since the quantum state achieving this optimal value might be an entangled state which might not be computable in polynomial time, we are interested in finding the product state that achieves the best approximation.
-It is equivalent to finding the best approximation to the maximal eigenvalue, because $\lambda_{max}(-H)=\lambda_{min}(H)$.\cite{gharibian19}\\
+It is equivalent to finding the best approximation to the maximal eigenvalue, because $\lambda_{max}(-H)=\lambda_{min}(H)$ \cite{gharibian19}.\\
 In the local Hamiltonian problem, we are to determine, whether the ground state energy of a given $k$-local Hamiltonian is below one threshold or above another.
 It is equivalent to the maximum constraint satisfaction problem from classical computation.
-The $2$-local Hamiltonian problem is QMA complete.\cite{kempe06}
+The $2$-local Hamiltonian problem is QMA complete \cite{kempe06}.
 Specifically, we look at \emph{traceless} $2$-local Hamiltonians, as these are the quantum generalization of binary quadratic functions of the form \[
 	F(x) = x^{T}Bx +v^{T}x, \quad x\in \{\pm 1\} ^{n},
 \]

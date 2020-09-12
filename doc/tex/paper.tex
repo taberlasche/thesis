@@ -7,16 +7,16 @@ We form a new $n+1$-qubit Hamiltonian: \[
 H'=H_2+Z_{n+1}H_1
 .\]
 
-\begin{lma}
+\begin{lma}\cite{bravyi19}
 	\emph{$\lambda_{max}\left( H' \right) =\lambda_{max}\left( H \right)$. Moreover, given any $(n+1)$-qubit state  $\omega$ we can efficiently compute an $n$-qubit state $\phi$ such that \[
 	\bra{\phi}H\ket{\phi} \ge \bra{\omega}H'\ket{\omega}
 	.\]
 If $\omega$ is a tensor product of single qubit stabilizer states then so is $\phi$.}
 \end{lma}
 \noindent The idea is, that for any $n$-qubit traceless $2$-local Hamiltonian with linear terms, there is a purely quadratic $(n+1)$-qubit traceless $2$-local Hamiltonian that has the same maximal eigenvalue and has an at best equally good product state approximation.
-Therefore, the bounds that we proof for quadratic Hamiltonians are valid also for Hamiltonians with linear terms.
+Therefore, the bounds that we prove for quadratic Hamiltonians are valid also for Hamiltonians with linear terms.
 This enables us to set $H_1=0$.
-To proof this, we first show that all eigenvalues of $H'$ are either eigenvalues of $H_2-H_1$ or $H_1+H_2$.
+To prove this, we first show that all eigenvalues of $H'$ are either eigenvalues of $H_2-H_1$ or $H_1+H_2$.
 This is the case because $H'$ commutes with $Z_{n+1}$ and therefore they share a common set of eigenvectors $\ket{\psi}$: \[
 Z_{n+1}H_1\ket{\psi} = \lambda(Z_{n+1})\lambda(H_1)\ket{\psi}=\pm \lambda(H_1)\ket{\psi} = \lambda(Z_{n+1}H_1)\ket{\psi}
 .\]
@@ -46,7 +46,7 @@ This criterion is very easy to check and gives us a useful mathematical toolbox.
 For choosing the product state $\ket{\phi}$, we use operations on $\ket{\omega}$ that take eigenvectors of matrices from the Pauli group to eigenvectors of matrices from the Pauli group.
 Therefore, if $\omega$ is a tensor product of single qubit stabilizer states, $\phi$ is, too.\\
 The following Theorem is the main result of the part of the publication described here.
-\begin{thm}\emph{
+\begin{thm}\cite{bravyi19}\emph{
 		There is an efficient classical algorithm which, given $H$ of the form \eqref{ham}, outputs a product state $\ket{\phi} = \ket{\phi_1}\otimes\ldots\otimes \ket{\phi_n}$ such that with probability at least $\frac{2}{3}$ \[
 			\bra{\phi}H\ket{\phi}\ge \frac{\lambda_{max}(H)}{O(\log{}n)}.
 		\]
@@ -99,7 +99,7 @@ As output we take $ \rho=\rho_1\otimes\ldots\otimes\rho_n$ where:\[
 	\rho_a=\frac{1}{2}\left(\1 +y_{3a-2}P_{3a-2}+y_{3a-1}P_{3a-1}+y_{3a}P_{3a}\right).
 .\]
 We want to show that this algorithm fulfills the approximation ratio $\Omega(\frac{1}{\log{}n})$ with probability $\frac{2}{3}$.\\
-First we demonstrate that the approximation ratio is bounded below by a constant \cite{lieb73}
+First we demonstrate that the approximation ratio is bounded below by a constant \cite{lieb73}:
 \begin{thm}\emph{
 	Suppose $H$ is traceless 2-local Hamiltonian. Then \[
 	\lambda_{sep}(H)\ge \frac{1}{9}\lambda_{max}(H)
@@ -108,7 +108,7 @@ First we demonstrate that the approximation ratio is bounded below by a constant
 Where we call $\lambda_{sep}$ the highest eigenvalue achievable by a product state: \[
 	\lambda_{sep}(H)=\max_{\phi_1,\ldots,\phi_n}\bra{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}H\ket{\phi_1\otimes\phi_2\otimes\ldots\otimes\phi_n}
 .\]
-We can proof this using entanglement-breaking depolarizing channels.
+We can prove this using entanglement-breaking depolarizing channels.
 Depolarizing channels are a simple model for noise in quantum information theory \cite{nielsen11}.
 They are implemented by a map $\Delta_{\lambda}$, which maps a state  $\rho$ onto a linear combination of itself and the identity matrix:\cite{king02}\[
 	\Delta_{\lambda}(\rho)=\lambda\rho+\frac{1-\lambda}{d}\1,
@@ -147,7 +147,7 @@ Using our definition of $\mathcal{E}$, we see \[
 	Tr\left( \sigma P_{j_1}P_{j_2}\ldots P_{j_L} \right) = \frac{1}{3^L}Tr\left( \rho P_{j_1}P_{j_2}\ldots P_{j_L} \right)
 \]
 Where $\sigma=\mathcal{E}^{\otimes n}_{\frac{1}{3}}(\rho)$.
-With this, we can proof the Theorem due to Lieb.\\
+With this, we can prove the Theorem due to Lieb.\\
 We consider the $n$-qubit state $\psi$ satisfying $\bra{\psi}H\ket{\psi}=\lambda_{max}(H)$.
 With the identity shown above, the depolarized state \[
 	\sigma = \mathcal{E}^{\otimes n}_{\frac{1}{3}}\left( \ket{\psi}\bra{\psi} \right)
