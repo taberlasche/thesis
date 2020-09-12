@@ -16,5 +16,14 @@ def roundeig(M):
         if w[i]<0:
             if abs(w[i])<10e-8: w[i]=0
     return w
-
-tfiplot(4,5200,2,20,25,2,4)
+tfiplot(4,5200,2,20,25,1,2)
+tfiplot(4,5200,2,20,25,2,1)
+tfiplot(4,5200,2,20,25,1,4)
+tfiplot(4,5200,2,20,25,4,1)
+tavgplot(4,2500,2,20,20)
+avgplot(4,5200,2,20,25)
+avgchainplot(4,5200,2,20,25)
+tavgplot(4,2500,2,20,20)
+tavgplot(4,2500,2,20,20)
+avgplot(4,5200,2,20,25)
+avgchainplot(4,5200,2,20,25)

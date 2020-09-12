@@ -52,15 +52,22 @@ def tsample(n, c, o, C):
 def tavgplot(ni,nf,c,o,s):
     y=[]
     x=[]
+    var=[]
+    maxlist=[]
     a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
     for i in a:
-        x.append(i)
+        x.append(int(i))
     for i in range(len(x)):
-        y.append(avg(tsample(x[i],c,o,tC(x[i]))))
+        alist=np.real(tsample(x[i],c,o,tC(x[i])))
+        y.append(avg(alist))
+        maxlist.append(np.max(alist))
+        var.append(statistics.variance(alist))
         print(x[i])
-    plt.scatter(x,y,marker="o",s=5)
-    plt.xlabel('log(n)')
-    plt.ylabel('ratio')
-    plt.xscale('log')
-    plt.title('Qutrit Approximation Algorithm')
-    plt.show()
+    f=open("qutrit().txt","a+")
+    f.writelines(['Parameters:',str(ni),str(nf),str(c),str(o),str(s),'x:',str(x),'y:',str(y),'var:',str(var),'maxlist:',str(maxlist),"\n"])
+    f.close()
+    #plt.xlabel('log(n)')
+    #plt.ylabel('ratio')
+    #plt.xscale('log')
+    #plt.title('Qutrit Approximation Algorithm')
+    #plt.show()
