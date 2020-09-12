@@ -59,12 +59,15 @@ They are traceless, hermitian, and obey $Tr\left(\lambda_i\lambda_j\right)=\delt
 The geometry of the Bloch space for qutrits has been studied by many authors \cite{mendas06,goyal16,kimura03} and many properties, such as sections in lower dimensions, have been found.
 The problem with generalizing the algorithm shown by Bravyi \emph{et al.} to qutrits is that we can not directly map the solution states of the SDP to the Bloch space in the same way, since it is not a solid ball with radius one.
 We therefore have to find a rounding scheme that takes into account the geometric restrictions of the Bloch space for three level systems.
-The simplest method, albeit surely not the best performing, is to reduce the space to a solid ball in the Bloch space.
-As proved in \cite{goyal16}, the boundary of the Bloch space of qutrits can never stray into the solid ball of radius $\frac{1}{2}$. \todo{show proof?}
+An elgant and simple method to reduce the space to a solid ball in the Bloch space.
+As proved in \cite{goyal16}, the boundary of the Bloch space of qutrits can never stray into the solid ball of radius $\frac{1}{2}$, meaning all bloch vectors with $ \left| \tau \right| \le \frac{1}{2}$ correspond to valid states. \todo{show proof?}
 We can therefore apply the same rounding scheme as in the qubit case, modified for the smaller sphere.
 The cut-off value therefore becomes $\frac{1}{2\sqrt{8}}$.
 Visually, we fit a hypercube into the $8$-dimensional sphere of radius $\frac{1}{2}$ and round any states into the cube.
-As a field study\todo{word this differently?}, I have implemented this algorithm and plotted the result, mirroring the procedure described in chapter 4.
+As a field study I have implemented this algorithm and plotted the result, mirroring the procedure described in chapter 4.
+The model used is a one dimensional chain of the form: \[
+H = \sum_{i=1}^{8n}\lambda_1^{i}\lambda_1^{i+1}
+.\]
 The result can be seen in Figure \ref{fig:4}
 \begin{figure}[H]
 	\centering

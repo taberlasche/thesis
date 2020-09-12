@@ -4,8 +4,8 @@ All of it can be found in appendix A.
 To produce informative plots, the implementation executes the algorithm with output $y$ and computes the ratio $r=y^{T}Cy/\lambda_{max}$.
 It does this $o$ times per number of qubits $n$.
 The average of the $o$ ratios per $n$ is plotted, where a logarithmic scale is used for the $x$-axis.
-I have chosen to plot in the range of $n=4$ to $n=5200$ in equidistant steps on the logarithmic scale, using $o=20$.
-The computation time became infeasible for larger qubit numbers.\\
+I have chosen to plot in the range of $n=4$ to $n=5200$ in $20 $equidistant steps on the logarithmic scale, using $o=20$.
+The computation time became infeasible for larger qubit numbers, as the complexity of the function \emph{numpy.linalg.eig()}, used to to find the solution vectors, is $O\left(N^3\right) $.\\
 The Ising model with a transverse field has physical relevance because it can be used to study quantum phase transitions of ferroelectrics with a tunneling effect or systems of interacting magnetic spins with an outer field.
 The Hamiltonian
 \[
