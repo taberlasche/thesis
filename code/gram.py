@@ -1,4 +1,5 @@
 import numpy as np
+import scipy.sparse.linalg
 
 
 def findGenVecGram(gram):

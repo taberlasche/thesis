@@ -17,4 +17,4 @@ def roundeig(M):
             if abs(w[i])<10e-8: w[i]=0
     return w
 
-tfiplot(4,2000,1,20,5,2,4)
+tfiplot(4,5200,2,20,25,2,4)
