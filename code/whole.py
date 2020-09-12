@@ -9,6 +9,7 @@ import math
 import matplotlib.scale as scale
 import statistics
 
+from timeit import default_timer as timer
 from hamiltonians import *
 from sdp import *
 from gram import *
@@ -30,11 +31,16 @@ def ratio(C, y, maxeig):
 
 # returns list of ratios upon input of number of qubits, c and number of iterations o, for buildC(n).
 def sample(n, c, o, C):
+    print('finding gram vectors...')
+    start = timer()
     v = findGenVecGram(sdp1(n))
+    end = timer()
+    print('elapsed time:',end-start)
     ratlist=[]
     i=0
     while i < o:
         ratlist.append(ratio(C, rund(v,c,cvx.matrix(C))["blochvec"], n))
+        print(100*i/25,'%')
         i=i+1
     return ratlist
 
@@ -99,7 +105,7 @@ def avgplot(ni,nf,c,o,s):
         x.append(i)
     for i in range(len(x)):
         print(x[i])
-        list=sample(x[i],c,o,buildC(x[i]))
+        list=np.real(sample(x[i],c,o,buildC(x[i])))
         y.append(avg(list))
         var.append(statistics.variance(list))
     plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
@@ -158,22 +164,6 @@ def chainplot(ni, nf, c, o,s):
     plt.title('nplot')
     plt.show()
 
-def maxchainplot(ni,nf,c,o,s):
-    y=[]
-    x=[]
-    a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
-    for i in a:
-        i = int(4*round(i/4.))
-        x.append(i)
-    for i in range(len(x)):
-        y.append(avg(maxsample(x[i],c,o,buildC(x[i]))))
-        print(x[i])
-    plt.scatter(x,y,marker="o",s=5)
-    plt.xlabel('log(n)')
-    plt.ylabel('ratio')
-    plt.xscale('log')
-    plt.title('s')
-    plt.show()
 
 # For the chainbuildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is.
 def chainplotc(ci, cf, n, o):
@@ -201,7 +191,7 @@ def avgchainplot(ni,nf,c,o,s):
         x.append(i)
     for i in range(len(x)):
         print(x[i])
-        list=chainsample(x[i],c,o,chainC(x[i]))
+        list=np.real(chainsample(x[i],c,o,chainC(x[i])))
         y.append(avg(list))
         var.append(statistics.variance(list))
     plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
@@ -211,6 +201,22 @@ def avgchainplot(ni,nf,c,o,s):
     plt.title('One Dimensional Ising Model')
     plt.show()
 
+def chainmaxplot(ni,nf,c,o,s):
+    y=[]
+    x=[]
+    a = np.exp(np.linspace(np.log(ni), np.log(nf), s))
+    for i in a:
+        i = int(4*round(i/4.))
+        x.append(i)
+    for i in range(len(x)):
+        y.append(avg(maxsample(x[i],c,o,buildC(x[i]))))
+        print(x[i])
+    plt.scatter(x,y,marker="o",s=5)
+    plt.xlabel('log(n)')
+    plt.ylabel('ratio')
+    plt.xscale('log')
+    plt.title('s')
+    plt.show()
 # Returns the maximal eigenvalue of the transverse field Ising model upon input of a, b, n and a constant d.
 def tfimaxeig(n,a,b,d):
     x = a+b/2+(2*a*n/math.pi)*(1+b/(2*a))*d
@@ -218,33 +224,90 @@ def tfimaxeig(n,a,b,d):
 
 # Returns list of ratios for the transverse field Ising model.
 def tfisample(n, c, o, C,a,b,d):
+    print('finding gram vector...')
+    start = timer()
+    v = findGenVecGram(tfisdp(n))
+    end = timer()
+    print('elapsed time:', end-start)
+    ratlist=[]
+    i=0
+    while i < o:
+        print(100*i/25,'%')
+        ratlist.append(ratio(C, rund(v,c,cvx.matrix(C))["blochvec"], tfimaxeig(n,a,b,d)))
+        i=i+1
+    return ratlist
+
+def tfimaxsample(n,a,b,d):
     v = findGenVecGram(tfisdp(n))
     ratlist=[]
     i=0
     while i < o:
         ratlist.append(ratio(C, rund(v,c,cvx.matrix(C))["blochvec"], tfimaxeig(n,a,b,d)))
         i=i+1
-    return ratlist
+    return np.max(ratlist)
+
 
 # Plots the average of the list of ratios for the transverse field Ising model.
+#def tfiplot(ni,nf,c,iterations,steps,a,b):
+#    l = math.sqrt((2*b/a)/((1+b/2*a)**2))
+#    d=scipy.special.ellipeinc(math.pi/2,l)
+#    x=[]
+#    y=[]
+#    var=[]
+#    a = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
+#    for i in a:
+#        i = int(2*round(i/2.))
+#        x.append(i)
+#    for i in range(len(x)):
+#        print(x[i])
+#        list=tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d)
+#        y.append(avg(list))
+#        var.append(statistics.variance(list))
+#    plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
+#    plt.xlabel('n')
+#    plt.ylabel('ratio')
+#    plt.xscale('log')
+#    plt.title('Transverse Field Ising Model')
+#    plt.show()
+
 def tfiplot(ni,nf,c,iterations,steps,a,b):
     l = math.sqrt((2*b/a)/((1+b/2*a)**2))
     d=scipy.special.ellipeinc(math.pi/2,l)
     x=[]
     y=[]
     var=[]
-    a = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
-    for i in a:
+    k = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
+    for i in k:
         i = int(2*round(i/2.))
         x.append(i)
     for i in range(len(x)):
         print(x[i])
-        list=tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d)
-        y.append(avg(list))
-        plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
-        var.append(statistics.variance(list))
+        alist=np.real(tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d))
+        y.append(avg(alist))
+        var.append(statistics.variance(alist))
+    plt.errorbar(x,y,yerr=var,fmt='o',elinewidth=1,capsize=3,lw=0)
     plt.xlabel('n')
     plt.ylabel('ratio')
     plt.xscale('log')
-    plt.title('Transverse Field Ising Model')
+    plt.title('Transverse Field Isisng Model')
+    plt.show()
+
+def tfimaxplot(ni,nf,c,iterations,steps,a,b):
+    l = math.sqrt((2*b/a)/((1+b/2*a)**2))
+    d=scipy.special.ellipeinc(math.pi/2,l)
+    x=[]
+    y=[]
+    k = np.exp(np.linspace(np.log(ni), np.log(nf), steps))
+    for i in k:
+        i = int(2*round(i/2.))
+        x.append(i)
+    for i in range(len(x)):
+        print(x[i])
+        alist=np.real(tfisample(x[i],c,iterations,tfiC(x[i],a,b),a,b,d))
+        y.append(avg(alist))
+    plt.scatter(x,y,marker="o",s=5)
+    plt.xlabel('n')
+    plt.ylabel('ratio')
+    plt.xscale('log')
+    plt.title('Transverse Field Isisng Model')
     plt.show()
