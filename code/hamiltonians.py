@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.linalg import block_diag
 
-# Assumes that n is a multiple of 4 it returns C for H' the form X1X2+Z1Z2+X5X6+Z5Z6... upon input of the number of qubits
+# Assumes that n is a multiple of 4 it returns C for H' the form X1X2+Z1Z2+X5+X6... upon input of the number of qubits
 def buildC(n):
     o1 = np.zeros((3,3))
     a = np.array([[1,0,0], [0,0,0], [0,0,1]])

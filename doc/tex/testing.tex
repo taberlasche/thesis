@@ -1,7 +1,7 @@
 I will now discuss the results of my implementation of the algorithm and the implemented Hamiltonians.
 The code is written in Python 3.8, while for the semidefinite program the interface PICOS is used.
-All of it can be found in appendix A.
-To produce informative plots, the implementation executes the algorithm with output $y$ and computes the ratio $r=y^{T}Cy/\lambda_{max}$.
+All the code can be found in appendix A.
+To produce informative plots, the implementation executes the algorithm with output $y$ (Bloch vector) and computes the ratio $r=y^{T}Cy/\lambda_{max}$.
 It does this $o$ times per number of qubits $n$.
 The average of the $o$ ratios per $n$ is plotted, where a logarithmic scale is used for the $x$-axis.
 The variance has been visualized as error bars.
@@ -18,7 +18,7 @@ The Hamiltonian
 \[
 H=\alpha \sum_{i} Z_i + \beta \sum_{i} X_iX_{i+1}
 \]
-has been exactly solved in one dimension in \cite{pfeuty70}.
+has been exactly solved in one dimension \cite{pfeuty70}.
 One way to do this by transforming the Hamiltonian into a quadratic form of Fermi operators via the Jordan-Wigner transformation \cite{nielsen05}.
 To diagonalize this Hamiltonian, one can use the Bogoliubov transformation which is an isomorphism in the canonical commutation or anticommutation relation algebra \cite{bogoljubov58}.\\
 The parameter $\alpha$ corresponds to the tunneling energy and $\beta$ to the nearest neighbour interaction in the ferroelectric problem.

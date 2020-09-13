@@ -78,9 +78,9 @@ The minimal eigenvalue of such a systems corresponds to its ground state.
 Since the quantum state achieving this optimal value might be an entangled state which might not be computable in polynomial time, we are interested in finding the product state that achieves the best approximation.
 It is equivalent to finding the best approximation to the maximal eigenvalue, because $\lambda_{max}(-H)=\lambda_{min}(H)$ \cite{gharibian19}.\\
 In the local Hamiltonian problem, we are to determine, whether the ground state energy of a given $k$-local Hamiltonian is below one threshold or above another.
-It is equivalent to the maximum constraint satisfaction problem from classical computation.
-The $2$-local Hamiltonian problem is QMA complete \cite{kempe06}.
-Specifically, we look at \emph{traceless} $2$-local Hamiltonians, as these are the quantum generalization of binary quadratic functions of the form \[
+It is the quantum analogue to the maximum constraint satisfaction problem from classical computation.
+The $2$-local Hamiltonian problem is QMA complete \cite{kempe06}.\\
+Specifically, we look at \emph{traceless} $2$-local Hamiltonians, as finding the maximal or minimal energy configuration of such Hamiltonian is the quantum generalization of binary quadratic functions of the form \[
 	F(x) = x^{T}Bx +v^{T}x, \quad x\in \{\pm 1\} ^{n},
 \]
 where $B\in\IR^{n\times n}$ is a matrix with zero diagonal and $v\in\IR^{n}$ a vector.
