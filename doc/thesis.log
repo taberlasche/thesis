@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  13 SEP 2020 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  13 SEP 2020 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1491,37 +1491,42 @@ bbildungen/tumlogo.pdf>] (./thesis.toc
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 14.02747pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 14.02747pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 14.02747pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 14.02747pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 14.02747pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 14.02747pt
 number indent calculated (toc, 0): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
-text indent calculated (toc, 0): 16.33182pt
+text indent calculated (toc, 0): 14.02747pt
+number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 0):  0.0pt
+text indent by \l@... (toc, 0):  16.33182pt
+number indent by parent (toc, 0):  0.0pt
+text indent calculated (toc, 0): 14.02747pt
 number indent calculated (toc, 0): 0.0pt
 )
 \tf@toc=\write8
@@ -1580,14 +1585,14 @@ chapter 5.
 (./testing.tex [14
 
 ]
-<avgchainplot(4,5200,2,20,25).png, id=188, 548.5293pt x 419.166pt>
+<avgchainplot(4,5200,2,20,25).png, id=190, 548.5293pt x 419.166pt>
 File: avgchainplot(4,5200,2,20,25).png Graphic file (type png)
 <use avgchainplot(4,5200,2,20,25).png>
 Package pdftex.def Info: avgchainplot(4,5200,2,20,25).png  used on input line 3
 8.
 (pdftex.def)             Requested size: 376.42744pt x 287.66425pt.
  [15 <./Abbildungen/avgchainplot(4,5200,2,20,25).png>]
-<tfiplots.png, id=198, 760.2804pt x 500.1084pt>
+<tfiplots.png, id=200, 760.2804pt x 500.1084pt>
 File: tfiplots.png Graphic file (type png)
 <use tfiplots.png>
 Package pdftex.def Info: tfiplots.png  used on input line 52.
@@ -1603,7 +1608,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--59
  []
 
 [16 <./Abbildungen/tfiplots.png>]
-<avgplot(4,5200,2,20,25.png, id=207, 543.4704pt x 422.7795pt>
+<avgplot(4,5200,2,20,25.png, id=209, 543.4704pt x 422.7795pt>
 File: avgplot(4,5200,2,20,25.png Graphic file (type png)
 <use avgplot(4,5200,2,20,25.png>
 Package pdftex.def Info: avgplot(4,5200,2,20,25.png  used on input line 84.
@@ -1617,7 +1622,7 @@ chapter 6.
 (./qutrits.tex [19
 
 ] [20]
-<tavgplot(4,2500,2,20,20).png, id=246, 537.6888pt x 362.0727pt>
+<tavgplot(4,2500,2,20,20).png, id=248, 537.6888pt x 362.0727pt>
 File: tavgplot(4,2500,2,20,20).png Graphic file (type png)
 <use tavgplot(4,2500,2,20,20).png>
 Package pdftex.def Info: tavgplot(4,2500,2,20,20).png  used on input line 77.
@@ -1700,20 +1705,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
  42477 strings out of 480478
  814638 string characters out of 5905959
- 1775230 words of memory out of 5000000
+ 1775109 words of memory out of 5000000
  57308 multiletter control sequences out of 15000+600000
  555355 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -1739,10 +1737,10 @@ b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/t
 exmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf-dist/fonts
 /type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sftt1095.pfb>
-Output written on thesis.pdf (40 pages, 535016 bytes).
+Output written on thesis.pdf (40 pages, 535443 bytes).
 PDF statistics:
- 1072 PDF objects out of 1200 (max. 8388607)
- 988 compressed objects within 10 object streams
+ 1073 PDF objects out of 1200 (max. 8388607)
+ 989 compressed objects within 10 object streams
  565 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
