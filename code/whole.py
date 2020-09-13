@@ -44,6 +44,7 @@ def sample(n, c, o, C):
         i=i+1
     return ratlist
 
+# returns list of ratios upon input of number of qubits, c and number of iterations o, for chainC(n).
 def chainsample(n, c, o, C):
     print('finding gram vector...')
     start = timer()
@@ -62,7 +63,7 @@ def chainsample(n, c, o, C):
 def avg(l):
     return sum(l)/len(l)
 
-# Does the same as plotn but returns the averages over the lists per n, and the steps are choosable for efficiency
+# Outputs the average, the variance and the maximum of o iterations for s equidistant steps on a log scale in the range [ni,nf].
 def avgplot(ni,nf,c,o,s):
     y=[]
     x=[]
@@ -106,7 +107,7 @@ def plotc(ci, cf, n, o):
     plt.show()
 
 
-# For the chainbuildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is.
+# For the chainbuildC(n) returns a plot of samples for a range of c's to hopefully find out something about what the optimal c is. Not used.
 def chainplotc(ci, cf, n, o):
     C = chainC(n)
     x=[]
@@ -121,7 +122,7 @@ def chainplotc(ci, cf, n, o):
     plt.title('cplot')
     plt.show()
 
-# Plots the averages of the lists of ratios for chainC(n).
+# Outputs the average, the variance and the maximum of o iterations for s equidistant steps on a log scale in the range [ni,nf].
 def avgchainplot(ni,nf,c,o,s):
     x=[]
     y=[]
@@ -170,6 +171,7 @@ def tfisample(n, c, o, C,a,b,d):
         i=i+1
     return ratlist
 
+# Outputs the average, the variance and the maximum of o iterations for s equidistant steps on a log scale in the range [ni,nf].
 def tfiplot(ni,nf,c,iterations,steps,a,b):
     l = math.sqrt((2*b/a)/((1+b/2*a)**2))
     d=scipy.special.ellipeinc(math.pi/2,l)

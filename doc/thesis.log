@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  12 SEP 2020 20:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.27)  13 SEP 2020 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -125,65 +125,6 @@ Package tocbasic Info: babel extension for `lot' omitted
 Class scrbook Info: Redefining `\numberline' on input line 7081.
 \bibindent=\dimen134
 )
-Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
-(typearea)             BCOR = 28.45274pt
-(typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 398.33864pt
-(typearea)              DIV departure   = -1%
-(typearea)              \evensidemargin = 41.54103pt
-(typearea)              \oddsidemargin  = 41.54103pt
-(typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 555.00024pt
-(typearea)              \topmargin      = 12.2347pt
-(typearea)              \headheight     = 17.0pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
-(typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 56.
-Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
-(typearea)             BCOR = 28.45274pt
-(typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 398.33864pt
-(typearea)              DIV departure   = -1%
-(typearea)              \evensidemargin = 41.54103pt
-(typearea)              \oddsidemargin  = 41.54103pt
-(typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 555.00024pt
-(typearea)              \topmargin      = 12.2347pt
-(typearea)              \headheight     = 17.0pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
-(typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 56.
-Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
-ne 56.
-
-(/usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2020/04/19 v3.30 KOMA-Script font size class option (11pt
-)
-)
-Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
-(typearea)             BCOR = 28.45274pt
-(typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 398.33864pt
-(typearea)              DIV departure   = -1%
-(typearea)              \evensidemargin = 41.54105pt
-(typearea)              \oddsidemargin  = 13.08827pt
-(typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 555.00024pt
-(typearea)              \topmargin      = 12.2347pt
-(typearea)              \headheight     = 17.0pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
-(typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 56.
-
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks16
@@ -658,6 +599,7 @@ Now handling font encoding PD1 ...
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count308
+Package hyperref Info: Option `draft' set `false' on input line 4338.
 Package hyperref Info: Option `unicode' set `true' on input line 4338.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
@@ -1334,24 +1276,24 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 (./thesis.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count508
@@ -1368,7 +1310,7 @@ LaTeX Font Info:    ... okay on input line 17.
 )
 Preview: Fontsize 10.95pt
 Preview: PDFoutput 1
-Package soulpos Info: Loading soulutf8 on input line 17.
+Package soulpos Info: Loading soulutf8 on input line 16.
 (/usr/share/texmf-dist/tex/generic/soulutf8/soulutf8.sty
 Package: soulutf8 2019/12/15 v1.2 Permit use of UTF-8 characters in soul (HO)
 
@@ -1385,7 +1327,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@ulht=\dimen305
 ))
 \AtBeginShipoutBox=\box76
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 16.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1395,9 +1337,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count514
 )
-LaTeX Info: Redefining \ref on input line 17.
-LaTeX Info: Redefining \pageref on input line 17.
-LaTeX Info: Redefining \nameref on input line 17.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write7
@@ -1408,7 +1350,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 17.
+(scrbook)           before \begin{document} on input line 16.
 
 (/usr/share/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
@@ -1454,8 +1396,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
  (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 17.
-Package biblatex Info: Reference segment=0 on input line 17.
+Package biblatex Info: Reference section=0 on input line 16.
+Package biblatex Info: Reference segment=0 on input line 16.
 \c@lstlisting=\count516
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1469,16 +1411,16 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 17.
+(hyperref)                setting the option has no effect on input line 16.
 
 
 Package hyperref Warning: Option `pdfpagelayout' has already been used,
-(hyperref)                setting the option has no effect on input line 17.
+(hyperref)                setting the option has no effect on input line 16.
 
 (/usr/share/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-Package scrbase Info: activating ngerman \proofname on input line 17.
+Package scrbase Info: activating ngerman \proofname on input line 16.
 
 
 Package tocstyle Warning: Usage of `tocstyle' with new `tocbasic' detected.
@@ -1492,44 +1434,44 @@ Package tocstyle Warning: Usage of `tocstyle' with new `tocbasic' detected.
 (tocstyle)                redefined `\numberline'. Ignore them.
 
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-7.
+6.
 (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Package tocstyle Info: prepare \l@part for redefinition on input line 17.
-Package tocstyle Info: prepare \l@chapter for redefinition on input line 17.
-Package tocstyle Info: prepare \l@section for redefinition on input line 17.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+Package tocstyle Info: prepare \l@part for redefinition on input line 16.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 16.
+Package tocstyle Info: prepare \l@section for redefinition on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package tocstyle Info: prepare \l@table for redefinition on input line 17.
-Package tocstyle Info: prepare \l@figure for redefinition on input line 17.
+Package tocstyle Info: prepare \l@table for redefinition on input line 16.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 16.
 
 
 Package scrbase Warning: Usage of deprecated command `\ifpdfoutput'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
 (scrbase)                Please replace `\ifpdfoutput' by `\Ifpdfoutput' on inp
-ut line 21.
+ut line 20.
 
 <PH.pdf, id=4, 29.8716pt x 29.8716pt>
 File: PH.pdf Graphic file (type pdf)
 <use PH.pdf>
-Package pdftex.def Info: PH.pdf  used on input line 21.
+Package pdftex.def Info: PH.pdf  used on input line 20.
 (pdftex.def)             Requested size: 28.45274pt x 28.45303pt.
 <tumlogo.pdf, id=5, 53.24893pt x 28.45631pt>
 File: tumlogo.pdf Graphic file (type pdf)
 <use tumlogo.pdf>
-Package pdftex.def Info: tumlogo.pdf  used on input line 21.
+Package pdftex.def Info: tumlogo.pdf  used on input line 20.
 (pdftex.def)             Requested size: 53.20651pt x 28.43495pt.
 [1
 
@@ -1544,11 +1486,8 @@ Non-PDF special ignored!
 
 
 
-
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Abbildungen/PH.pdf> <./A
-bbildungen/tumlogo.pdf>] [2
-
-] (./thesis.toc
+bbildungen/tumlogo.pdf>] (./thesis.toc
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.33182pt
 number indent by parent (toc, 0):  0.0pt
@@ -1586,10 +1525,7 @@ text indent calculated (toc, 0): 16.33182pt
 number indent calculated (toc, 0): 0.0pt
 )
 \tf@toc=\write8
- [3
-
-] [4
-
+ [2
 
 ]
 chapter 1.
@@ -1610,6 +1546,7 @@ Class scrbook Warning: \float@addtolists detected!
 
 (./intro.tex) [1
 
+
 ]
 chapter 2.
 (./qit.tex [2
@@ -1622,7 +1559,7 @@ chapter 3.
 chapter 4.
 (./paper.tex [8
 
-] [9]
+]
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 27.2pt needed,
@@ -1631,49 +1568,61 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting typearea's option
 (scrlayer-scrpage)                `headheight=27.2pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 9
-3.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 6
+2.
 
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
- [10]
-[11] [12]) [13]
+ [9]
+[10] [11] [12]) [13]
 chapter 5.
 (./testing.tex [14
 
 ]
-<avgchainplotn(4,5200,2,20,20).png, id=196, 557.2017pt x 396.7623pt>
-File: avgchainplotn(4,5200,2,20,20).png Graphic file (type png)
-<use avgchainplotn(4,5200,2,20,20).png>
-Package pdftex.def Info: avgchainplotn(4,5200,2,20,20).png  used on input line 
-34.
-(pdftex.def)             Requested size: 358.50233pt x 255.27705pt.
- [15 <./Abbildungen/avgchainplotn(4,5200,2,20,20).png>]
-<tfiplot(4,5200,2,20,20,2,3).png, id=208, 505.1673pt x 395.3169pt>
-File: tfiplot(4,5200,2,20,20,2,3).png Graphic file (type png)
-<use tfiplot(4,5200,2,20,20,2,3).png>
-Package pdftex.def Info: tfiplot(4,5200,2,20,20,2,3).png  used on input line 49
-.
-(pdftex.def)             Requested size: 358.50233pt x 280.54425pt.
+<avgchainplot(4,5200,2,20,25).png, id=188, 548.5293pt x 419.166pt>
+File: avgchainplot(4,5200,2,20,25).png Graphic file (type png)
+<use avgchainplot(4,5200,2,20,25).png>
+Package pdftex.def Info: avgchainplot(4,5200,2,20,25).png  used on input line 3
+8.
+(pdftex.def)             Requested size: 376.42744pt x 287.66425pt.
+ [15 <./Abbildungen/avgchainplot(4,5200,2,20,25).png>]
+<tfiplots.png, id=198, 760.2804pt x 500.1084pt>
+File: tfiplots.png Graphic file (type png)
+<use tfiplots.png>
+Package pdftex.def Info: tfiplots.png  used on input line 52.
+(pdftex.def)             Requested size: 460.08365pt x 302.64664pt.
 
-[16 <./Abbildungen/tfiplot(4,5200,2,20,20,2,3).png>]
-<avgplotn(4,5200,2,20,20).png, id=216, 633.8079pt x 471.2004pt>
-File: avgplotn(4,5200,2,20,20).png Graphic file (type png)
-<use avgplotn(4,5200,2,20,20).png>
-Package pdftex.def Info: avgplotn(4,5200,2,20,20).png  used on input line 78.
-(pdftex.def)             Requested size: 358.50233pt x 266.53069pt.
-) [17 <./Abbildungen/avgplotn(4,5200,2,20,20).png>] [18]
+Overfull \hbox (41.8281pt too wide) in paragraph at lines 52--53
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+[16 <./Abbildungen/tfiplots.png>]
+<avgplot(4,5200,2,20,25.png, id=207, 543.4704pt x 422.7795pt>
+File: avgplot(4,5200,2,20,25.png Graphic file (type png)
+<use avgplot(4,5200,2,20,25.png>
+Package pdftex.def Info: avgplot(4,5200,2,20,25.png  used on input line 84.
+(pdftex.def)             Requested size: 376.42744pt x 292.82774pt.
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17] [18 <./Abbildungen/avgplot(4,5200,2,20,25.png>]
 chapter 6.
 (./qutrits.tex [19
 
 ] [20]
-<tavgplot(4,2000,2,20,20).png, id=254, 535.5207pt x 385.1991pt>
-File: tavgplot(4,2000,2,20,20).png Graphic file (type png)
-<use tavgplot(4,2000,2,20,20).png>
-Package pdftex.def Info: tavgplot(4,2000,2,20,20).png  used on input line 77.
-(pdftex.def)             Requested size: 318.67212pt x 229.22275pt.
-) [21 <./Abbildungen/tavgplot(4,2000,2,20,20).png>]
+<tavgplot(4,2500,2,20,20).png, id=246, 537.6888pt x 362.0727pt>
+File: tavgplot(4,2500,2,20,20).png Graphic file (type png)
+<use tavgplot(4,2500,2,20,20).png>
+Package pdftex.def Info: tavgplot(4,2500,2,20,20).png  used on input line 77.
+(pdftex.def)             Requested size: 334.60571pt x 225.32803pt.
+) [21 <./Abbildungen/tavgplot(4,2500,2,20,20).png>]
 chapter A.
 (./code.tex (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1686,68 +1635,69 @@ nput line 2.
 ])
 (/home/naigou/thesis/code/hamiltonians.py [23] [24])
 (/home/naigou/thesis/code/gram.py [25] [26]) (/home/naigou/thesis/code/whole.py
-[27] [28] [29] [30] [31]) (/home/naigou/thesis/code/qutritalgo.py [32] [33])
-[34]) [35]
+[27] [28] [29] [30] [31]) (/home/naigou/thesis/code/qutritalgo.py [32] [33]
+[34])) [35]
 chapter without number
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-0.
+
+Underfull \hbox (badness 1783) in paragraph at lines 40--40
+\T1/cmr/m/n/10.95 al-gorithms for a quantum gen-er-al-iz-a-tion of Max-Cut^^S. 
+In: \T1/cmr/m/it/10.95 arXiv pre-print
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+9.
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3884) in paragraph at lines 41--41
-\T1/cmr/m/n/10.95 Complete Prob-lems^^S. In: \T1/cmr/m/it/10.95 SIAM Journal on
- Com-put-ing \T1/cmr/m/n/10.95 41.4 (2012),
- []
-
-
-Underfull \hbox (badness 3439) in paragraph at lines 41--41
-\T1/cmr/m/n/10.95 Local Hamilto-nian Prob-lem^^S. In: \T1/cmr/m/it/10.95 SIAM J
-ournal on Com-put-ing \T1/cmr/m/n/10.95 35.5
+Underfull \hbox (badness 1436) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Sevag Ghari-bian and Ju-lia Kempe. ^^T  Ap-prox-im-a-tion A
+l-gorithms for QMA-
  []
 
 [36
 
 
 ]
-Underfull \hbox (badness 7504) in paragraph at lines 41--41
+Underfull \hbox (badness 5036) in paragraph at lines 40--40
 []\T1/cmr/m/n/10.95 Mary Beth Ruskai. ^^T  Qubit En-tan-gle-ment Break-ing Chan
--nels^^S. In:
+-nels^^S. In: \T1/cmr/m/it/10.95 Re-
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 41--41
-\T1/cmr/m/it/10.95 Re-views in Math-em-at-ical Phys-ics \T1/cmr/m/n/10.95 15.06
- (2003), pp. 643^^U662. \T1/cmr/m/sc/10.95 doi\T1/cmr/m/n/10.95 :
+Underfull \hbox (badness 6396) in paragraph at lines 40--40
+\T1/cmr/m/it/10.95 views in Math-em-at-ical Phys-ics \T1/cmr/m/n/10.95 15.06 (2
+003), pp. 643^^U662. \T1/cmr/m/sc/10.95 doi\T1/cmr/m/n/10.95 : []$\T1/cmtt/m/n/
+10.95 10 .
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 41--41
-[]$\T1/cmtt/m/n/10.95 10 . 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . eprin
-t: []$\T1/cmtt/m/n/10.95 https : [] [] doi . org[] 10 .
+Overfull \hbox (8.17679pt too wide) in paragraph at lines 40--40
+\T1/cmtt/m/n/10.95 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . eprint: []$\T
+1/cmtt/m/n/10.95 https : [] [] doi . org[] 10 . 1142[] S0129055X03001710$[]\T1/
+cmr/m/n/10.95 .
  []
 
 
-Overfull \hbox (19.10585pt too wide) in paragraph at lines 41--41
-\T1/cmtt/m/n/10.95 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/
-10.95 url\T1/cmr/m/n/10.95 : []$\T1/cmtt/m/n/10.95 https : [] [] doi . org[] 10
- . 1142[] S0129055X03001710$[]\T1/cmr/m/n/10.95 . 
+Underfull \hbox (badness 3590) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Michael A. Nielsen. \T1/cmr/m/it/10.95 The Fer-mi-onic ca-n
+on-ical com-mut-a-tion re-la-tions and
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 41--41
+Underfull \hbox (badness 6575) in paragraph at lines 40--40
 \T1/cmr/m/it/10.95 the Jordan-Wigner trans-form\T1/cmr/m/n/10.95 . 2005. \T1/cm
 r/m/sc/10.95 url\T1/cmr/m/n/10.95 : []$\T1/cmtt/m/n/10.95 http : [] [] michaeln
 ielsen .
  []
 
 [37]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
  [38]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
  (./thesis.aux
 * soulpos - computing points - it may take a few seconds * (./thesis.upa))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1761,13 +1711,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iffalse on line 58 was incomplete) 
 Here is how much of TeX's memory you used:
- 42485 strings out of 480478
- 815215 string characters out of 5905959
- 1771182 words of memory out of 5000000
- 57315 multiletter control sequences out of 15000+600000
+ 42477 strings out of 480478
+ 814638 string characters out of 5905959
+ 1775230 words of memory out of 5000000
+ 57308 multiletter control sequences out of 15000+600000
  555355 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 72i,20n,110p,10122b,3640s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,20n,110p,10122b,3621s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/f
 onts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/
 cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
@@ -1789,10 +1739,10 @@ b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/t
 exmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf-dist/fonts
 /type1/public/cm-super/sfti1095.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sftt1095.pfb>
-Output written on thesis.pdf (42 pages, 511983 bytes).
+Output written on thesis.pdf (40 pages, 535016 bytes).
 PDF statistics:
- 1083 PDF objects out of 1200 (max. 8388607)
- 997 compressed objects within 10 object streams
+ 1072 PDF objects out of 1200 (max. 8388607)
+ 988 compressed objects within 10 object streams
  565 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

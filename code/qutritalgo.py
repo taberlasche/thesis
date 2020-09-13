@@ -48,7 +48,7 @@ def tsample(n, c, o, C):
         i=i+1
     return ratlist
 
-# Plots the average of aforementioned samplelists within a range of qutrit numbers, upon input of c, sample size o per step, and total steps s. The steps are made such that they are equidistant on a logarithmic scale.
+# Plots the average, variance and maximum of aforementioned samplelists within a range of qutrit numbers, upon input of c, sample size o per step, and total steps s. The steps are made such that they are equidistant on a logarithmic scale.
 def tavgplot(ni,nf,c,o,s):
     y=[]
     x=[]
