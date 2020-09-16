@@ -44,23 +44,23 @@ with the Pauli-operators $P_{3a-2}=X_a, ~ P_{3a-1}=Y_a, ~ P_{3a}=Z_a$
 Moreover, each single-qubit state $\phi_i$ in an eigenstate of one of the Pauli operators $X$, $Y$ or $Z$.
 }\end{thm}
 
+<!---
+ # Approximation algorithms for quantum many-body systems
+ + $H'=H_2+Z_{n+1}H_1$
+ \begin{lma}
+ 	\emph{$\lambda_{max}\left( H' \right) =\lambda_{max}\left( H \right)$. Moreover, given any $(n+1)$-qubit state  $\omega$ we can efficiently compute an $n$-qubit state $\phi$ such that $$ \bra{\phi}H\ket{\phi} \ge \bra{\omega}H'\ket{\omega}.$$
+ If $\omega$ is a tensor product of single qubit stabilizer states then so is $\phi$.}
+ \end{lma}
 
-# Approximation algorithms for quantum many-body systems
-+ $H'=H_2+Z_{n+1}H_1$
-\begin{lma}
-	\emph{$\lambda_{max}\left( H' \right) =\lambda_{max}\left( H \right)$. Moreover, given any $(n+1)$-qubit state  $\omega$ we can efficiently compute an $n$-qubit state $\phi$ such that $$ \bra{\phi}H\ket{\phi} \ge \bra{\omega}H'\ket{\omega}.$$
-If $\omega$ is a tensor product of single qubit stabilizer states then so is $\phi$.}
-\end{lma}
+ # Approximation algorithms for quantum many-body systems
 
-# Approximation algorithms for quantum many-body systems
+ + $H'=H_2+Z_{n+1}H_1$
 
-+ $H'=H_2+Z_{n+1}H_1$
+ + Since $H_1$ and $Z_{n+1}$ commute, they share a set of common eigenvectors:
+ $$Z_{n+1}H_1\ket{\psi} = \lambda(Z_{n+1})\lambda(H_1)\ket{\psi}=\pm \lambda(H_1)\ket{\psi} = \lambda(Z_{n+1}H_1)\ket{\psi}$$
 
-+ Since $H_1$ and $Z_{n+1}$ commute, they share a set of common eigenvectors:
-$$Z_{n+1}H_1\ket{\psi} = \lambda(Z_{n+1})\lambda(H_1)\ket{\psi}=\pm \lambda(H_1)\ket{\psi} = \lambda(Z_{n+1}H_1)\ket{\psi}$$
-
-+ Operations that conserve the spectrum: $$\left( Y^{\otimes n}\left( H_2+H_1 \right) Y^{\otimes n} \right) ^{T} = H_2-H_1$$
-
+ + Operations that conserve the spectrum: $$\left( Y^{\otimes n}\left( H_2+H_1 \right) Y^{\otimes n} \right) ^{T} = H_2-H_1$$
+--->
 
 
 # The semidefinite program
@@ -84,7 +84,7 @@ For  $M$ hermitian:
 \begin{enumerate}
 	\item Solve the relaxed semidefinite program, obtaining an optimal set of vectors $v_i$
 	\item Let $\ket{r}$ be a vector of $3n$ independently and identically distributed $N(0,1)$ random variables
-	\item Let $z_i=\braket{r, v^i}/T$ with $T=c~\sqrt{\log{}n}$ and $c=O(\log{}n)$
+	\item Let $z_i=\braket{r, v^i}/T$ with $T=c~\sqrt{\log{}n}$ and $c=O(1)$
 	\item If $|z_i|>\frac{1}{\sqrt{3}}$: $y_i=\frac{sgn(z_i)}{\sqrt{3}}$, otherwise $y_i=z_i$
 \end{enumerate}
 
@@ -93,9 +93,11 @@ Output: $\rho_a=\frac{1}{2}\left(\mathds{1} +y_{3a-2}P_{3a-2}+y_{3a-1}P_{3a-1}+y
 
 # Proof ideas
 
++ Reduce the Hamiltonian to a purely quadratic
+
 + Show that $\mathbb{E}_r\left| \Delta_{i,j} \right|$, with $\Delta_{ij}=z_iz_j-y_iy_j$ is suffiently small
 
-+ Show $T=c~\sqrt{\log{}n}$ and $c=O(\log{}n)$ is suffient
++ Show $T=c~\sqrt{\log{}n}$ and $c=O(1)$ is suffient
 
 + Use theorem due to Lieb to show $\bra{\phi}H\ket{\phi}\ge \frac{\lambda_{max}(H)}{O(\log{}n)}$ with probability at least $\frac{2}{3}$
 
@@ -130,7 +132,7 @@ $$H=\alpha \sum_{i} Z_i + \beta \sum_{i} X_iX_{i+1}$$
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.1\textwidth]{tfiplots}
+	\includegraphics[width=1.1\textwidth]{tfiplots2}
 	\label{fig:2}
 \end{figure}
 
