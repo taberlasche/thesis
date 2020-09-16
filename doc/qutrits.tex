@@ -5,7 +5,7 @@ A qutrit processor has also recently been used to study thermalisation and loss 
 In this chapter, I will introduce the reader to the basic concepts of $3$-level systems and discuss the challenge of generalizing the algorithm discussed in chapter 4 to qutrit systems.\\
 First, we will look at the generalization of the Bloch representation to $d$-level systems.
 We represent a state $\rho$ with the help of a $d^2-1$-dimensional Bloch vector $\bm{\tau}$.
-We call the space of states that fulfill the conditions presented in chapter 1, the Bloch space.
+We call the space of states that fulfill the conditions presented in chapter 1 the Bloch space.
 A state $\rho$ can be represented in the following way:
 $$\rho = \frac{1}{d} \1 + \sum_{i=1}^{d^2-1} \tau_i \sigma_i$$
 where $\sigma_i$ are generators of $SU(d)$ obeying
@@ -62,20 +62,23 @@ We therefore have to find a rounding scheme that takes into account the geometri
 An elgant and simple method to reduce the space to a solid ball in the Bloch space.
 As proved in \cite{goyal16}, the boundary of the Bloch space of qutrits can never stray into the solid ball of radius $\frac{1}{2}$, meaning all bloch vectors with $ \left| \tau \right| \le \frac{1}{2}$ correspond to valid states.
 This is proved by using that boundary vectors $\bm{\tau}\in\IR^{8}$ should necessarily satisfy \[
-	det \rho(\bm{\tau}) = 0
+	det ~ \rho(\bm{\tau}) = 0
 .\]
 We can therefore apply the same rounding scheme as in the qubit case, modified for the smaller sphere.
 The cut-off value therefore becomes $\frac{1}{2\sqrt{8}}$.
 Visually, we fit a hypercube into the $8$-dimensional sphere of radius $\frac{1}{2}$ and round any states into the cube.
 As a field study I have implemented this algorithm and plotted the result, mirroring the procedure described in chapter 4.
 The model used is a one dimensional chain of the form: \[
-H = \sum_{i=1}^{8n}\lambda_1^{i}\lambda_1^{i+1}
-.\]
+H = \sum_{i=1}^{n}\lambda_1^{i}\lambda_1^{i+1}
+\]
+where $\lambda^{i}_{1}$ is the first Gell-Mann matrix operating on the $i$th qubit and the chain is closed, i.e. $\lambda^{n+1}_1=\lambda^{1}_1$.
 The result can be seen in Figure \ref{fig:4}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{tavgplot(4,2000,2,20,20).png}
+	\includegraphics[width=0.8\textwidth]{tavgplot(4,2500,2,20,20).png}
 	\caption{The result of the simplistically adapted algorithm on qutrits.}
 	\label{fig:4}
 \end{figure}
-\noindent A better rounding scheme would include using the unique geometry of the Bloch space to make the cut-off smaller.
+\noindent While the variance is very large for small $n$, it quickly falls off.
+Next steps would include analytically proving the behaviour of the approximation ratio, and thinking about more efficient rounding schemes.
+A better rounding scheme would include using the unique geometry of the Bloch space to make the cut-off smaller.

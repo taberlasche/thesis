@@ -49,15 +49,15 @@ Using this the algorithm which can be solved in polynomial time is:
 	\item If $\left| z_i \right| > 1$ then $y_i=\text{sgn}(z_i)$, otherwise $y_i=z_i$
 	\item Round the $y_i$ to $\pm 1$
 \end{enumerate}
-Step 4 truncates any values outside $\left[ -1,+1\right] $
+Step 4 truncates any values outside $\left[ -1,+1\right] $.
 The last rounding step is based on the size of the $y_{i}\in\left[ -1,1\right]^{n}$: \[
 x_{i}=\begin{cases}
 	-1, \quad \text{with probability} \frac{1-y_{i}}{2}\\
 	+1, \quad \text{with probability} \frac{1+y_{i}}{2}
 \end{cases}
 \]
-The result then clearly lies in $\left[ -1,+1\right]$.
-The proof that this algorithm indeed has an approximation ratio of $\Omega(\frac{1}{\log{}n}$ exploits the spherical symmetry of the distribution of the vector $r$ to show that \[
+The result then clearly lies in $ \{-1,+1\} $.
+The proof that this algorithm indeed has an approximation ratio of $\Omega(\frac{1}{\log{}n})$ exploits the spherical symmetry of the distribution of the vector $r$ to show that \[
 T^2\mathbb{E}\left[ z_iz_j \right] = v_i\cdot v_j
 .\]
 Therefore, if every $\left| z_i \right| $ would be at most one, the approximation ratio would be $\frac{1}{T^2}$.

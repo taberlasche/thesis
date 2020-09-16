@@ -46,8 +46,8 @@
 \DefineFamilyKey{TUMPH}{encoding}{\renewcommand{\file@encoding}{#1}}
 \FamilyProcessOptions{TUMPH}\relax
 \if@draftmode
-	\relax
-\else
+%	\relax
+%\else
 	\KOMAoptions{BCOR=1cm%
 		,DIV=10%
 		,open=any%
